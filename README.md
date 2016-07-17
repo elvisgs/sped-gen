@@ -77,13 +77,28 @@ O seguintes campos são incluídos a cada metadado de registro na sua raiz. Pode
 
 ## Funções e constantes utilitárias
 
+### No módulo
+
 ```javascript
 var spedGen = require('sped-gen');
 
 spedGen.layouts.{FISCAL|CONTRIB} // layouts permitidos
 spedGen.utils // funções utilitárias sobre registros
 spedGen.DEFAULT_OPTIONS // pode ser usada para sobrescrever as opções default
+spedGen.registerHelper // registra um helper do handlebars
 ```
+
+### Nos templates (helpers do handlebars)
+- **camelize**(*String*): Converte a string para camel case. Por ex.: field_name -> fieldName
+- **getter**(*String*): Obtém java getter. Por ex.: field_name -> getFieldName
+- **setter**(*String*): Obtém java setter. Por ex.: field_name -> setFieldName
+- **getJavaType**(*Object*): Obtém um java type a partir de um metadado de campo do SPED
+- **getBloco**(*String*): Obtém o bloco (primeiro caracter do id do registro)
+- **pascalCase**(*String*): Converte a string para pascal case. Por ex.: field_name -> FieldName
+- **lcase**(*String*): Converte a string para lowercase
+- **ucase**(*String*): Converte a string para uppercase
+
+A utilização de alguns desses helpers pode ser vista nos exemplos.
 
 ## TODO
 - Permitir outras template engines
