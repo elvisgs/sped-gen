@@ -89,7 +89,12 @@ singleFileWriter.flushIfNeeded = options => {
   }
 }
 
+const registerHelper = (name, func) => {
+  handlebars.registerHelper(name, func);
+};
+
 module.exports = generate;
 module.exports.layouts = { FISCAL: LAYOUT_FISCAL, CONTRIB: LAYOUT_CONTRIB };
 module.exports.utils = spedUtils;
 module.exports.DEFAULT_OPTIONS = DEFAULT_OPTIONS;
+module.exports.registerHelper = registerHelper;
