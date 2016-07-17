@@ -1,0 +1,28 @@
+{
+  "name": "sped-gen",
+  "version": "0.1.0",
+  "description": "Gerador de código baseado em metadados do SPED",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvisgs/sped-gen.git"
+  },
+  "keywords": [
+    "gerador",
+    "generator",
+    "sped"
+  ],
+  "author": "Elvis Luciano Guimaraes <elvis.gs@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvisgs/sped-gen/issues"
+  },
+  "homepage": "https://github.com/elvisgs/sped-gen#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "mkdirp": "^0.5.1"
+  }
+}
