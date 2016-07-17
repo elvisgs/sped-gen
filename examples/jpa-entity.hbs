@@ -1,0 +1,35 @@
+package {{package}};
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.Date;
+import java.util.Set;
+
+@Entity
+@Table(name = "reg_{{lcase id}}")
+@Getter
+@Setter
+public class Reg{{id}} {
+
+    @Id @GeneratedVaue
+    private Long id;
+
+{{#campos}}
+    @Column(name = "{{lcase id}}")
+    private {{getType this}} {{camelize id}};
+
+{{/campos}}
+{{#if pai}}
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id", insertable = false, updatable = false)
+    private Reg{{pai}} reg{{pai}};
+
+{{/if}}
+{{#filhos}}
+    @OneToMany(mappedBy = "reg{{../id}}", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Reg{{this}}> regs{{this}};
+
+{{/filhos~}}
+}
