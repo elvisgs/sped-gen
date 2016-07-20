@@ -1,0 +1,5 @@
+examples/
+test/
+.editorconfig
+.travis.yml
+jsconfig.json
