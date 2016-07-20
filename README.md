@@ -1,4 +1,5 @@
 # SPED-Gen
+[![Build Status](https://travis-ci.org/elvisgs/sped-gen.svg?branch=master)](https://travis-ci.org/elvisgs/sped-gen)
 > Gerador de código baseado em metadados do SPED - Sistema Público de Escrituração Digital.
 
 ## Instalação
