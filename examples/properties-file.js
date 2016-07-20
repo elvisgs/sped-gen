@@ -24,7 +24,7 @@ const options = {
   },
 
   // Só processa registros do bloco 0
-  filter: registro => registro.bloco === '0',
+  filter: registro => registro.id[0] === '0',
 
   // Mapper que simplifica a estrutura do registro e de seus campos
   mapper: registro => {

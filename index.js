@@ -29,7 +29,9 @@ const DEFAULT_OPTIONS = {
 };
 
 const generate = options => {
-  let opts = Object.assign(DEFAULT_OPTIONS, options);
+  validateOptions(options);
+
+  let opts = Object.assign({}, DEFAULT_OPTIONS, options);
 
   if (typeof opts.fileName === 'function') {
     opts.fileName = opts.fileName(opts);
@@ -37,34 +39,40 @@ const generate = options => {
 
   const metadata = require(`./meta/metadados-${opts.layoutSped}`);
 
-  const template = opts.template || fs.readFileSync(opts.templateFile).toString();
+  const template = opts.template != null ? opts.template : fs.readFileSync(opts.templateFile).toString();
   const compiledTemplate = handlebars.compile(template);
 
   opts.writer = opts.writer || (opts.singleFile ? singleFileWriter : multiFileWriter);
+  singleFileWriter.reset();
 
-  metadata.forEach(registro => {
+  metadata.filter(opts.filter).forEach(registro => {
     registro.bloco = registro.id[0];
-
-    registro.campos.shift(); // remove campo REG
     registro.abertura = spedUtils.ehAbertura(registro.id);
     registro.encerramento = spedUtils.ehEncerramento(registro.id);
     registro.layoutSped = opts.layoutSped;
+    registro.campos.shift(); // remove campo REG
 
-    registro = Object.assign(registro, DEFAULT_OPTIONS.aditionalFields, opts.aditionalFields);
-
-    const shouldWrite = opts.filter(registro);
-    if (shouldWrite === false) return;
+    const newFields = Object.assign({}, DEFAULT_OPTIONS.aditionalFields, opts.aditionalFields);
+    registro = Object.assign({}, registro, newFields);
 
     opts.handler(registro);
 
     registro = opts.mapper(registro);
 
     const result = compiledTemplate(registro);
-    opts.writer(result, registro, opts);
+    if (result.trim() !== '') {
+      opts.writer(result, registro, opts);
+    }
   });
 
   singleFileWriter.flushIfNeeded(opts);
 
+};
+
+const validateOptions = opts => {
+  if (opts.template == null && (opts.templateFile == null || opts.templateFile === '')) {
+    throw new Error('Opção template ou templateFile não informada');
+  }
 };
 
 const multiFileWriter = (chunk, registro, options) => {
@@ -80,14 +88,20 @@ const singleFileWriter = (chunk, registro, options) => {
   singleFileWriter.buffer += chunk + '\n';
 };
 singleFileWriter.flushIfNeeded = options => {
+  const buffer = singleFileWriter.buffer;
+  if (!buffer || buffer.trim() === '') return;
+
   if (options.singleFile && options.writer === singleFileWriter) {
     const fileName = options.fileName;
 
     mkdirp.sync(path.dirname(fileName));
 
-    fs.writeFileSync(fileName, singleFileWriter.buffer);
+    fs.writeFileSync(fileName, buffer);
   }
 }
+singleFileWriter.reset = () => {
+  delete singleFileWriter.buffer;
+};
 
 const registerHelper = (name, func) => {
   handlebars.registerHelper(name, func);
