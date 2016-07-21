@@ -16,8 +16,8 @@ const DEFAULT_OPTIONS = {
   templateFile: null,
   fileName: null,
   singleFile: false,
-  filter: reg => true,
-  handler: reg => {},
+  filter: () => true,
+  handler: () => {},
   mapper: reg => reg,
   writer: null,
   aditionalFields: {}

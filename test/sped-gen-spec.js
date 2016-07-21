@@ -200,7 +200,7 @@ describe('Sped Gen', function () {
       this.noop_opts.filter = reg => reg.id === '0000' || reg.id === '0001';
       this.noop_opts.singleFile = false;
       this.noop_opts.writer = null; // força o uso do writer interno
-      const fileName = this.noop_opts.fileName = './test/generated/multiFilesTest{{id}}';
+      this.noop_opts.fileName = './test/generated/multiFilesTest{{id}}';
 
       spedGen(this.noop_opts);
 

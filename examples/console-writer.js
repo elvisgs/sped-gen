@@ -9,7 +9,7 @@ const spedGen = require('../index');
 const options = {
   template: 'Bloco{{bloco}} - Registro {{id}}',
 
-  writer: (chunk, registro, options) => {
+  writer(chunk/* , registro, options */) {
     console.log(chunk)
   }
 };
