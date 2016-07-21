@@ -1,2 +1,3 @@
-node_modules/
+examples/out/
 test/generated/
+node_modules/
