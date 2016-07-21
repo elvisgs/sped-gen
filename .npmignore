@@ -1,5 +1,6 @@
 examples/
 test/
 .editorconfig
+.eslintrc.json
 .travis.yml
 jsconfig.json
