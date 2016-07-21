@@ -1,15 +1,11 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-const mkdirp = require('mkdirp');
 const handlebars = require('handlebars');
 const spedUtils = require('./lib/sped-utils');
+const DefaultWriter = require('./lib/default-writer');
+
 require('./lib/custom-helpers').registerCustomHelpers(handlebars);
 
-const DEFAULT_FILTER = reg => true;
-const DEFAULT_MAPPER = reg => reg;
-const NO_OP = () => {};
 const LAYOUT_FISCAL = 'fiscal';
 const LAYOUT_CONTRIB = 'contrib';
 
@@ -19,13 +15,11 @@ const DEFAULT_OPTIONS = {
   templateFile: null,
   fileName: null,
   singleFile: false,
-  filter: DEFAULT_FILTER,
-  handler: NO_OP,
-  mapper: DEFAULT_MAPPER,
+  filter: reg => true,
+  handler: reg => {},
+  mapper: reg => reg,
   writer: null,
-  aditionalFields: {
-    prefixo: null
-  }
+  aditionalFields: {}
 };
 
 const generate = options => {
@@ -42,8 +36,11 @@ const generate = options => {
   const template = opts.template != null ? opts.template : fs.readFileSync(opts.templateFile).toString();
   const compiledTemplate = handlebars.compile(template);
 
-  opts.writer = opts.writer || (opts.singleFile ? singleFileWriter : multiFileWriter);
-  singleFileWriter.reset();
+  opts.writer = opts.writer || new DefaultWriter(handlebars);
+  if (typeof opts.writer === 'function') {
+    const write = opts.writer;
+    opts.writer = { write };
+  }
 
   metadata.filter(opts.filter).forEach(registro => {
     registro.bloco = registro.id[0];
@@ -61,46 +58,15 @@ const generate = options => {
 
     const result = compiledTemplate(registro);
     if (result.trim() !== '') {
-      opts.writer(result, registro, opts);
+      opts.writer.write(result, registro, opts);
     }
   });
-
-  singleFileWriter.flushIfNeeded(opts);
-
 };
 
 const validateOptions = opts => {
   if (opts.template == null && (opts.templateFile == null || opts.templateFile === '')) {
     throw new Error('Opção template ou templateFile não informada');
   }
-};
-
-const multiFileWriter = (chunk, registro, options) => {
-  const fileName = handlebars.compile(options.fileName)(registro);
-
-  mkdirp.sync(path.dirname(fileName));
-
-  fs.writeFileSync(fileName, chunk);
-};
-
-const singleFileWriter = (chunk, registro, options) => {
-  singleFileWriter.buffer = singleFileWriter.buffer || '';
-  singleFileWriter.buffer += chunk + '\n';
-};
-singleFileWriter.flushIfNeeded = options => {
-  const buffer = singleFileWriter.buffer;
-  if (!buffer || buffer.trim() === '') return;
-
-  if (options.singleFile && options.writer === singleFileWriter) {
-    const fileName = options.fileName;
-
-    mkdirp.sync(path.dirname(fileName));
-
-    fs.writeFileSync(fileName, buffer);
-  }
-}
-singleFileWriter.reset = () => {
-  delete singleFileWriter.buffer;
 };
 
 const registerHelper = (name, func) => {

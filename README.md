@@ -14,7 +14,7 @@ var spedGen = require('sped-gen');
 spedGen(/*Object*/options);
 ```
 
-## Opções
+### Opções
 - (*String*) **layoutSped**: Os valores possíveis são `fiscal` ou `contrib` (obrigatório, *default*: fiscal)
 - (*String*) **template**: String contendo um template handlebars (obrigatório se templateFile não especificado)
 - (*String*) **templateFile**: Arquivo de template handlebars (obrigatório se template não especificado)
@@ -23,7 +23,7 @@ spedGen(/*Object*/options);
 - (*Function*) **filter**: Função para filtrar (excluir) registros da geração (*default*: `(registro) => true`)
 - (*Function*) **handler**: Função para alterar um registro antes de ser passado para o template. Pode ser usada, por ex., para adicionar campos calculados ao registro (*default*: `() => {}`)
 - (*Function*) **mapper**: Função para transformar um registro antes de ser passado para o template (*default*: `(registro) => registro`)
-- (*Function*) **writer**: Função que define onde o template processado será escrito. Recebe como parâmetros o template processado, o registro e as opções (*default*: multiFileWriter)
+- (*Function*) **writer**: Função que define onde o template processado será escrito. Recebe como parâmetros o template processado, o registro e as opções (*default*: DefaultWriter)
 - (*Object*) **aditionalFields**: Campos adicionais incluídos nos registros antes de passá-los ao template (*default*: {})
 
 Para entender melhor as opções consulte os exemplos.
