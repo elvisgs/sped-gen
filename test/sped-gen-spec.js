@@ -100,6 +100,16 @@ describe('Sped Gen', function () {
       compile.should.be.calledWith(this.noop_opts.template);
     });
 
+    it('deve carregar templateFile informado nas opções, se houver', function () {
+      this.noop_opts.template = null;
+      this.noop_opts.templateFile = './test/test.hbs';
+      const read = sinon.spy(fs, 'readFileSync');
+
+      spedGen(this.noop_opts);
+
+      read.should.be.calledWith(this.noop_opts.templateFile);
+    });
+
     it('deve usar filter informado nas opções, se houver', function () {
       const filter = this.noop_opts.filter = sinon.stub().returns(false);
 

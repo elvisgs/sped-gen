@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const handlebars = require('handlebars');
 const spedUtils = require('./lib/sped-utils');
 const DefaultWriter = require('./lib/default-writer');
