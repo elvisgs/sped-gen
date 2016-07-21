@@ -1,6 +1,6 @@
 {
   "name": "sped-gen",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Gerador de código baseado em metadados do SPED",
   "main": "index.js",
   "scripts": {
