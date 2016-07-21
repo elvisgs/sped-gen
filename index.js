@@ -37,7 +37,7 @@ const generate = options => {
   const template = opts.template != null ? opts.template : fs.readFileSync(opts.templateFile).toString();
   const compiledTemplate = handlebars.compile(template);
 
-  opts.writer = opts.writer || new DefaultWriter(handlebars);
+  opts.writer = opts.writer || new DefaultWriter(opts, handlebars);
   if (typeof opts.writer === 'function') {
     const write = opts.writer;
     opts.writer = { write };

@@ -196,7 +196,7 @@ describe('Sped Gen', function () {
       fs.existsSync(fileName).should.be.false();
     });
 
-    it('deve escrever arquivo com multiFileWriter', function() {
+    it('deve escrever arquivos com multiFileWriter', function() {
       this.noop_opts.filter = reg => reg.id === '0000' || reg.id === '0001';
       this.noop_opts.singleFile = false;
       this.noop_opts.writer = null; // força o uso do writer interno
@@ -232,6 +232,20 @@ describe('Sped Gen', function () {
 
       const content = fs.readFileSync(fileName).toString();
       content.should.be.equal('Registro 0000\nRegistro 0001\n');
+    });
+
+    it('deve excluir arquivo gerado se já existir', function () {
+      this.noop_opts.template = "{{id}}";
+      this.noop_opts.filter = reg => reg.id === '0000';
+      this.noop_opts.singleFile = true;
+      this.noop_opts.writer = null; // força o uso do writer interno
+      const fileName = this.noop_opts.fileName = './test/generated/singleFileTest4';
+
+      spedGen(this.noop_opts);
+      spedGen(this.noop_opts);
+
+      const content = fs.readFileSync(fileName).toString();
+      content.should.be.equal('0000\n');
     });
   });
 });
