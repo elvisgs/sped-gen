@@ -20,7 +20,8 @@ const DEFAULT_OPTIONS = {
   handler: () => {},
   mapper: reg => reg,
   writer: null,
-  aditionalFields: {}
+  aditionalFields: {},
+  helpers: {}
 };
 
 const generate = options => {
@@ -43,6 +44,10 @@ const generate = options => {
     opts.writer = { write };
   }
 
+  if (opts.helpers) {
+    Object.keys(opts.helpers).forEach(name => registerHelper(name, opts.helpers[name]));
+  }
+
   metadata.filter(opts.filter).forEach(registro => {
     registro.bloco = registro.id[0];
     registro.abertura = spedUtils.ehAbertura(registro.id);
@@ -62,6 +67,10 @@ const generate = options => {
       opts.writer.write(result, registro, opts);
     }
   });
+
+  if (opts.helpers) {
+    Object.keys(opts.helpers).forEach(name => handlebars.unregisterHelper(name));
+  }
 };
 
 const validateOptions = opts => {

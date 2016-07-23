@@ -20,12 +20,13 @@ spedGen(/*Object*/options);
 - (*String*) **template**: String contendo um template handlebars (obrigatório se templateFile não especificado)
 - (*String*) **templateFile**: Arquivo de template handlebars (obrigatório se template não especificado)
 - (*String|Function*) **fileName**: String ou função que retorna o nome do(s) arquivo(s) a ser(em) gerado(s). Pode ser um template handlebars que será processado com os metadados (obrigatório)
-- (*Boolean*) **singleFile**: Será gerado um único arquivo? (*default*: false)
+- (*Boolean*) **singleFile**: Será gerado um único arquivo? (*default*: `false`)
 - (*Function*) **filter**: Função para filtrar (excluir) registros da geração (*default*: `(registro) => true`)
 - (*Function*) **handler**: Função para alterar um registro antes de ser passado para o template. Pode ser usada, por ex., para adicionar campos calculados ao registro (*default*: `() => {}`)
 - (*Function*) **mapper**: Função para transformar um registro antes de ser passado para o template (*default*: `(registro) => registro`)
-- (*Function*) **writer**: Função que define onde o template processado será escrito. Recebe como parâmetros o template processado, o registro e as opções (*default*: DefaultWriter)
-- (*Object*) **aditionalFields**: Campos adicionais incluídos nos registros antes de passá-los ao template (*default*: {})
+- (*Function*) **writer**: Função que define onde o template processado será escrito. Recebe como parâmetros o template processado, o registro e as opções (*default*: `DefaultWriter`)
+- (*Object*) **aditionalFields**: Campos adicionais incluídos nos registros antes de passá-los ao template (*default*: `{}`)
+- (*Object*) **helpers**: Helpers customizados do Handlebars que existirão somente no escopo da execução atual (*default*: `{}`)
 
 Para entender melhor as opções consulte os exemplos.
 

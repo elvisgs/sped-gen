@@ -247,5 +247,25 @@ describe('Sped Gen', function () {
       const content = fs.readFileSync(fileName).toString();
       content.should.be.equal('0000\n');
     });
+
+    it('deve registrar helpers informados nas opções, se houver', function () {
+      this.noop_opts.helpers = { sayHello: who => 'Hello, ' + who };
+      const registerHelper = sinon.spy(require('handlebars'), 'registerHelper');
+
+      spedGen(this.noop_opts);
+
+      registerHelper.should.be.calledWith('sayHello', this.noop_opts.helpers.sayHello);
+    });
+
+    it('deve remover helpers informados nas opções, se houver', function () {
+      this.noop_opts.helpers = { foo: () => 'bar' };
+      const forEach = sinon.spy(Array.prototype, 'forEach');
+      const unregisterHelper = sinon.spy(require('handlebars'), 'unregisterHelper');
+
+      spedGen(this.noop_opts);
+
+      unregisterHelper.should.be.calledWith('foo');
+      unregisterHelper.calledAfter(forEach).should.be.true();
+    });
   });
 });
