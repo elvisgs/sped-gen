@@ -773,6 +773,11 @@
         "regId": "H010",
         "campoId": "COD_PART",
         "campoRef": "COD_PART"
+      },
+      {
+        "regId": "K200",
+        "campoId": "COD_PART",
+        "campoRef": "COD_PART"
       }
     ]
   },
@@ -1076,6 +1081,7 @@
     "filhos": [
       "0205",
       "0206",
+      "0210",
       "0220"
     ],
     "referenciadoPor": [
@@ -1108,6 +1114,11 @@
         "regId": "1923",
         "campoId": "COD_ITEM",
         "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "0210",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM_COMP"
       },
       {
         "regId": "C170",
@@ -1188,6 +1199,51 @@
         "regId": "H010",
         "campoId": "COD_ITEM",
         "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "K200",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "K220",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM_ORI"
+      },
+      {
+        "regId": "K220",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM_DEST"
+      },
+      {
+        "regId": "K230",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "K235",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "K235",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_INS_SUBST"
+      },
+      {
+        "regId": "K250",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "K255",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_ITEM"
+      },
+      {
+        "regId": "K255",
+        "campoId": "COD_ITEM",
+        "campoRef": "COD_INS_SUBST"
       }
     ]
   },
@@ -1216,7 +1272,7 @@
         "id": "DESCR_ANT_ITEM",
         "tipo": "C",
         "tamanho": "",
-        "obrigatorio": "1",
+        "obrigatorio": "0",
         "rotulo": "Descrição anterior do item",
         "descricao": "Descrição anterior do item"
       },
@@ -1253,7 +1309,7 @@
   {
     "id": "0206",
     "nivel": "3",
-    "ocorrencia": "1",
+    "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "Código de Produto, Conforme Tabela Publicada Pela ANP (COMBUSTÍVEIS)",
     "descricao": "Código de Produto, Conforme Tabela Publicada Pela ANP (COMBUSTÍVEIS)",
@@ -1281,6 +1337,61 @@
         "valores-validos": {
           "datasource": "COD_COMB"
         }
+      }
+    ],
+    "pai": "0200"
+  },
+  {
+    "id": "0210",
+    "nivel": "3",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Consumo Específico Padronizado",
+    "descricao": "Consumo Específico Padronizado",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo '0210'",
+        "valores-validos": {
+          "valores": "0210"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "COD_ITEM_COMP",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item componente/insumo",
+        "descricao": "Código do item componente/insumo (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "3",
+        "id": "QTD_COMP",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "6",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade do item componente/insumo",
+        "descricao": "Quantidade do item componente/insumo para se produzir uma unidade do item composto/resultante"
+      },
+      {
+        "posicao": "4",
+        "id": "PERDA",
+        "tipo": "N",
+        "tamanho": "7",
+        "casasdecimais": "4",
+        "obrigatorio": "1",
+        "rotulo": "Perda/Quebra",
+        "descricao": "Perda/quebra normal percentual do insumo/componente para se produzir uma unidade do item composto/resultante"
       }
     ],
     "pai": "0200"
@@ -2206,6 +2317,7 @@
         "id": "PAIS",
         "tipo": "N",
         "tamanho": "3",
+        "casasdecimais": "",
         "obrigatorio": "1",
         "rotulo": "Código do país de destino",
         "descricao": "Código do país de destino da mercadoria, conforme tabela do SISCOMEX",
@@ -4908,7 +5020,7 @@
         "rotulo": "Totalizador de registros",
         "descricao": "Registro que será totalizado no próximo campo",
         "valores-validos": {
-          "valores": "0000;0001;0005;0015;0100;0150;0175;0190;0200;0205;0206;0220;0300;0305;0400;0450;0460;0500;0600;0990;C001;C100;C105;C110;C111;C112;C113;C114;C115;C116;C120;C130;C140;C141;C160;C165;C170;C171;C172;C173;C174;C175;C176;C177;C178;C179;C190;C195;C197;C300;C310;C320;C321;C350;C370;C390;C400;C405;C410;C420;C425;C460;C465;C470;C490;C500;C510;C590;C600;C601;C610;C690;C700;C790;C791;C800;C850;C860;C890;C990;D001;D100;D110;D120;D130;D140;D150;D160;D161;D162;D170;D180;D190;D195;D197;D300;D301;D310;D350;D355;D360;D365;D370;D390;D400;D410;D411;D420;D500;D510;D530;D590;D600;D610;D690;D695;D696;D697;D990;E001;E100;E110;E111;E112;E113;E115;E116;E200;E210;E220;E230;E240;E250;E500;E510;E520;E530;E990;G001;G110;G125;G126;G130;G140;G990;H001;H005;H010;H020;H990;1001;1010;1100;1105;1110;1200;1210;1300;1310;1320;1350;1360;1370;1390;1391;1400;1500;1510;1600;1700;1710;1800;1900;1910;1920;1921;1922;1923;1925;1926;1990;9001;9900;9990;9999"
+          "valores": "0000;0001;0005;0015;0100;0150;0175;0190;0200;0205;0206;0210;0220;0300;0305;0400;0450;0460;0500;0600;0990;C001;C100;C105;C110;C111;C112;C113;C114;C115;C116;C120;C130;C140;C141;C160;C165;C170;C171;C172;C173;C174;C175;C176;C177;C178;C179;C190;C195;C197;C300;C310;C320;C321;C350;C370;C390;C400;C405;C410;C420;C425;C460;C465;C470;C490;C500;C510;C590;C600;C601;C610;C690;C700;C790;C791;C800;C850;C860;C890;C990;D001;D100;D110;D120;D130;D140;D150;D160;D161;D162;D170;D180;D190;D195;D197;D300;D301;D310;D350;D355;D360;D365;D370;D390;D400;D410;D411;D420;D500;D510;D530;D590;D600;D610;D690;D695;D696;D697;D990;E001;E100;E110;E111;E112;E113;E115;E116;E200;E210;E220;E230;E240;E250;E500;E510;E520;E530;E990;G001;G110;G125;G126;G130;G140;G990;H001;H005;H010;H020;H990;K001;K100;K200;K220;K230;K235;K250;K255;K990;1001;1010;1100;1105;1110;1200;1210;1300;1310;1320;1350;1360;1370;1390;1391;1400;1500;1510;1600;1700;1710;1800;1900;1910;1920;1921;1922;1923;1925;1926;1990;9001;9900;9990;9999"
         }
       },
       {
@@ -17743,6 +17855,16 @@
         "obrigatorio": "0",
         "rotulo": "Código da conta analítica",
         "descricao": "Código da conta analítica contábil debitada/creditada"
+      },
+      {
+        "posicao": "11",
+        "id": "VL_ITEM_IR",
+        "tipo": "N",
+        "tamanho": "",
+        "casasdecimais": "2",
+        "obrigatorio": "0",
+        "rotulo": "Valor do item para efeitos do Imposto de Renda",
+        "descricao": "Valor do item para efeitos do Imposto de Renda"
       }
     ],
     "pai": "H005",
@@ -17831,6 +17953,520 @@
         "obrigatorio": "1",
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco H"
+      }
+    ]
+  },
+  {
+    "id": "K001",
+    "nivel": "1",
+    "ocorrencia": "0",
+    "obrigatorio": "1",
+    "rotulo": "ABERTURA DO BLOCO K",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K001'",
+        "valores-validos": {
+          "valores": "K001"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "IND_MOV",
+        "tipo": "N",
+        "tamanho": "1",
+        "obrigatorio": "1",
+        "rotulo": "Indicador de movimento",
+        "descricao": "Indicador de movimento",
+        "valores-validos": {
+          "valores": "0=Bloco com dados informados;1=Bloco sem dados informados"
+        }
+      }
+    ],
+    "filhos": [
+      "K100"
+    ]
+  },
+  {
+    "id": "K100",
+    "nivel": "2",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Período de Apuração do ICMS/IPI",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K100'",
+        "valores-validos": {
+          "valores": "K100"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_INI",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data inicial",
+        "descricao": "Data inicial a que a apuração se refere"
+      },
+      {
+        "posicao": "3",
+        "id": "DT_FIN",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data final",
+        "descricao": "Data final a que a apuração se refere"
+      }
+    ],
+    "pai": "K001",
+    "filhos": [
+      "K200",
+      "K220",
+      "K230",
+      "K250"
+    ]
+  },
+  {
+    "id": "K200",
+    "nivel": "3",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Estoque Escriturado",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K200'",
+        "valores-validos": {
+          "valores": "K200"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_EST",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data do estoque final",
+        "descricao": "Data do estoque final"
+      },
+      {
+        "posicao": "3",
+        "id": "COD_ITEM",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item",
+        "descricao": "Código do item (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "4",
+        "id": "QTD",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "3",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade em estoque",
+        "descricao": "Quantidade em estoque"
+      },
+      {
+        "posicao": "5",
+        "id": "IND_EST",
+        "tipo": "C",
+        "tamanho": "1",
+        "obrigatorio": "1",
+        "rotulo": "Indicador do tipo de estoque",
+        "descricao": "Indicador do tipo de estoque",
+        "valores-validos": {
+          "valores": "0=Estoque de propriedade do informante e em seu poder;1=Estoque de propriedade do informante e em posse de terceiros;2=Estoque de propriedade de terceiros e em posse do informante"
+        }
+      },
+      {
+        "posicao": "6",
+        "id": "COD_PART",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "",
+        "rotulo": "Código do participante",
+        "descricao": "Código do participante (campo 02 do Registro 0150):- proprietário/possuidor que não seja o informante do arquivo",
+        "valores-validos": {
+          "datasource": "COD_PART_0150"
+        }
+      }
+    ],
+    "pai": "K100"
+  },
+  {
+    "id": "K220",
+    "nivel": "3",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Outras Movimentações Internas entre Mercadorias",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K220'",
+        "valores-validos": {
+          "valores": "K220"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_MOV",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data da movimentação interna",
+        "descricao": "Data da movimentação interna"
+      },
+      {
+        "posicao": "3",
+        "id": "COD_ITEM_ORI",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item de origem",
+        "descricao": "Código do item de origem (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "4",
+        "id": "COD_ITEM_DEST",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item de destino",
+        "descricao": "Código do item de destino (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "5",
+        "id": "QTD",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "3",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade movimentadado item de origem",
+        "descricao": "Quantidade movimentadado item de origem codificado no campo 03"
+      }
+    ],
+    "pai": "K100"
+  },
+  {
+    "id": "K230",
+    "nivel": "3",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Itens Produzidos",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K230'",
+        "valores-validos": {
+          "valores": "K230"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_INI_OP",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "0",
+        "rotulo": "Data de início da ordem de produção",
+        "descricao": "Data de início da ordem de produção"
+      },
+      {
+        "posicao": "3",
+        "id": "DT_FIN_OP",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "0",
+        "rotulo": "Data de conclusão da ordem de produção",
+        "descricao": "Data de conclusão da ordem de produção"
+      },
+      {
+        "posicao": "4",
+        "id": "COD_DOC_OP",
+        "tipo": "C",
+        "tamanho": "30",
+        "obrigatorio": "0",
+        "rotulo": "Código de identificação da ordem de produção",
+        "descricao": "Código de identificação da ordem de produção"
+      },
+      {
+        "posicao": "5",
+        "id": "COD_ITEM",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item produzido",
+        "descricao": "Código do item produzido (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "6",
+        "id": "QTD_ENC",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "3",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade de produção acabada",
+        "descricao": "Quantidade de produção acabada"
+      }
+    ],
+    "pai": "K100",
+    "filhos": [
+      "K235"
+    ]
+  },
+  {
+    "id": "K235",
+    "nivel": "4",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Insumos Consumidos",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K235'",
+        "valores-validos": {
+          "valores": "K235"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_SAIDA",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data de saída",
+        "descricao": "Data de saída do estoque para alocação ao produto"
+      },
+      {
+        "posicao": "3",
+        "id": "COD_ITEM",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item componente/insumo",
+        "descricao": "Código do item componente/insumo (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "4",
+        "id": "QTD",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "3",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade consumida do item",
+        "descricao": "Quantidade consumida do item"
+      },
+      {
+        "posicao": "5",
+        "id": "COD_INS_SUBST",
+        "tipo": "C",
+        "tamanho": "",
+        "obrigatorio": "0",
+        "rotulo": "Código do insumo que foi substituído",
+        "descricao": "Código do insumo que foi substituído, caso ocorra a substituição (campo 02 do Registro 0210)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      }
+    ],
+    "pai": "K230"
+  },
+  {
+    "id": "K250",
+    "nivel": "3",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Industrialização Efetuada por Terceiros – Itens Produzidos",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K250'",
+        "valores-validos": {
+          "valores": "K250"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_PROD",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data do reconhecimento da produção ocorrida no terceiro",
+        "descricao": "Data do reconhecimento da produção ocorrida no terceiro"
+      },
+      {
+        "posicao": "3",
+        "id": "COD_ITEM",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do item produzido",
+        "descricao": "Código do item produzido (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "4",
+        "id": "QTD",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "3",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade produzida",
+        "descricao": "Quantidade produzida"
+      }
+    ],
+    "pai": "K100",
+    "filhos": [
+      "K255"
+    ]
+  },
+  {
+    "id": "K255",
+    "nivel": "4",
+    "ocorrencia": "2",
+    "obrigatorio": "0",
+    "rotulo": "Industrialização em Terceiros – Insumos Consumidos",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K255'",
+        "valores-validos": {
+          "valores": "K255"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "DT_CONS",
+        "tipo": "D",
+        "tamanho": "8",
+        "obrigatorio": "1",
+        "rotulo": "Data do reconhecimento do consumo do insumo",
+        "descricao": "Data do reconhecimento do consumo do insumo (referente ao produto informado no campo 04 do Registro K250)"
+      },
+      {
+        "posicao": "3",
+        "id": "COD_ITEM",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "1",
+        "rotulo": "Código do insumo",
+        "descricao": "Código do insumo (campo 02 do Registro 0200)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      },
+      {
+        "posicao": "4",
+        "id": "QTD",
+        "tipo": "N",
+        "tamanho": "17",
+        "casasdecimais": "3",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade de consumo do insumo",
+        "descricao": "Quantidade de consumo do insumo"
+      },
+      {
+        "posicao": "5",
+        "id": "COD_INS_SUBST",
+        "tipo": "C",
+        "tamanho": "60",
+        "obrigatorio": "0",
+        "rotulo": "Código do insumo que foi substituído, caso ocorra a substituição",
+        "descricao": "Código do insumo que foi substituído, caso ocorra a substituição (campo 02 do Registro 0210)",
+        "valores-validos": {
+          "datasource": "COD_ITEM_0200"
+        }
+      }
+    ],
+    "pai": "K250"
+  },
+  {
+    "id": "K990",
+    "nivel": "1",
+    "ocorrencia": "0",
+    "obrigatorio": "1",
+    "rotulo": "ENCERRAMENTO DO BLOCO K",
+    "campos": [
+      {
+        "posicao": "1",
+        "id": "REG",
+        "tipo": "C",
+        "tamanho": "4",
+        "obrigatorio": "1",
+        "rotulo": "Tipo de Registro",
+        "descricao": "Texto fixo contendo 'K990'",
+        "valores-validos": {
+          "valores": "K990"
+        }
+      },
+      {
+        "posicao": "2",
+        "id": "QTD_LIN_K",
+        "tipo": "N",
+        "tamanho": "",
+        "obrigatorio": "1",
+        "rotulo": "Quantidade total de linhas",
+        "descricao": "Quantidade total de linhas do Bloco K"
       }
     ]
   }
