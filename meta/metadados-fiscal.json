@@ -4162,7 +4162,7 @@
         }
       },
       {
-        "posicao": "6",
+        "posicao": "2",
         "id": "NUM_DOC_INI",
         "tipo": "N",
         "tamanho": "12",
@@ -4171,7 +4171,7 @@
         "descricao": "Número do dispositivo autorizado inicial"
       },
       {
-        "posicao": "7",
+        "posicao": "3",
         "id": "NUM_DOC_FIN",
         "tipo": "N",
         "tamanho": "12",

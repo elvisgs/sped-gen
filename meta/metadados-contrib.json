@@ -17307,7 +17307,7 @@
         }
       },
       {
-        "posicao": "4",
+        "posicao": "3",
         "id": "VL_TOT_REC",
         "tipo": "N",
         "casasdecimais": "2",
@@ -17316,7 +17316,7 @@
         "descricao": "Valor total da receita bruta no período."
       },
       {
-        "posicao": "5",
+        "posicao": "4",
         "id": "COD_CTA",
         "tipo": "C",
         "tamanho": "60",
@@ -17328,7 +17328,7 @@
         }
       },
       {
-        "posicao": "6",
+        "posicao": "5",
         "id": "DESC_COMPL",
         "tipo": "C",
         "obrigatorio": "0",
