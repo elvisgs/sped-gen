@@ -166,7 +166,23 @@
     ],
     "filhos": [
       "0001",
-      "0990"
+      "0990",
+      "1001",
+      "1990",
+      "9001",
+      "9990",
+      "C001",
+      "C990",
+      "D001",
+      "D990",
+      "E001",
+      "E990",
+      "G001",
+      "G990",
+      "H001",
+      "H990",
+      "K001",
+      "K990"
     ]
   },
   {
@@ -2049,6 +2065,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "1010",
       "1100",
@@ -4954,7 +4971,8 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco 1"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "9001",
@@ -4988,6 +5006,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "9900"
     ]
@@ -5063,7 +5082,8 @@
         "rotulo": "Total de linhas",
         "descricao": "Quantidade total de linhas do Bloco 9"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "9999",
@@ -5127,6 +5147,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "C100",
       "C300",
@@ -11159,7 +11180,8 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco C"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "D001",
@@ -11193,6 +11215,7 @@
     "valores-validos": {
       "valores": "D001"
     },
+    "pai": "0000",
     "filhos": [
       "D100",
       "D300",
@@ -15542,7 +15565,8 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco D"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "E001",
@@ -15576,6 +15600,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "E100",
       "E200",
@@ -17107,7 +17132,8 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco E"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "G001",
@@ -17141,6 +17167,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "G110"
     ]
@@ -17647,7 +17674,8 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco G"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "H001",
@@ -17681,6 +17709,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "H005"
     ]
@@ -17954,7 +17983,8 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco H"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "K001",
@@ -17988,6 +18018,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "K100"
     ]
@@ -18468,6 +18499,7 @@
         "rotulo": "Quantidade total de linhas",
         "descricao": "Quantidade total de linhas do Bloco K"
       }
-    ]
+    ],
+    "pai": "0000"
   }
 ]

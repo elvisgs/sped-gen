@@ -10,7 +10,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0000”",
+        "descricao": "Texto fixo contendo '0000'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -24,7 +24,7 @@
         "id": "COD_VER",
         "descricao": "Código da versão do leiaute conforme a tabela 3.1.1",
         "tipo": "N",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "rotulo": "Versão do leiaute"
@@ -58,7 +58,7 @@
         "id": "NUM_REC_ANTERIOR",
         "descricao": "Número do Recibo da Escrituração Anterior, a ser Retificada. Utilizado para escrituração retificadora",
         "tipo": "C",
-        "tamanho": "[041]",
+        "tamanho": "041",
         "tamanho-fixo": "true",
         "obrigatorio": "0",
         "rotulo": "Número do Recibo da Escrituração Anterior"
@@ -68,7 +68,7 @@
         "id": "DT_INI",
         "descricao": "Data inicial das informações contidas no arquivo",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "rotulo": "Data inicial"
@@ -78,7 +78,7 @@
         "id": "DT_FIN",
         "descricao": "Data final das informações contidas no arquivo",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "rotulo": "Data final"
@@ -97,7 +97,7 @@
         "id": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento matriz da pessoa jurídica no CNPJ",
         "tipo": "N",
-        "tamanho": "[014]",
+        "tamanho": "014",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "rotulo": "CNPJ"
@@ -107,7 +107,7 @@
         "id": "UF",
         "descricao": "Sigla da unidade da federação da pessoa jurídica",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "UF",
         "valores-validos": {
@@ -119,7 +119,7 @@
         "id": "COD_MUN",
         "descricao": "Código do município do domicílio fiscal da pessoa jurídica, conforme a tabela IBGE",
         "tipo": "N",
-        "tamanho": "[7]",
+        "tamanho": "7",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "rotulo": "Município",
@@ -132,7 +132,7 @@
         "id": "SUFRAMA",
         "descricao": "Inscrição da pessoa jurídica na Suframa",
         "tipo": "C",
-        "tamanho": "[9]",
+        "tamanho": "9",
         "tamanho-fixo": "true",
         "obrigatorio": "0",
         "rotulo": "Inscrição na SUFRAMA"
@@ -142,7 +142,7 @@
         "id": "IND_NAT_PJ",
         "descricao": "Indicador da natureza da pessoa jurídica",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "tamanho-fixo": "true",
         "obrigatorio": "0",
         "rotulo": "Natureza da pessoa jurídica",
@@ -162,6 +162,28 @@
           "valores": "0=Industrial ou equiparado a industrial;1=Prestador de serviços;2=Atividade de comércio;3=Pessoas jurídicas referidas nos §§ 6º, 8º e 9º do art. 3º da Lei nº 9.718, de 1998;4=Atividade imobiliária;9=Outros"
         }
       }
+    ],
+    "filhos": [
+      "1001",
+      "1990",
+      "9001",
+      "9990",
+      "0001",
+      "0990",
+      "A001",
+      "A990",
+      "C001",
+      "C990",
+      "D001",
+      "D990",
+      "F001",
+      "F990",
+      "I001",
+      "I990",
+      "M001",
+      "M990",
+      "P001",
+      "P990"
     ]
   },
   {
@@ -175,7 +197,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0001”",
+        "descricao": "Texto fixo contendo '0001'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -197,6 +219,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "0035",
       "0100",
@@ -218,7 +241,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0035”",
+        "descricao": "Texto fixo contendo '0035'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -232,7 +255,7 @@
         "id": "COD_SCP",
         "descricao": "Código de identificação do estabelecimento",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "Identificação"
       },
@@ -268,7 +291,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0100”",
+        "descricao": "Texto fixo contendo '0100'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -291,7 +314,7 @@
         "id": "CPF",
         "descricao": "Número de inscrição do contabilista no CPF",
         "tipo": "N",
-        "tamanho": "[011]",
+        "tamanho": "011",
         "obrigatorio": "1",
         "rotulo": "CPF"
       },
@@ -309,7 +332,7 @@
         "id": "CNPJ",
         "descricao": "Número de inscrição do escritório de contabilidade no CNPJ, se houver",
         "tipo": "N",
-        "tamanho": "[014]",
+        "tamanho": "014",
         "obrigatorio": "0",
         "rotulo": "CNPJ"
       },
@@ -318,7 +341,7 @@
         "id": "CEP",
         "descricao": "Código de Endereçamento Postal",
         "tipo": "N",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "CEP"
       },
@@ -388,7 +411,7 @@
         "id": "COD_MUN",
         "descricao": "Código do município, conforme tabela IBGE",
         "tipo": "N",
-        "tamanho": "[7]",
+        "tamanho": "7",
         "obrigatorio": "0",
         "rotulo": "Município",
         "valores-validos": {
@@ -409,9 +432,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0110”",
+        "descricao": "Texto fixo contendo '0110'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -423,7 +446,7 @@
         "id": "COD_INC_TRIB",
         "descricao": "Código indicador da incidência tributária no período",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Incidência tributária no período",
         "valores-validos": {
@@ -435,7 +458,7 @@
         "id": "IND_APRO_CRED",
         "descricao": "Código indicador de método de apropriação de créditos comuns, no caso de incidência no regime não-cumulativo (COD_INC_TRIB = 1 ou 3)",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Método de apropriação de créditos comuns",
         "valores-validos": {
@@ -447,7 +470,7 @@
         "id": "COD_TIPO_CONT",
         "descricao": "Código indicador do Tipo de Contribuição Apurada no Período",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Tipo de contribuição apurada no período",
         "valores-validos": {
@@ -459,11 +482,11 @@
         "id": "IND_REG_CUM",
         "descricao": "Código indicador do Tipo de Critério de escrituração e apuração",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Critério de escrituração e apuração",
         "valores-validos": {
-          "valores": "1=Regime de Caixa - Escrituração consolidada (Registro F500);2=Regime de Competência - Escrituração consolidada (Registro F550);9=Regime de Competência - Escrituração detalhada, com base nos registros dos Blocos “A”, “C”, “D” e “F”"
+          "valores": "1=Regime de Caixa - Escrituração consolidada (Registro F500);2=Regime de Competência - Escrituração consolidada (Registro F550);9=Regime de Competência - Escrituração detalhada, com base nos registros dos Blocos 'A', 'C', 'D' e 'F'"
         }
       }
     ],
@@ -483,9 +506,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0111”",
+        "descricao": "Texto fixo contendo '0111'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -551,7 +574,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0120”",
+        "descricao": "Texto fixo contendo '0120'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -565,7 +588,7 @@
         "id": "MES_DISPENSA",
         "descricao": "Mês de referência do ano-calendário da escrituração, dispensada da entrega",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Mês de referência"
       },
@@ -592,7 +615,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0140”",
+        "descricao": "Texto fixo contendo '0140'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -624,7 +647,7 @@
         "id": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ"
       },
@@ -633,7 +656,7 @@
         "id": "UF",
         "descricao": "Sigla da unidade da federação do estabelecimento",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "UF",
         "valores-validos": {
@@ -654,7 +677,7 @@
         "id": "COD_MUN",
         "descricao": "Código do município do domicílio fiscal do estabelecimento, conforme a tabela IBGE",
         "tipo": "N",
-        "tamanho": "[7]",
+        "tamanho": "7",
         "obrigatorio": "1",
         "rotulo": "Município",
         "valores-validos": {
@@ -674,7 +697,7 @@
         "id": "SUFRAMA",
         "descricao": "Inscrição do estabelecimento na Suframa",
         "tipo": "C",
-        "tamanho": "[9]",
+        "tamanho": "9",
         "obrigatorio": "0",
         "rotulo": "Inscrição na SUFRAMA"
       }
@@ -737,7 +760,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0145”",
+        "descricao": "Texto fixo contendo '0145'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -751,7 +774,7 @@
         "id": "COD_INC_TRIB",
         "descricao": "Código indicador da incidência tributária no período",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Incidência tributária no período",
         "valores-validos": {
@@ -807,7 +830,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0150”",
+        "descricao": "Texto fixo contendo '0150'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -851,7 +874,7 @@
         "id": "CNPJ",
         "descricao": "CNPJ do participante",
         "tipo": "N",
-        "tamanho": "[014]",
+        "tamanho": "014",
         "obrigatorio": "0",
         "rotulo": "CNPJ"
       },
@@ -860,7 +883,7 @@
         "id": "CPF",
         "descricao": "CPF do participante",
         "tipo": "N",
-        "tamanho": "[011]",
+        "tamanho": "011",
         "obrigatorio": "0",
         "rotulo": "CPF"
       },
@@ -878,7 +901,7 @@
         "id": "COD_MUN",
         "descricao": "Código do município, conforme a tabela IBGE",
         "tipo": "N",
-        "tamanho": "[7]",
+        "tamanho": "7",
         "obrigatorio": "0",
         "rotulo": "Município",
         "valores-validos": {
@@ -890,7 +913,7 @@
         "id": "SUFRAMA",
         "descricao": "Número de inscrição do participante na Suframa",
         "tipo": "C",
-        "tamanho": "[9]",
+        "tamanho": "9",
         "obrigatorio": "0",
         "rotulo": "Inscrição na SUFRAMA"
       },
@@ -980,7 +1003,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0190”",
+        "descricao": "Texto fixo contendo '0190'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1032,7 +1055,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0200”",
+        "descricao": "Texto fixo contendo '0200'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1092,7 +1115,7 @@
         "id": "TIPO_ITEM",
         "descricao": "Tipo do item - Atividades Industriais, Comerciais e Serviços",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Tipo do Item",
         "valores-validos": {
@@ -1104,7 +1127,7 @@
         "id": "COD_NCM",
         "descricao": "Código da Nomenclatura Comum do Mercosul",
         "tipo": "C",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Código NCM"
       },
@@ -1122,7 +1145,7 @@
         "id": "COD_GEN",
         "descricao": "Código do gênero do item, conforme a Tabela 4.2.1",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código do gênero",
         "valores-validos": {
@@ -1242,7 +1265,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0205”",
+        "descricao": "Texto fixo contendo '0205'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1264,7 +1287,7 @@
         "id": "DT_INI",
         "descricao": "Data inicial de utilização da descrição do item",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data inicial"
       },
@@ -1273,7 +1296,7 @@
         "id": "DT_FIM",
         "descricao": "Data final de utilização da descrição do item",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data final"
       },
@@ -1300,7 +1323,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0206”",
+        "descricao": "Texto fixo contendo '0206'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1334,7 +1357,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0208”",
+        "descricao": "Texto fixo contendo '0208'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1387,7 +1410,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0400”",
+        "descricao": "Texto fixo contendo '0400'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1434,7 +1457,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0450”",
+        "descricao": "Texto fixo contendo '0450'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1501,9 +1524,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0500”",
+        "descricao": "Texto fixo contendo '0500'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -1515,7 +1538,7 @@
         "id": "DT_ALT",
         "descricao": "Data da inclusão/alteração",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da inclusão ou alteração"
       },
@@ -1524,7 +1547,7 @@
         "id": "COD_NAT_CC",
         "descricao": "Código da natureza da conta/grupo de contas",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza",
         "valores-validos": {
@@ -1536,7 +1559,7 @@
         "id": "IND_CTA",
         "descricao": "Indicador do tipo de conta",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo",
         "valores-validos": {
@@ -1584,7 +1607,7 @@
         "id": "CNPJ_EST",
         "descricao": "CNPJ do estabelecimento, no caso da conta informada no campo COD_CTA ser específica de um estabelecimento",
         "tipo": "C",
-        "tamanho": "[014]",
+        "tamanho": "014",
         "obrigatorio": "0",
         "rotulo": "CNPJ do Estabelecimento"
       }
@@ -1864,9 +1887,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0600”",
+        "descricao": "Texto fixo contendo '0600'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -1878,7 +1901,7 @@
         "id": "DT_ALT",
         "descricao": "Data da inclusão/alteração",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da inclusão ou alteração"
       },
@@ -1936,7 +1959,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “0990”",
+        "descricao": "Texto fixo contendo '0990'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -1953,7 +1976,8 @@
         "obrigatorio": "1",
         "rotulo": "Quantidade total de linhas do Bloco 0"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "1001",
@@ -1986,6 +2010,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "1010",
       "1020",
@@ -1993,7 +2018,8 @@
       "1300",
       "1500",
       "1700",
-      "1800"
+      "1800",
+      "1900"
     ]
   },
   {
@@ -2045,10 +2071,10 @@
         "posicao": "5",
         "id": "IND_NAT_ACAO",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Ação Judicial",
-        "descricao": "Indicador da Natureza da Ação Judicial, impetrada na Justiça Federal:01 - Decisão Judicial Transitada em Julgado, a favor da Pessoa Jurídica.02 - Decisão Judicial Não Transitada em Julgado, a favor da Pessoa Jurídica.03 - Decisão Judicial oriunda de Liminar em Mandado de Segurança.04 - Decisão Judicial oriunda de Liminar em Medida Cautelar.05 - Decisão Judicial oriunda de Antecipação de Tutela. 06 - Decisão Judicial Vinculada a Depósito Administrativo ou Judicial em Montante Integral.07 - Medida Judicial em que a Pessoa Jurídica não é o autor.08 - Sumula Vinculante aprovada pelo STF99 - Outros.",
+        "descricao": "Indicador da Natureza da Ação Judicial, impetrada na Justiça Federal:01 - Decisão Judicial Transitada em Julgado, a favor da Pessoa Jurídica.02 - Decisão Judicial Não Transitada em Julgado, a favor da Pessoa Jurídica.03 - Decisão Judicial oriunda de Liminar em Mandado de Segurança.04 - Decisão Judicial oriunda de Liminar em Medida Cautelar.05 - Decisão Judicial oriunda de Antecipação de Tutela. 06 - Decisão Judicial Vinculada a Depósito Administrativo ou Judicial em Montante Integral.07 - Medida Judicial em que a Pessoa Jurídica não é o autor.08 - Sumula Vinculante aprovada pelo STF99 - Outros",
         "valores-validos": {
           "valores": "01=Decisão Judicial Transitada em Julgado, a favor da Pessoa Jurídica;02=Decisão Judicial Não Transitada em Julgado, a favor da Pessoa Jurídica;03=Decisão Judicial oriunda de Liminar em Mandado de Segurança;04=Decisão Judicial oriunda de Liminar em Medida Cautelar;05=Decisão Judicial oriunda de Antecipação de Tutela;06=Decisão Judicial Vinculada a Depósito Administrativo ou Judicial em Montante Integral;07=Medida Judicial em que a Pessoa Jurídica não é o autor;08=Sumula Vinculante aprovada pelo STF;99=Outros"
         }
@@ -2060,13 +2086,13 @@
         "tamanho": "100",
         "obrigatorio": "0",
         "rotulo": "Descrição Resumida dos Efeitos Tributários",
-        "descricao": "Descrição Resumida dos Efeitos Tributários abrangidos pela Decisão Judicial proferida."
+        "descricao": "Descrição Resumida dos Efeitos Tributários abrangidos pela Decisão Judicial proferida"
       },
       {
         "posicao": "7",
         "id": "DT_SENT_JUD",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data da Sentença",
         "descricao": "Data da Sentença/Decisão Judicial"
@@ -2106,7 +2132,7 @@
         "posicao": "3",
         "id": "IND_NAT_ACAO",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Ação",
         "descricao": "Indicador da Natureza da Ação, decorrente de Processo Administrativo na Secretaria da Receita Federal do Brasil:01 -  Processo Administrativo de Consulta;02 - Despacho Decisório;03 - Ato Declaratório Executivo;04 - Ato Declaratório Interpretativo;05 - Decisão Administrativa de DRJ ou do CARF;06 - Auto de Infração;99 - Outros",
@@ -2118,7 +2144,7 @@
         "posicao": "4",
         "id": "DT_DEC_ADM",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data do Despacho",
         "descricao": "Data do Despacho/Decisão Administrativa"
@@ -2149,7 +2175,7 @@
         "posicao": "2",
         "id": "PER_APU_CRED",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período de Apuração do Crédito",
         "descricao": "Período de Apuração do Crédito (MM/AAAA)"
@@ -2158,10 +2184,10 @@
         "posicao": "3",
         "id": "ORIG_CRED",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Origem do Crédito",
-        "descricao": "Indicador da origem do crédito.",
+        "descricao": "Indicador da origem do crédito",
         "valores-validos": {
           "valores": "01=Crédito decorrente de operações próprias;02=Crédito transferidos por pessoa jurídica sucedida"
         }
@@ -2170,16 +2196,16 @@
         "posicao": "4",
         "id": "CNPJ_SUC",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "0",
         "rotulo": "CNPJ do Cedente do Crédito",
-        "descricao": "CNPJ da pessoa jurídica cedente do crédito (se ORIG_CRED = 02)."
+        "descricao": "CNPJ da pessoa jurídica cedente do crédito (se ORIG_CRED = 02)"
       },
       {
         "posicao": "5",
         "id": "COD_CRED",
         "tipo": "N",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo do Crédito",
         "descricao": "Código do Tipo do Crédito, conforme Tabela 4.3.6",
@@ -2194,7 +2220,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do Crédito Apurado no Período a que se refere este registro (campo 01)",
-        "descricao": "Valor do Crédito apurado em Demonstrativo Dacon ou em Escrituração Fiscal Digital, em Período(s)  Anterior(es)."
+        "descricao": "Valor do Crédito apurado em Demonstrativo Dacon ou em Escrituração Fiscal Digital, em Período(s)  Anterior(es)"
       },
       {
         "posicao": "7",
@@ -2230,7 +2256,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do Crédito Utilizado Mediante Pedido de Ressarcimento, em Período(s) Anterior(es)",
-        "descricao": "Valor do Crédito utilizado mediante Pedido de Ressarcimento, em Período(s) Anterior(es)."
+        "descricao": "Valor do Crédito utilizado mediante Pedido de Ressarcimento, em Período(s) Anterior(es)"
       },
       {
         "posicao": "11",
@@ -2302,7 +2328,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Saldo de Créditos a Utilizar em Período de Apuração Futuro",
-        "descricao": "Saldo de créditos a utilizar em período de apuração futuro (12-13-14-15-16-17)."
+        "descricao": "Saldo de créditos a utilizar em período de apuração futuro (12-13-14-15-16-17)"
       }
     ],
     "pai": "1001"
@@ -2330,7 +2356,7 @@
         "posicao": "2",
         "id": "IND_NAT_RET",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Retenção na Fonte",
         "descricao": "Indicador de Natureza da Retenção na Fonte",
@@ -2342,7 +2368,7 @@
         "posicao": "3",
         "id": "PR_REC_RET",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período do Recebimento e da Retenção",
         "descricao": "Período do Recebimento e da Retenção(MM/AAAA)"
@@ -2372,7 +2398,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Retenção Utilizada Mediante Pedido de Ressarcimento",
-        "descricao": "Valor da Retenção utilizada mediante Pedido de Ressarcimento."
+        "descricao": "Valor da Retenção utilizada mediante Pedido de Ressarcimento"
       },
       {
         "posicao": "7",
@@ -2381,7 +2407,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Retenção Utilizada Mediante Declaração de Compensação",
-        "descricao": "Valor da Retenção utilizada mediante Declaração de Compensação."
+        "descricao": "Valor da Retenção utilizada mediante Declaração de Compensação"
       },
       {
         "posicao": "8",
@@ -2390,7 +2416,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Saldo de Retenção a Utilizar em Períodos de Apuração Futuros",
-        "descricao": "Saldo de Retenção a utilizar em períodos de apuração futuros."
+        "descricao": "Saldo de Retenção a utilizar em períodos de apuração futuros"
       }
     ],
     "pai": "1001"
@@ -2418,7 +2444,7 @@
         "posicao": "2",
         "id": "PER_APU_CRED",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período de Apuração do Crédito",
         "descricao": "Período de Apuração do Crédito (MM/AAAA)"
@@ -2427,10 +2453,10 @@
         "posicao": "3",
         "id": "ORIG_CRED",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Origem do Crédito",
-        "descricao": "Indicador da origem do crédito.",
+        "descricao": "Indicador da origem do crédito",
         "valores-validos": {
           "valores": "01=Crédito decorrente de operações próprias;02=Crédito transferidos por pessoa jurídica sucedida"
         }
@@ -2439,16 +2465,16 @@
         "posicao": "4",
         "id": "CNPJ_SUC",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "0",
         "rotulo": "CNPJ do Cedente do Crédito",
-        "descricao": "CNPJ da pessoa jurídica cedente do crédito (se ORIG_CRED = 02)."
+        "descricao": "CNPJ da pessoa jurídica cedente do crédito (se ORIG_CRED = 02)"
       },
       {
         "posicao": "5",
         "id": "COD_CRED",
         "tipo": "N",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo do Crédito",
         "descricao": "Código do Tipo do Crédito, conforme Tabela 4.3.6",
@@ -2463,7 +2489,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do Crédito Apurado no Período a que se refere este registro (campo 01)",
-        "descricao": "Valor do Crédito já apurado em Demonstrativo Dacon ou em Escrituração Fiscal Digital."
+        "descricao": "Valor do Crédito já apurado em Demonstrativo Dacon ou em Escrituração Fiscal Digital"
       },
       {
         "posicao": "7",
@@ -2499,7 +2525,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do Crédito Utilizado Mediante Pedido de Ressarcimento, em Período(s) Anterior(es)",
-        "descricao": "Valor do Crédito utilizado mediante Pedido de Ressarcimento, em Período(s) Anterior(es)."
+        "descricao": "Valor do Crédito utilizado mediante Pedido de Ressarcimento, em Período(s) Anterior(es)"
       },
       {
         "posicao": "11",
@@ -2571,7 +2597,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Saldo de Créditos a Utilizar em Período de Apuração Futuro",
-        "descricao": "Saldo de créditos a utilizar em período de apuração futuro (12-13-14-15-16-17)."
+        "descricao": "Saldo de créditos a utilizar em período de apuração futuro (12-13-14-15-16-17)"
       }
     ],
     "pai": "1001"
@@ -2599,7 +2625,7 @@
         "posicao": "2",
         "id": "IND_NAT_RET",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Retenção na Fonte",
         "descricao": "Indicador de Natureza da Retenção na Fonte",
@@ -2611,7 +2637,7 @@
         "posicao": "3",
         "id": "PR_REC_RET",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período do Recebimento e da Retenção",
         "descricao": "Período do Recebimento e da Retenção(MM/AAAA)"
@@ -2641,7 +2667,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Retenção utilizada mediante Pedido de Ressarcimento",
-        "descricao": "Valor da Retenção utilizada mediante Pedido de Ressarcimento."
+        "descricao": "Valor da Retenção utilizada mediante Pedido de Ressarcimento"
       },
       {
         "posicao": "7",
@@ -2650,7 +2676,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Retenção utilizada mediante Declaração de Compensação",
-        "descricao": "Valor da Retenção utilizada mediante Declaração de Compensação."
+        "descricao": "Valor da Retenção utilizada mediante Declaração de Compensação"
       },
       {
         "posicao": "8",
@@ -2659,7 +2685,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Saldo de Retenção a Utilizar em Períodos de Apuração Futuros",
-        "descricao": "Saldo de Retenção a Utilizar em Períodos de Apuração Futuros."
+        "descricao": "Saldo de Retenção a Utilizar em Períodos de Apuração Futuros"
       }
     ],
     "pai": "1001"
@@ -2690,7 +2716,7 @@
         "tamanho": "90",
         "obrigatorio": "1",
         "rotulo": "Empreendimento objeto de Incorporação Imobiliária",
-        "descricao": "Empreendimento objeto de Incorporação Imobiliária, optante pelo RET."
+        "descricao": "Empreendimento objeto de Incorporação Imobiliária, optante pelo RET"
       },
       {
         "posicao": "3",
@@ -2699,7 +2725,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Receitas Recebidas pela Incorporadora na Venda das Unidades Imobiliárias que Compõem a Incorporação",
-        "descricao": "Receitas recebidas pela incorporadora na venda das unidades imobiliárias que compõem a incorporação."
+        "descricao": "Receitas recebidas pela incorporadora na venda das unidades imobiliárias que compõem a incorporação"
       },
       {
         "posicao": "4",
@@ -2708,7 +2734,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Receitas Financeiras e Variações Monetárias Decorrentes das Vendas Submetidas ao RET",
-        "descricao": "Receitas Financeiras e Variações Monetárias decorrentes das vendas submetidas ao RET."
+        "descricao": "Receitas Financeiras e Variações Monetárias decorrentes das vendas submetidas ao RET"
       },
       {
         "posicao": "5",
@@ -2736,13 +2762,13 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do Recolhimento Unificado",
-        "descricao": "Valor do Recolhimento Unificado."
+        "descricao": "Valor do Recolhimento Unificado"
       },
       {
         "posicao": "8",
         "id": "DT_REC_UNI",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data do Recolhimento Unificado",
         "descricao": "Data do recolhimento unificado"
@@ -2774,7 +2800,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo 1809",
         "valores-validos": {
@@ -2795,7 +2821,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -2817,7 +2843,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo 1900",
         "valores-validos": {
@@ -2830,7 +2856,7 @@
         "rotulo": "CNPJ",
         "descricao": "CNPJ do estabelecimento da pessoa jurídica, emitente dos documentos geradores de receita",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "valores-validos": {
           "datasource": "CNPJ_0140"
@@ -2840,7 +2866,7 @@
         "posicao": "3",
         "id": "COD_MOD",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo",
         "descricao": "Código do modelo do documento fiscal conforme a Tabela 4.1.1, ou 98 - Nota Fiscal de Prestação de Serviços (ISSQN) ou 99 - Outros Documentos",
@@ -2871,7 +2897,7 @@
         "id": "COD_SIT",
         "descricao": "Código da situação do documento fiscal",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação do documento",
         "valores-validos": {
@@ -2900,7 +2926,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -2912,7 +2938,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -2924,7 +2950,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -2950,7 +2976,8 @@
           "datasource": "COD_CTA_0500"
         }
       }
-    ]
+    ],
+    "pai": "1001"
   },
   {
     "id": "1990",
@@ -2978,7 +3005,8 @@
         "obrigatorio": "1",
         "descricao": "Quantidade total de linhas do Bloco 1"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "9001",
@@ -3004,12 +3032,13 @@
         "tipo": "N",
         "tamanho": "1",
         "obrigatorio": "1",
-        "descricao": "Indicador de movimento: 0- Bloco com dados informados; 1- Bloco sem dados informados.",
+        "descricao": "Indicador de movimento: 0- Bloco com dados informados; 1- Bloco sem dados informados",
         "valores-validos": {
           "valores": "0=Bloco com dados informados;1=Bloco sem dados informados"
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "9900"
     ]
@@ -3075,7 +3104,8 @@
         "obrigatorio": "1",
         "descricao": "Quantidade total de linhas do Bloco 9"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "9999",
@@ -3100,7 +3130,7 @@
         "id": "QTD_LIN",
         "tipo": "N",
         "obrigatorio": "1",
-        "descricao": "Quantidade total de linhas do arquivo digital."
+        "descricao": "Quantidade total de linhas do arquivo digital"
       }
     ]
   },
@@ -3115,7 +3145,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A001”",
+        "descricao": "Texto fixo contendo 'A001'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3137,6 +3167,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "A010"
     ]
@@ -3152,7 +3183,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A010",
+        "descricao": "Texto fixo contendo 'A010",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3167,7 +3198,7 @@
         "rotulo": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "valores-validos": {
           "datasource": "CNPJ_0140"
@@ -3190,7 +3221,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A100”",
+        "descricao": "Texto fixo contendo 'A100'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3204,7 +3235,7 @@
         "id": "IND_OPER",
         "descricao": "Indicador do tipo de operação",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de operação",
         "valores-validos": {
@@ -3216,7 +3247,7 @@
         "id": "IND_EMIT",
         "descricao": "Indicador do emitente do documento fiscal",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador de Emitente",
         "valores-validos": {
@@ -3240,7 +3271,7 @@
         "id": "COD_SIT",
         "descricao": "Código da situação do documento fiscal",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação do documento",
         "valores-validos": {
@@ -3288,7 +3319,7 @@
         "id": "DT_DOC",
         "descricao": "Data da emissão do documento fiscal",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da emissão"
       },
@@ -3297,7 +3328,7 @@
         "id": "DT_EXE_SERV",
         "descricao": "Data de Execução / Conclusão do Serviço",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de execução/conclusão do serviço"
       },
@@ -3315,7 +3346,7 @@
         "id": "IND_PGTO",
         "descricao": "Indicador do tipo de pagamento",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de pagamento",
         "valores-validos": {
@@ -3414,7 +3445,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A110”",
+        "descricao": "Texto fixo contendo 'A110'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3457,7 +3488,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A111”",
+        "descricao": "Texto fixo contendo 'A111'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3480,7 +3511,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -3501,7 +3532,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A120”",
+        "descricao": "Texto fixo contendo 'A120'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3542,7 +3573,7 @@
         "id": "DT_PAG_PIS",
         "descricao": "Data de pagamento do PIS/PASEP - Importação",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de pagamento do PIS/PASEP"
       },
@@ -3569,7 +3600,7 @@
         "id": "DT_PAG_COFINS",
         "descricao": "Data de pagamento do COFINS - Importação",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de pagamento do COFINS"
       },
@@ -3578,7 +3609,7 @@
         "id": "LOC_EXE_SERV",
         "descricao": "Local da execução do serviço",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Local da execução do serviço",
         "valores-validos": {
@@ -3595,12 +3626,11 @@
     "ocorrencia": "2",
     "obrigatorio": "1",
     "rotulo": "A170 - Itens do Documento",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A170”",
+        "descricao": "Texto fixo contendo 'A170'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3673,7 +3703,7 @@
         "id": "IND_ORIG_CRED",
         "descricao": "Indicador da origem do crédito",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Origem do crédito",
         "valores-validos": {
@@ -3685,7 +3715,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP - Tabela 4.3.3",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -3724,7 +3754,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente ao COFINS - Tabela 4.3.4",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -3797,7 +3827,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “A990”",
+        "descricao": "Texto fixo contendo 'A990'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3814,7 +3844,8 @@
         "obrigatorio": "1",
         "rotulo": "Quantidade total de linhas do Bloco A"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "C001",
@@ -3827,7 +3858,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C001”",
+        "descricao": "Texto fixo contendo 'C001'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3849,6 +3880,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "C010"
     ]
@@ -3864,7 +3896,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C010”",
+        "descricao": "Texto fixo contendo 'C010'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3879,7 +3911,7 @@
         "rotulo": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "valores-validos": {
           "datasource": "CNPJ_0140"
@@ -3890,7 +3922,7 @@
         "id": "IND_ESCRI",
         "descricao": "Indicador da apuração das contribuições e créditos, na escrituração das operações por NF-e e ECF, no período",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Indicador da Apuração",
         "valores-validos": {
@@ -3923,7 +3955,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C100”",
+        "descricao": "Texto fixo contendo 'C100'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -3937,7 +3969,7 @@
         "id": "IND_OPER",
         "descricao": "Indicador do tipo de operação",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de operação",
         "valores-validos": {
@@ -3949,7 +3981,7 @@
         "id": "IND_EMIT",
         "descricao": "Indicador do emitente do documento fiscal",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Emitente",
         "valores-validos": {
@@ -3973,7 +4005,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo",
         "valores-validos": {
@@ -3985,7 +4017,7 @@
         "id": "COD_SIT",
         "descricao": "Código da situação do documento fiscal",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação",
         "valores-validos": {
@@ -4015,7 +4047,7 @@
         "id": "CHV_NFE",
         "descricao": "Chave da NF-e / NFC-e",
         "tipo": "N",
-        "tamanho": "[044]",
+        "tamanho": "044",
         "obrigatorio": "0",
         "rotulo": "Chave documento eletrônico"
       },
@@ -4024,7 +4056,7 @@
         "id": "DT_DOC",
         "descricao": "Data da emissão do documento fiscal",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da emissão"
       },
@@ -4033,7 +4065,7 @@
         "id": "DT_E_S",
         "descricao": "Data da entrada ou da saída",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data da entrada ou da saída"
       },
@@ -4051,7 +4083,7 @@
         "id": "IND_PGTO",
         "descricao": "Indicador do tipo de pagamento",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de pagamento",
         "valores-validos": {
@@ -4090,7 +4122,7 @@
         "id": "IND_FRT",
         "descricao": "Indicador do tipo do frete",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo do frete",
         "valores-validos": {
@@ -4226,7 +4258,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C110”",
+        "descricao": "Texto fixo contendo 'C110'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -4269,7 +4301,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C111”",
+        "descricao": "Texto fixo contendo 'C111'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -4292,7 +4324,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador da origem do processo",
         "valores-validos": {
@@ -4313,7 +4345,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C120”",
+        "descricao": "Texto fixo contendo 'C120'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -4327,7 +4359,7 @@
         "id": "COD_DOC_IMP",
         "descricao": "Documento de importação",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Documento de importação",
         "valores-validos": {
@@ -4380,12 +4412,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C170 - Itens do Documento",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C170”",
+        "descricao": "Texto fixo contendo 'C170'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -4479,7 +4510,7 @@
         "id": "CST_ICMS",
         "descricao": "Código da Situação Tributária referente ao ICMS, conforme a Tabela indicada no item 4.3.1",
         "tipo": "N",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "0",
         "rotulo": "CST ICMS",
         "valores-validos": {
@@ -4491,7 +4522,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -4571,7 +4602,7 @@
         "id": "IND_APUR",
         "descricao": "Indicador de período de apuração do IPI",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Período de apuração do IPI",
         "valores-validos": {
@@ -4581,9 +4612,9 @@
       {
         "posicao": "20",
         "id": "CST_IPI",
-        "descricao": "Código da Situação Tributária referente ao IPI, conforme a Tabela indicada no item 4.3.2.",
+        "descricao": "Código da Situação Tributária referente ao IPI, conforme a Tabela indicada no item 4.3.2",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "CST IPI",
         "valores-validos": {
@@ -4593,9 +4624,9 @@
       {
         "posicao": "21",
         "id": "COD_ENQ",
-        "descricao": "Código de enquadramento legal do IPI, conforme tabela indicada no item 4.5.3.",
+        "descricao": "Código de enquadramento legal do IPI, conforme tabela indicada no item 4.5.3",
         "tipo": "C",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "0",
         "rotulo": "Código de enquadramento do IPI",
         "valores-validos": {
@@ -4635,7 +4666,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -4693,7 +4724,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente ao COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -4772,9 +4803,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C175”",
+        "descricao": "Texto fixo contendo 'C175'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -4786,7 +4817,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Código fiscal de operação e prestação",
         "valores-validos": {
@@ -4814,9 +4845,9 @@
       {
         "posicao": "5",
         "id": "CST_PIS",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3.",
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -4872,9 +4903,9 @@
       {
         "posicao": "11",
         "id": "CST_COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS conforme a Tabela indicada no item 4.3.4.",
+        "descricao": "Código da Situação Tributária referente a COFINS conforme a Tabela indicada no item 4.3.4",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -4988,7 +5019,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C180”",
+        "descricao": "Texto fixo contendo 'C180'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5000,9 +5031,9 @@
       {
         "posicao": "2",
         "id": "COD_MOD",
-        "descricao": "Texto fixo contendo “55” - Código da Nota Fiscal Eletrônica, modelo 55",
+        "descricao": "Texto fixo contendo '55' - Código da Nota Fiscal Eletrônica, modelo 55",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -5014,7 +5045,7 @@
         "id": "DT_DOC_INI",
         "descricao": "Data de Emissão Inicial dos Documentos",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de Emissão Inicial dos Documentos"
       },
@@ -5023,7 +5054,7 @@
         "id": "DT_DOC_FIN",
         "descricao": "Data de Emissão Final dos Documentos",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de Emissão Final dos Documentos"
       },
@@ -5044,7 +5075,7 @@
         "id": "COD_NCM",
         "descricao": "Código da Nomenclatura Comum do Mercosul",
         "tipo": "C",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Código NCM"
       },
@@ -5081,12 +5112,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C181 - Detalhamento da Consolidação -PIS/PASEP",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C181”",
+        "descricao": "Texto fixo contendo 'C181'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5100,7 +5130,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -5112,7 +5142,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -5212,12 +5242,11 @@
     "ocorrencia": "2",
     "obrigatorio": "1",
     "rotulo": "C185 - Detalhamento da Consolidação - COFINS",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C185”",
+        "descricao": "Texto fixo contendo 'C185'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5231,7 +5260,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -5243,7 +5272,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -5347,7 +5376,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C188”",
+        "descricao": "Texto fixo contendo 'C188'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5370,7 +5399,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -5391,7 +5420,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C190”",
+        "descricao": "Texto fixo contendo 'C190'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5405,7 +5434,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1 (Código 55 - Nota Fiscal Eletrônica)",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -5417,7 +5446,7 @@
         "id": "DT_REF_INI",
         "descricao": "Data Inicial de Referencia da Consolidação",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data Inicial de Referencia"
       },
@@ -5426,7 +5455,7 @@
         "id": "DT_REF_FIN",
         "descricao": "Data Final de Referencia da Consolidação",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data Final de Referencia"
       },
@@ -5447,7 +5476,7 @@
         "id": "COD_NCM",
         "descricao": "Código da Nomenclatura Comum do Mercosul",
         "tipo": "C",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Código NCM"
       },
@@ -5489,7 +5518,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C191”",
+        "descricao": "Texto fixo contendo 'C191'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5512,7 +5541,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -5524,7 +5553,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -5624,12 +5653,11 @@
     "ocorrencia": "2",
     "obrigatorio": "1",
     "rotulo": "C195 - Detalhamento da Consolidação - COFINS",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C195”",
+        "descricao": "Texto fixo contendo 'C195'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5652,7 +5680,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -5664,7 +5692,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -5768,7 +5796,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C198”",
+        "descricao": "Texto fixo contendo 'C198'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5791,7 +5819,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -5812,7 +5840,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C199”",
+        "descricao": "Texto fixo contendo 'C199'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5826,7 +5854,7 @@
         "id": "COD_DOC_IMP",
         "descricao": "Documento de importação",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Documento de Importação",
         "valores-validos": {
@@ -5883,7 +5911,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C380”",
+        "descricao": "Texto fixo contendo 'C380'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5897,7 +5925,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento Fiscal",
         "valores-validos": {
@@ -5909,7 +5937,7 @@
         "id": "DT_DOC_INI",
         "descricao": "Data de Emissão Inicial dos Documentos",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de Emissão Inicial dos Documentos"
       },
@@ -5918,7 +5946,7 @@
         "id": "DT_DOC_FIN",
         "descricao": "Data de Emissão Final dos Documentos",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de Emissão Final dos Documentos"
       },
@@ -5972,12 +6000,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C381 - Detalhamento da Consolidação - PIS/PASEP",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C381”",
+        "descricao": "Texto fixo contendo 'C381'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -5991,7 +6018,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -6087,12 +6114,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C385 - Detalhamento da Consolidação - COFINS",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C385”",
+        "descricao": "Texto fixo contendo 'C385'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6106,7 +6132,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -6206,7 +6232,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C395”",
+        "descricao": "Texto fixo contendo 'C395'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6220,7 +6246,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento Fiscal",
         "valores-validos": {
@@ -6271,7 +6297,7 @@
         "id": "DT_DOC",
         "descricao": "Data da emissão do documento fiscal",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Emissão"
       },
@@ -6301,7 +6327,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C396”",
+        "descricao": "Texto fixo contendo 'C396'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6357,7 +6383,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -6397,7 +6423,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -6458,7 +6484,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C400”",
+        "descricao": "Texto fixo contendo 'C400'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6472,7 +6498,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento Fiscal",
         "valores-validos": {
@@ -6524,7 +6550,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C405”",
+        "descricao": "Texto fixo contendo 'C405'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6538,7 +6564,7 @@
         "id": "DT_DOC",
         "descricao": "Data do movimento a que se refere a Redução Z",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Redução Z"
       },
@@ -6601,12 +6627,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C481 - Detalhamento do PIS/PASEP",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C481”",
+        "descricao": "Texto fixo contendo 'C481'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6620,7 +6645,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -6716,12 +6741,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C485 - Detalhamento da COFINS",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C485”",
+        "descricao": "Texto fixo contendo 'C485'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6735,7 +6759,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -6835,7 +6859,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C489”",
+        "descricao": "Texto fixo contendo 'C489'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6858,7 +6882,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -6879,7 +6903,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C490”",
+        "descricao": "Texto fixo contendo 'C490'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6893,7 +6917,7 @@
         "id": "DT_DOC_INI",
         "descricao": "Data de Emissão Inicial dos Documentos",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de Emissão Inicial dos Documentos"
       },
@@ -6902,7 +6926,7 @@
         "id": "DT_DOC_FIN",
         "descricao": "Data de Emissão Final dos Documentos",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de Emissão Final dos Documentos"
       },
@@ -6911,7 +6935,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do modelo do documento fiscal",
         "valores-validos": {
@@ -6933,12 +6957,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C491 - Detalhamento do PIS/PASEP",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C491”",
+        "descricao": "Texto fixo contendo 'C491'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -6964,7 +6987,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -6976,7 +6999,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -7060,12 +7083,11 @@
     "ocorrencia": "2",
     "obrigatorio": "0",
     "rotulo": "C495 - Detalhamento da COFINS",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C495”",
+        "descricao": "Texto fixo contendo 'C495'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7091,7 +7113,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -7103,7 +7125,7 @@
         "id": "CFOP",
         "descricao": "Código fiscal de operação e prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -7182,7 +7204,7 @@
   },
   {
     "id": "C499",
-    "descricao": "Processo Referenciado - Documentos Emitidos Por ECF",
+    "descricao": "Processo Referenciado - Documentos Emitidos Por ECF",
     "nivel": "4",
     "ocorrencia": "2",
     "obrigatorio": "0",
@@ -7191,7 +7213,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C499”",
+        "descricao": "Texto fixo contendo 'C499'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7214,7 +7236,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -7235,7 +7257,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C500”",
+        "descricao": "Texto fixo contendo 'C500'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7261,7 +7283,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -7273,7 +7295,7 @@
         "id": "COD_SIT",
         "descricao": "Código da situação do documento fiscal, conforme a Tabela 4.1.2",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação do Documento",
         "valores-validos": {
@@ -7312,7 +7334,7 @@
         "id": "DT_DOC",
         "descricao": "Data da emissão do documento fiscal",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Emissão"
       },
@@ -7321,7 +7343,7 @@
         "id": "DT_E_S",
         "descricao": "Data da entrada",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data da Entrada"
       },
@@ -7392,7 +7414,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C501”",
+        "descricao": "Texto fixo contendo 'C501'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7406,7 +7428,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -7488,7 +7510,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C505”",
+        "descricao": "Texto fixo contendo 'C505'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7502,7 +7524,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -7584,7 +7606,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C509”",
+        "descricao": "Texto fixo contendo 'C509'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7607,7 +7629,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -7628,7 +7650,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C600”",
+        "descricao": "Texto fixo contendo 'C600'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7642,7 +7664,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -7654,7 +7676,7 @@
         "id": "COD_MUN",
         "descricao": "Código do município dos pontos de consumo, conforme a tabela IBGE",
         "tipo": "N",
-        "tamanho": "[7]",
+        "tamanho": "7",
         "obrigatorio": "0",
         "rotulo": "Município dos Pontos de Consumo",
         "valores-validos": {
@@ -7684,7 +7706,7 @@
         "id": "COD_CONS",
         "descricao": "Código de classe de consumo de energia elétrica, conforme a Tabela 4.4.5, ou Código de Consumo de Fornecimento D'água - Tabela 4.4.2 ou Código da classe de consumo de gás canalizado conforme Tabela 4.4.3",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Classe de Consumo",
         "valores-validos": {
@@ -7712,7 +7734,7 @@
         "id": "DT_DOC",
         "descricao": "Data dos documentos consolidados",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data dos Documentos Consolidados"
       },
@@ -7851,7 +7873,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C601”",
+        "descricao": "Texto fixo contendo 'C601'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7865,7 +7887,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -7935,7 +7957,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C605”",
+        "descricao": "Texto fixo contendo 'C605'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -7949,7 +7971,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "rotulo": "CST da COFINS",
         "valores-validos": {
           "datasource": "TABELA_CST_COFINS"
@@ -8013,7 +8035,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C609”",
+        "descricao": "Texto fixo contendo 'C609'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8036,7 +8058,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -8057,7 +8079,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C860”",
+        "descricao": "Texto fixo contendo 'C860'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8071,7 +8093,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1 (Código 59 - Cupom Fiscal Eletrônico CF-e)",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -8092,7 +8114,7 @@
         "id": "DT_DOC",
         "descricao": "Data de emissão do(s) documento(s) fiscal(is)",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data de emissão do(s) documento(s) fiscal(is)"
       },
@@ -8133,9 +8155,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C870”",
+        "descricao": "Texto fixo contendo 'C870'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -8159,7 +8181,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -8189,7 +8211,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -8229,7 +8251,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -8290,9 +8312,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C880”",
+        "descricao": "Texto fixo contendo 'C880'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -8316,7 +8338,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -8346,7 +8368,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -8385,7 +8407,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -8445,9 +8467,9 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C890”",
+        "descricao": "Texto fixo contendo 'C890'",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
         "valores-validos": {
@@ -8468,7 +8490,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -8489,7 +8511,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “C990”",
+        "descricao": "Texto fixo contendo 'C990'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8506,7 +8528,8 @@
         "obrigatorio": "1",
         "rotulo": "Quantidade total de linhas do Bloco C"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "D001",
@@ -8519,7 +8542,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D001”",
+        "descricao": "Texto fixo contendo 'D001'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8541,6 +8564,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "D010"
     ]
@@ -8556,7 +8580,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D010”",
+        "descricao": "Texto fixo contendo 'D010'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8571,7 +8595,7 @@
         "rotulo": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "valores-validos": {
           "datasource": "CNPJ_0140"
@@ -8595,12 +8619,11 @@
     "ocorrencia": "2",
     "obrigatorio": "2",
     "rotulo": "D100 - Aquisição de Serviços de Transportes",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D100”",
+        "descricao": "Texto fixo contendo 'D100'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8614,7 +8637,7 @@
         "id": "IND_OPER",
         "descricao": "Indicador do tipo de operação",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Operação",
         "valores-validos": {
@@ -8626,7 +8649,7 @@
         "id": "IND_EMIT",
         "descricao": "Indicador do emitente do documento fiscal",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Emitente do Documento",
         "valores-validos": {
@@ -8650,7 +8673,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -8662,7 +8685,7 @@
         "id": "COD_SIT",
         "descricao": "Código da situação do documento fiscal, conforme a Tabela 4.1.2",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação do Documento",
         "valores-validos": {
@@ -8701,7 +8724,7 @@
         "id": "CHV_CTE",
         "descricao": "Chave do Conhecimento de Transporte Eletrônico",
         "tipo": "N",
-        "tamanho": "[044]",
+        "tamanho": "044",
         "obrigatorio": "0",
         "rotulo": "Chave do CT-e"
       },
@@ -8710,7 +8733,7 @@
         "id": "DT_DOC",
         "descricao": "Data da emissão do documento fiscal",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Emissão do Documento"
       },
@@ -8719,7 +8742,7 @@
         "id": "DT_A_P",
         "descricao": "Data da aquisição ou da prestação do serviço",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data da aquisição/prestação do Serviço"
       },
@@ -8728,7 +8751,7 @@
         "id": "TP_CTE",
         "descricao": "Tipo de Conhecimento de Transporte Eletrônico conforme definido no Manual de Integração do CT-e",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Tipo de CT-e",
         "valores-validos": {
@@ -8738,9 +8761,9 @@
       {
         "posicao": "14",
         "id": "CHV_CTE_REF",
-        "descricao": "Chave do CT-e de referência cujos valores foram complementados (opção “1” do campo anterior) ou cujo débito foi anulado(opção “2” do campo anterior)",
+        "descricao": "Chave do CT-e de referência cujos valores foram complementados (opção '1' do campo anterior) ou cujo débito foi anulado(opção '2' do campo anterior)",
         "tipo": "N",
-        "tamanho": "[044]",
+        "tamanho": "044",
         "obrigatorio": "0",
         "rotulo": "Chave do CT-e de referência"
       },
@@ -8767,7 +8790,7 @@
         "id": "IND_FRT",
         "descricao": "Indicador do tipo do frete",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo do Frete",
         "valores-validos": {
@@ -8853,7 +8876,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D101”",
+        "descricao": "Texto fixo contendo 'D101'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8867,7 +8890,7 @@
         "id": "IND_NAT_FRT",
         "descricao": "Indicador da Natureza do Frete",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Natureza do Frete",
         "valores-validos": {
@@ -8888,7 +8911,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -8961,7 +8984,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D105”",
+        "descricao": "Texto fixo contendo 'D105'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -8975,7 +8998,7 @@
         "id": "IND_NAT_FRT",
         "descricao": "Indicador da Natureza do Frete",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Natureza do Frete",
         "valores-validos": {
@@ -8996,7 +9019,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -9069,7 +9092,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D111”",
+        "descricao": "Texto fixo contendo 'D111'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9092,7 +9115,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -9113,7 +9136,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D200”",
+        "descricao": "Texto fixo contendo 'D200'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9127,7 +9150,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -9139,7 +9162,7 @@
         "id": "COD_SIT",
         "descricao": "Código da situação do documento fiscal, conforme a Tabela 4.1.2",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação do Documento",
         "valores-validos": {
@@ -9187,7 +9210,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação conforme tabela indicada no item 4.2.2",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -9199,7 +9222,7 @@
         "id": "DT_REF",
         "descricao": "Data do dia de referência do resumo diário",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data do Dia de Referência do Resumo Diário"
       },
@@ -9240,7 +9263,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D201”",
+        "descricao": "Texto fixo contendo 'D201'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9254,7 +9277,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -9324,7 +9347,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D205”",
+        "descricao": "Texto fixo contendo 'D205'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9338,7 +9361,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -9408,7 +9431,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D209”",
+        "descricao": "Texto fixo contendo 'D209'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9431,7 +9454,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -9452,7 +9475,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D300”",
+        "descricao": "Texto fixo contendo 'D300'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9466,7 +9489,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento Fiscal",
         "valores-validos": {
@@ -9513,7 +9536,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação conforme tabela indicada no item 4.2.2",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -9525,7 +9548,7 @@
         "id": "DT_REF",
         "descricao": "Data do dia de referência do resumo diário",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data do Dia de Referência do Resumo Diário"
       },
@@ -9552,7 +9575,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -9592,7 +9615,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -9656,7 +9679,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D309”",
+        "descricao": "Texto fixo contendo 'D309'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9679,7 +9702,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -9700,7 +9723,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D350”",
+        "descricao": "Texto fixo contendo 'D350'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9714,7 +9737,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -9744,7 +9767,7 @@
         "id": "DT_DOC",
         "descricao": "Data do movimento a que se refere a Redução Z",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Redução Z"
       },
@@ -9798,7 +9821,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -9856,7 +9879,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -9938,7 +9961,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D359”",
+        "descricao": "Texto fixo contendo 'D359'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9961,7 +9984,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -9982,7 +10005,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D500”",
+        "descricao": "Texto fixo contendo 'D500'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -9996,7 +10019,7 @@
         "id": "IND_OPER",
         "descricao": "Indicador do tipo de operação",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Operação",
         "valores-validos": {
@@ -10008,7 +10031,7 @@
         "id": "IND_EMIT",
         "descricao": "Indicador do emitente do documento fiscal",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador do emitente do documento",
         "valores-validos": {
@@ -10032,7 +10055,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -10044,7 +10067,7 @@
         "id": "COD_SIT",
         "descricao": "Çódigo da situação do documento fiscal, conforme a Tabela 4.1.2",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Situação do Documento",
         "valores-validos": {
@@ -10083,7 +10106,7 @@
         "id": "DT_DOC",
         "descricao": "Data da emissão do documento fiscal",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da emissão do Documento"
       },
@@ -10092,7 +10115,7 @@
         "id": "DT_A_P",
         "descricao": "Data da entrada (aquisição)",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da entrada (aquisição)"
       },
@@ -10217,7 +10240,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D501”",
+        "descricao": "Texto fixo contendo 'D501'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10231,7 +10254,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -10313,7 +10336,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D505”",
+        "descricao": "Texto fixo contendo 'D505'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10327,7 +10350,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -10409,7 +10432,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D509”",
+        "descricao": "Texto fixo contendo 'D509'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10432,7 +10455,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -10453,7 +10476,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D600”",
+        "descricao": "Texto fixo contendo 'D600'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10467,7 +10490,7 @@
         "id": "COD_MOD",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
@@ -10479,7 +10502,7 @@
         "id": "COD_MUN",
         "descricao": "Código do município dos terminais faturados, conforme a tabela IBGE",
         "tipo": "N",
-        "tamanho": "[7]",
+        "tamanho": "7",
         "obrigatorio": "0",
         "rotulo": "Município dos terminais Faturados",
         "valores-validos": {
@@ -10509,7 +10532,7 @@
         "id": "IND_REC",
         "descricao": "Indicador do tipo de receita",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador do tipo de receita",
         "valores-validos": {
@@ -10529,7 +10552,7 @@
         "id": "DT_DOC_INI",
         "descricao": "Data Inicial dos documentos consolidados",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data Inicial dos Documentos Consolidados"
       },
@@ -10538,7 +10561,7 @@
         "id": "DT_DOC_FIN",
         "descricao": "Data Final dos documentos consolidados",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data Final dos Documentos Consolidados"
       },
@@ -10651,7 +10674,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D601”",
+        "descricao": "Texto fixo contendo 'D601'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10665,7 +10688,7 @@
         "id": "COD_CLASS",
         "descricao": "Código de classificação do item do serviço de comunicação ou de telecomunicação, conforme a Tabela 4.4.1",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Classificação do Item do Serviço",
         "valores-validos": {
@@ -10695,7 +10718,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -10756,7 +10779,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D605”",
+        "descricao": "Texto fixo contendo 'D605'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10770,7 +10793,7 @@
         "id": "COD_CLASS",
         "descricao": "Código de classificação do item do serviço de comunicação ou de telecomunicação, conforme a Tabela 4.4.1",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Classificação do Item do Serviço",
         "valores-validos": {
@@ -10800,7 +10823,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -10861,7 +10884,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D609”",
+        "descricao": "Texto fixo contendo 'D609'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10884,7 +10907,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
         "valores-validos": {
@@ -10905,7 +10928,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “D990”",
+        "descricao": "Texto fixo contendo 'D990'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -10922,7 +10945,8 @@
         "obrigatorio": "1",
         "rotulo": "Quantidade total de linhas do Bloco D"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "F001",
@@ -10936,7 +10960,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo F001",
         "valores-validos": {
@@ -10955,6 +10979,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "F010"
     ]
@@ -10984,7 +11009,7 @@
         "rotulo": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "valores-validos": {
           "datasource": "CNPJ_0140"
@@ -11015,7 +11040,6 @@
     "obrigatorio": "2",
     "descricao": "Demais Documentos e Operações Geradoras de Contribuição e Créditos",
     "rotulo": "F100 - Demais Documentos e Operações Geradoras de Contribuição e Créditos",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
@@ -11032,12 +11056,12 @@
         "posicao": "2",
         "id": "IND_OPER",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Operação",
         "descricao": "Indicador do Tipo da Operação",
         "valores-validos": {
-          "valores": "0=Operação Representativa de Aquisição, Custos, Despesa ou Encargos, ou Receitas, Sujeita à Incidência de Crédito de PIS/Pasep ou Cofins (CST 50 a 66);1=Operação Representativa de Receita Auferida , Sujeita  ao Pagamento das Contribuição  para o PIS/Pasep e da Cofins;2=Operação Representativa de Receita Auferida NÃO, Sujeita  ao Pagamento das Contribuição  para o PIS/Pasep e da Cofins."
+          "valores": "0=Operação Representativa de Aquisição, Custos, Despesa ou Encargos, ou Receitas, Sujeita à Incidência de Crédito de PIS/Pasep ou Cofins (CST 50 a 66);1=Operação Representativa de Receita Auferida , Sujeita  ao Pagamento das Contribuição  para o PIS/Pasep e da Cofins;2=Operação Representativa de Receita Auferida NÃO, Sujeita  ao Pagamento das Contribuição  para o PIS/Pasep e da Cofins"
         }
       },
       {
@@ -11068,7 +11092,7 @@
         "posicao": "5",
         "id": "DT_OPER",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Operação",
         "descricao": "Data da Operação (ddmmaaaa)"
@@ -11086,7 +11110,7 @@
         "posicao": "7",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3 (IN RFB nº 1.009, de 2010)",
@@ -11126,7 +11150,7 @@
         "posicao": "11",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4 (IN RFB nº 1.009, de 2010)",
@@ -11169,7 +11193,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
-        "descricao": "Código da Natureza da Base de Cálculo do Crédito, conforme a Tabela indicada no item 4.3.7 (Lei nº 12.058/09. art. 35).",
+        "descricao": "Código da Natureza da Base de Cálculo do Crédito, conforme a Tabela indicada no item 4.3.7 (Lei nº 12.058/09. art. 35)",
         "valores-validos": {
           "valores": "01=Aquisição de bens para revenda;02=Aquisição de bens utilizados como insumo;03=Aquisição de serviços utilizados como insumo;04=Energia elétrica e térmica, inclusive sob a forma de vapor;05=Aluguéis de prédios;06=Aluguéis de máquinas e equipamentos;07=Armazenagem de mercadoria e frete na operação de venda;08=Contraprestações de arrendamento mercantil;09=Máquinas, equipamentos e outros bens incorporados ao ativo imobilizado (crédito sobre encargos de depreciação);10=Máquinas, equipamentos e outros bens incorporados ao ativo imobilizado (crédito com base no valor de aquisição);11=Amortização de edificações e benfeitorias em imóveis;12=Devolução de Vendas Sujeitas à Incidência Não-Cumulativa;13=Outras Operações com Direito a Crédito;14=Atividade de Transporte de Cargas - Subcontratação;17=Atividade de Prestação de Serviços de Limpeza, Conservação e Manutenção - vale-transporte, vale-refeição ou vale-alimentação, fardamento ou uniforme"
         }
@@ -11178,7 +11202,7 @@
         "posicao": "16",
         "id": "IND_ORIG_CRED",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Origem do Crédito",
         "descricao": "Indicador da origem do crédito",
@@ -11250,16 +11274,16 @@
         "tamanho": "020",
         "obrigatorio": "1",
         "rotulo": "Processo ou Ato Concessório",
-        "descricao": "Identificação do processo ou ato concessório."
+        "descricao": "Identificação do processo ou ato concessório"
       },
       {
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
-        "descricao": "Indicador da origem do processo.",
+        "descricao": "Indicador da origem do processo",
         "valores-validos": {
           "valores": "1=Justiça Federal;3=Secretaria da Receita Federal do Brasil;9=Outros"
         }
@@ -11302,7 +11326,7 @@
         "posicao": "3",
         "id": "IDENT_BEM_IMOB",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Bens Incorporados ao Ativo Imobilizado",
         "descricao": "Identificação dos Bens Incorporados ao Ativo Imobilizado",
@@ -11314,7 +11338,7 @@
         "posicao": "4",
         "id": "IND_ORIG_CRED",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Origem do Bem Incorporado",
         "descricao": "Indicador da origem do bem incorporado ao ativo imobilizado, gerador de crédito",
@@ -11326,7 +11350,7 @@
         "posicao": "5",
         "id": "IND_UTIL_BEM_IMOB",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Utilização dos Bens Incorporados",
         "descricao": "Indicador da Utilização dos Bens Incorporados ao Ativo Imobilizado",
@@ -11356,7 +11380,7 @@
         "posicao": "8",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
@@ -11396,7 +11420,7 @@
         "posicao": "12",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4",
@@ -11462,7 +11486,7 @@
         "tipo": "C",
         "obrigatorio": "0",
         "rotulo": "Descrição complementar",
-        "descricao": "Descrição complementar do bem ou grupo de bens, com crédito apurado com base nos encargos de depreciação ou amortização."
+        "descricao": "Descrição complementar do bem ou grupo de bens, com crédito apurado com base nos encargos de depreciação ou amortização"
       }
     ],
     "pai": "F010",
@@ -11502,10 +11526,10 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
-        "descricao": "Indicador da origem do processo.",
+        "descricao": "Indicador da origem do processo",
         "valores-validos": {
           "valores": "1=Justiça Federal;3=Secretaria da Receita Federal do Brasil;9=Outros"
         }
@@ -11539,7 +11563,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
-        "descricao": "Texto fixo contendo 10 Código da Base de Cálculo do Crédito sobre Bens Incorporados ao Ativo Imobilizado, conforme a Tabela indicada no item 4.3.7.",
+        "descricao": "Texto fixo contendo 10 Código da Base de Cálculo do Crédito sobre Bens Incorporados ao Ativo Imobilizado, conforme a Tabela indicada no item 4.3.7",
         "valores-validos": {
           "valores": "10=Máquinas, equipamentos e outros bens incorporados ao ativo imobilizado (crédito com base no valor de aquisição)"
         }
@@ -11548,7 +11572,7 @@
         "posicao": "3",
         "id": "IDENT_BEM_IMOB",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Identificação dos Bens Incorporados",
         "descricao": "Identificação dos Bens Incorporados ao Ativo Imobilizado: 01 = Edificações e Benfeitorias; 03 = Instalações; 04 = Máquinas; 05 = Equipamentos; 06 = Veículos; 99 = Outras Situações",
@@ -11560,7 +11584,7 @@
         "posicao": "4",
         "id": "IND_ORIG_CRED",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Origem do Bem Incorporado",
         "descricao": "Indicador da origem do bem incorporado ao ativo imobilizado, gerador de crédito: 0 - Aquisição no Mercado Interno 1 - Aquisição no Mercado Externo (Importação)",
@@ -11572,10 +11596,10 @@
         "posicao": "5",
         "id": "IND_UTIL_BEM_IMOB",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Utilização dos Bens Incorporados",
-        "descricao": "Indicador da Utilização dos Bens Incorporados ao Ativo Imobilizado: 1 - Produção de Bens Destinados a Venda; 2 - Prestação de Serviços; 3 - Locação a Terceiros; 9 - Outros.",
+        "descricao": "Indicador da Utilização dos Bens Incorporados ao Ativo Imobilizado: 1 - Produção de Bens Destinados a Venda; 2 - Prestação de Serviços; 3 - Locação a Terceiros; 9 - Outros",
         "valores-validos": {
           "valores": "1=Produção de Bens Destinados a Venda;2=Prestação de Serviços;3=Locação a Terceiros;9=Outros"
         }
@@ -11584,10 +11608,10 @@
         "posicao": "6",
         "id": "MES_OPER_AQUIS",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "0",
         "rotulo": "Mês/Ano de Aquisição dos Bens",
-        "descricao": "Mês/Ano de Aquisição dos Bens Incorporados ao Ativo Imobilizado, com apuração de crédito com base no valor de aquisição."
+        "descricao": "Mês/Ano de Aquisição dos Bens Incorporados ao Ativo Imobilizado, com apuração de crédito com base no valor de aquisição"
       },
       {
         "posicao": "7",
@@ -11596,7 +11620,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor de Aquisição dos Bens Incorporados",
-        "descricao": "Valor de Aquisição dos Bens Incorporados ao Ativo Imobilizado - Crédito com base no valor de aquisição."
+        "descricao": "Valor de Aquisição dos Bens Incorporados ao Ativo Imobilizado - Crédito com base no valor de aquisição"
       },
       {
         "posicao": "8",
@@ -11620,10 +11644,10 @@
         "posicao": "10",
         "id": "IND_NR_PARC",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Número de Parcelas a serem apropriadas",
-        "descricao": "Indicador do Número de Parcelas a serem apropriadas (Crédito sobre Valor de Aquisição): 1 - Integral (Mês de Aquisição); 2 - 12 Meses; 3 - 24 Meses; 4 - 48 Meses; 5 - Outra periodicidade definida em Lei.",
+        "descricao": "Indicador do Número de Parcelas a serem apropriadas (Crédito sobre Valor de Aquisição): 1 - Integral (Mês de Aquisição); 2 - 12 Meses; 3 - 24 Meses; 4 - 48 Meses; 5 - Outra periodicidade definida em Lei",
         "valores-validos": {
           "valores": "1=Integral (Mês de Aquisição);2=12 Meses;3=24 Meses;4=48 Meses;5=6 Meses (Embalagens de bebidas frias);9=Outra periodicidade definida em Lei"
         }
@@ -11632,7 +11656,7 @@
         "posicao": "11",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
@@ -11647,7 +11671,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo Mensal do Crédito de PIS/PASEP",
-        "descricao": "Base de cálculo Mensal do Crédito de PIS/PASEP, conforme indicador informado no campo 10."
+        "descricao": "Base de cálculo Mensal do Crédito de PIS/PASEP, conforme indicador informado no campo 10"
       },
       {
         "posicao": "13",
@@ -11672,7 +11696,7 @@
         "posicao": "15",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4",
@@ -11687,7 +11711,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo Mensal do Crédito da COFINS",
-        "descricao": "Base de Cálculo Mensal do Crédito da COFINS, conforme indicador informado no campo 10."
+        "descricao": "Base de Cálculo Mensal do Crédito da COFINS, conforme indicador informado no campo 10"
       },
       {
         "posicao": "17",
@@ -11738,7 +11762,7 @@
         "tipo": "C",
         "obrigatorio": "",
         "rotulo": "Descrição Complementar",
-        "descricao": "Descrição complementar do bem ou grupo de bens, com crédito apurado com base no valor de aquisição."
+        "descricao": "Descrição complementar do bem ou grupo de bens, com crédito apurado com base no valor de aquisição"
       }
     ],
     "pai": "F010",
@@ -11800,10 +11824,10 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
-        "descricao": "Indicador da origem do processo.",
+        "descricao": "Indicador da origem do processo",
         "valores-validos": {
           "valores": "1=Justiça Federal;3=Secretaria da Receita Federal do Brasil;9=Outros"
         }
@@ -11834,10 +11858,10 @@
         "posicao": "2",
         "id": "NAT_BC_CRED",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
-        "descricao": "Texto fixo contendo 18 Código da Base de Cálculo do Crédito sobre Estoque de Abertura, conforme a Tabela indicada no item 4.3.7.",
+        "descricao": "Texto fixo contendo 18 Código da Base de Cálculo do Crédito sobre Estoque de Abertura, conforme a Tabela indicada no item 4.3.7",
         "valores-validos": {
           "valores": "18=Estoque de abertura de bens"
         }
@@ -11882,7 +11906,7 @@
         "posicao": "7",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
@@ -11913,7 +11937,7 @@
         "posicao": "10",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "descricao": "Código da Situação Tributária referente ao COFINS, conforme a Tabela indicada no item 4.3.4",
@@ -11999,7 +12023,7 @@
         "posicao": "2",
         "id": "IND_OPER",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Tipo da Operação",
         "descricao": "Indicador do Tipo da Operação",
@@ -12011,10 +12035,10 @@
         "posicao": "3",
         "id": "UNID_IMOB",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Indicador do tipo de unidade imobiliária Vendida",
-        "descricao": "Indicador do tipo de unidade imobiliária Vendida.",
+        "descricao": "Indicador do tipo de unidade imobiliária Vendida",
         "valores-validos": {
           "valores": "01=Terreno adquirido para venda;02=Terreno decorrente de loteamento;03=Lote oriundo de desmembramento de terreno;04=Unidade resultante de incorporação imobiliária;05=Prédio construído/em construção para venda;06=Outras"
         }
@@ -12058,7 +12082,7 @@
         "posicao": "8",
         "id": "DT_OPER",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Operação de Venda",
         "descricao": "Data da operação de venda da Unidade Imobiliária"
@@ -12079,7 +12103,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor recebido, acumulado até o mês anterior ao da escrituração",
-        "descricao": "Valor recebido, acumulado até o mês anterior ao da escrituração."
+        "descricao": "Valor recebido, acumulado até o mês anterior ao da escrituração"
       },
       {
         "posicao": "11",
@@ -12094,7 +12118,7 @@
         "posicao": "12",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3 (IN RFB nº 1.009, de 2010)",
@@ -12134,7 +12158,7 @@
         "posicao": "16",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4 (IN RFB nº 1.009, de 2010)",
@@ -12184,7 +12208,7 @@
         "posicao": "21",
         "id": "IND_NAT_EMP",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Indicador da Natureza Específica do Empreendimento",
         "descricao": "Indicador da Natureza Específica do Empreendimento",
@@ -12236,7 +12260,7 @@
         "tamanho": "4",
         "obrigatorio": "1",
         "rotulo": "Tipo de Registro",
-        "descricao": "Texto fixo contendo “F205”",
+        "descricao": "Texto fixo contendo 'F205'",
         "valores-validos": {
           "valores": "F205"
         }
@@ -12291,7 +12315,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
         "valores-validos": {
@@ -12349,7 +12373,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente ao COFINS, conforme a Tabela indicada no item 4.3.4",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
         "valores-validos": {
@@ -12461,7 +12485,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Base de Calculo do Crédito sobre o Custo Orçado Ajustado",
-        "descricao": "Valor da Base de Calculo do Crédito sobre o Custo Orçado Ajustado (Campo 02 - 03)."
+        "descricao": "Valor da Base de Calculo do Crédito sobre o Custo Orçado Ajustado (Campo 02 - 03)"
       },
       {
         "posicao": "5",
@@ -12476,10 +12500,10 @@
         "posicao": "6",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3.",
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
         "valores-validos": {
           "datasource": "TABELA_CST_PIS_F210"
         }
@@ -12507,10 +12531,10 @@
         "posicao": "9",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4.",
+        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4",
         "valores-validos": {
           "datasource": "TABELA_CST_COFINS_F210"
         }
@@ -12581,10 +12605,10 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do Processo",
-        "descricao": "Indicador da origem do processo.",
+        "descricao": "Indicador da origem do processo",
         "valores-validos": {
           "valores": "1=Justiça Federal;3=Secretaria da Receita Federal do Brasil;9=Outros"
         }
@@ -12599,12 +12623,11 @@
     "obrigatorio": "2",
     "rotulo": "F500 - Regime de Caixa - Escrituração consolidada das receitas recebidas",
     "descricao": "Consolidação das operações da pessoa jurídica submetida ao regime de tributação com base no lucro presumido - incidência do Pis/Pasep e da Cofins pelo regime de caixa",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F500”",
+        "descricao": "Texto fixo contendo 'F500'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -12627,7 +12650,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -12676,7 +12699,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -12724,7 +12747,7 @@
         "posicao": "13",
         "id": "COD_MOD",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
@@ -12737,7 +12760,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -12812,7 +12835,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F509”",
+        "descricao": "Texto fixo contendo 'F509'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -12835,7 +12858,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -12852,12 +12875,11 @@
     "ocorrencia": "2",
     "obrigatorio": "2",
     "rotulo": "F510 - Operações com Incidência do Pis/Pasep e da Cofins pelo regime de caixa (apuração da contribuição por unidade de medida de produto - alíquota em reais)",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F510”",
+        "descricao": "Texto fixo contendo 'F510'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -12880,7 +12902,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -12928,7 +12950,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -12975,7 +12997,7 @@
         "posicao": "13",
         "id": "COD_MOD",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
@@ -12988,7 +13010,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -13063,7 +13085,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F519”",
+        "descricao": "Texto fixo contendo 'F519'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -13086,7 +13108,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -13103,12 +13125,11 @@
     "ocorrencia": "2",
     "obrigatorio": "2",
     "rotulo": "F525 - Composição da receita escriturada no período - detalhamento da receita recebida pelo regime de caixa",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F525”",
+        "descricao": "Texto fixo contendo 'F525'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -13145,7 +13166,7 @@
         "tamanho": "14",
         "obrigatorio": "0",
         "rotulo": "CNPJ/CPF do Participante",
-        "descricao": "CNPJ/CPF do participante (cliente/pessoa física ou jurídica pagadora) ou da administradora de cartões (vendas por cartão de débito ou de crédito), no caso de detalhamento da receita recebida conforme os indicadores “01” ou “02”, respectivamente"
+        "descricao": "CNPJ/CPF do participante (cliente/pessoa física ou jurídica pagadora) ou da administradora de cartões (vendas por cartão de débito ou de crédito), no caso de detalhamento da receita recebida conforme os indicadores '01' ou '02', respectivamente"
       },
       {
         "posicao": "5",
@@ -13154,7 +13175,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Documento",
-        "descricao": "Número do título de crédito ou do documento fiscal, no caso de detalhamento da receita recebida conforme os indicadores “03” ou “04”, respectivamente"
+        "descricao": "Número do título de crédito ou do documento fiscal, no caso de detalhamento da receita recebida conforme os indicadores '03' ou '04', respectivamente"
       },
       {
         "posicao": "6",
@@ -13163,7 +13184,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Item",
-        "descricao": "Código do item (campo 02 do Registro 0200), no caso de detalhamento da receita recebida por item vendido, conforme o indicador “05”"
+        "descricao": "Código do item (campo 02 do Registro 0200), no caso de detalhamento da receita recebida por item vendido, conforme o indicador '05'"
       },
       {
         "posicao": "7",
@@ -13179,7 +13200,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -13191,7 +13212,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -13249,12 +13270,11 @@
     "ocorrencia": "2",
     "obrigatorio": "2",
     "rotulo": "F550 - Regime de Competência - Escrituração consolidada das receitas auferidas",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F550”",
+        "descricao": "Texto fixo contendo 'F550'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -13277,7 +13297,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -13326,7 +13346,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -13374,7 +13394,7 @@
         "posicao": "13",
         "id": "COD_MOD",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
@@ -13387,7 +13407,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -13430,7 +13450,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F559”",
+        "descricao": "Texto fixo contendo 'F559'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -13453,7 +13473,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -13470,12 +13490,11 @@
     "ocorrencia": "2",
     "obrigatorio": "2",
     "rotulo": "F560 - Incidência do Pis/Pasep e da Cofins pelo regime de competência (apuração da contribuição por unidade de medida de produto - alíquota em reais)",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F560”",
+        "descricao": "Texto fixo contendo 'F560'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -13498,7 +13517,7 @@
         "id": "CST_PIS",
         "descricao": "Código da Situação Tributária referente ao PIS/PASEP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST PIS/PASEP",
         "valores-validos": {
@@ -13547,7 +13566,7 @@
         "id": "CST_COFINS",
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST COFINS",
         "valores-validos": {
@@ -13595,7 +13614,7 @@
         "posicao": "13",
         "id": "COD_MOD",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
         "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
@@ -13608,7 +13627,7 @@
         "id": "CFOP",
         "descricao": "Código Fiscal de Operação e Prestação",
         "tipo": "N",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "CFOP",
         "valores-validos": {
@@ -13651,7 +13670,7 @@
       {
         "posicao": "1",
         "id": "REG",
-        "descricao": "Texto fixo contendo “F569”",
+        "descricao": "Texto fixo contendo 'F569'",
         "tipo": "C",
         "tamanho": "4",
         "obrigatorio": "1",
@@ -13674,7 +13693,7 @@
         "id": "IND_PROC",
         "descricao": "Indicador da origem do processo",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Origem do processo",
         "valores-validos": {
@@ -13707,7 +13726,7 @@
         "posicao": "2",
         "id": "IND_NAT_RET",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Retenção na Fonte",
         "descricao": "Indicador de Natureza da Retenção na Fonte: 01 - Retenção por Órgãos, Autarquias e Fundações Federais; 02 - Retenção por outras Entidades da Adm. Pública Federal; 03 - Retenção por Pessoas Jurídicas de Direito Privado; 04 - Retenção por Sociedade Cooperativa; 05 - Retenção por Fabricante de Máquinas e Veículos; 99 - Outras Retenções",
@@ -13719,7 +13738,7 @@
         "posicao": "3",
         "id": "DT_RET",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Retenção",
         "descricao": "Data da Retenção"
@@ -13758,7 +13777,7 @@
         "posicao": "7",
         "id": "IND_NAT_REC",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "0",
         "rotulo": "Natureza da Receita",
         "descricao": "Indicador da Natureza da Receita: 0 - Receita de Natureza Não Cumulativa; 1 - Receita de Natureza Cumulativa",
@@ -13770,7 +13789,7 @@
         "posicao": "8",
         "id": "CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ da Fonte Pagadora ou Beneficiária da Retenção / Recolhimento",
         "descricao": "CNPJ da Fonte Pagadora ou Beneficiária da Retenção / Recolhimento"
@@ -13797,7 +13816,7 @@
         "posicao": "11",
         "id": "IND_DEC",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador da Condição da Pessoa Jurídica Declarante",
         "descricao": "Indicador da Condição da Pessoa Jurídica Declarante",
@@ -13838,7 +13857,7 @@
         "posicao": "2",
         "id": "IND_ORI_DED",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Origem de Deduções",
         "descricao": "Indicador de Origem de Deduções Diversas",
@@ -13850,7 +13869,7 @@
         "posicao": "3",
         "id": "IND_NAT_DED",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Natureza da Dedução",
         "descricao": "Indicador da Natureza da Dedução",
@@ -13889,7 +13908,7 @@
         "posicao": "7",
         "id": "CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "0",
         "rotulo": "CNPJ da Pessoa Jurídica relacionada à Operação",
         "descricao": "CNPJ da Pessoa Jurídica relacionada à Operação"
@@ -13918,7 +13937,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo F800",
         "valores-validos": {
@@ -13929,7 +13948,7 @@
         "posicao": "2",
         "id": "IND_NAT_EVEN",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza do Evento de Sucessão",
         "descricao": "Indicador da Natureza do Evento de Sucessão",
@@ -13941,7 +13960,7 @@
         "posicao": "3",
         "id": "DT_EVEN",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data do Evento",
         "descricao": "Data do Evento"
@@ -13950,7 +13969,7 @@
         "posicao": "4",
         "id": "CNPJ_SUCED",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ da Sucedida",
         "descricao": "CNPJ da Pessoa Jurídica Sucedida"
@@ -13959,7 +13978,7 @@
         "posicao": "5",
         "id": "PA_CONT_CRED",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período de Apuração do Crédito",
         "descricao": "Período de Apuração do Crédito - Mês/Ano (MM/AAAA)"
@@ -13968,7 +13987,7 @@
         "posicao": "6",
         "id": "COD_CRED",
         "tipo": "N",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Código do Crédito Transferido",
         "descricao": "Código do crédito transferido, conforme Tabela 4.3.6",
@@ -14002,7 +14021,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Percentual do Crédito Original Transferido",
-        "descricao": "Percentual do crédito original transferido, no caso de evento de Cisão."
+        "descricao": "Percentual do crédito original transferido, no caso de evento de Cisão"
       }
     ],
     "pai": "F010"
@@ -14019,7 +14038,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo F990",
         "valores-validos": {
@@ -14033,7 +14052,8 @@
         "obrigatorio": "1",
         "descricao": "Quantidade total de linhas do Bloco F"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "I001",
@@ -14047,7 +14067,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I001",
         "valores-validos": {
@@ -14066,6 +14086,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "I010"
     ]
@@ -14093,7 +14114,7 @@
         "posicao": "2",
         "id": "CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ",
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
@@ -14105,7 +14126,7 @@
         "posicao": "3",
         "id": "IND_ATIV",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Indicador de operações realizadas no período",
         "descricao": "Indicador de operações realizadas no período",
@@ -14139,7 +14160,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I100",
         "valores-validos": {
@@ -14159,7 +14180,7 @@
         "posicao": "3",
         "id": "CST",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código de Situação Tributária",
         "descricao": "Código de Situação Tributária referente à Receita informada no Campo 02",
@@ -14210,8 +14231,8 @@
         "tipo": "N",
         "casasdecimais": "2",
         "obrigatorio": "0",
-        "rotulo": "Valor do PIS/PASEP ",
-        "descricao": "Valor do PIS/PASEP "
+        "rotulo": "Valor do PIS/PASEP",
+        "descricao": "Valor do PIS/PASEP"
       },
       {
         "posicao": "9",
@@ -14276,7 +14297,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I199",
         "valores-validos": {
@@ -14296,7 +14317,7 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador da origem do processo",
         "descricao": "Indicador da origem do processo",
@@ -14319,7 +14340,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I200",
         "valores-validos": {
@@ -14330,7 +14351,7 @@
         "posicao": "2",
         "id": "NUM_CAMPO",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Número do Campo",
         "descricao": "Número do Campo do registro I100 objeto de detalhamento",
@@ -14342,7 +14363,7 @@
         "posicao": "3",
         "id": "COD_DET",
         "tipo": "C",
-        "tamanho": "[5]",
+        "tamanho": "5",
         "obrigatorio": "1",
         "rotulo": "Código do Tipo de Detalhamento",
         "descricao": "Código do Tipo de Detalhamento",
@@ -14399,7 +14420,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I299",
         "valores-validos": {
@@ -14419,7 +14440,7 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador da origem do processo",
         "descricao": "Indicador da origem do processo",
@@ -14442,7 +14463,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I300",
         "valores-validos": {
@@ -14453,7 +14474,7 @@
         "posicao": "2",
         "id": "COD_COMP",
         "tipo": "C",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Código do Complemento",
         "descricao": "Código do Complemento",
@@ -14509,7 +14530,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I399",
         "valores-validos": {
@@ -14529,7 +14550,7 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Indicador da origem do processo",
         "descricao": "Indicador da origem do processo",
@@ -14552,7 +14573,7 @@
         "posicao": "1",
         "id": "REG",
         "tipo": "C",
-        "tamanho": "[4]",
+        "tamanho": "4",
         "obrigatorio": "1",
         "descricao": "Texto fixo contendo I990",
         "valores-validos": {
@@ -14566,7 +14587,8 @@
         "obrigatorio": "1",
         "descricao": "Quantidade total de linhas do Bloco I"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "M001",
@@ -14599,6 +14621,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "M100",
       "M200",
@@ -14634,7 +14657,7 @@
         "posicao": "2",
         "id": "COD_CRED",
         "tipo": "C",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo de Crédito",
         "descricao": "Código de Tipo de Crédito apurado no período, conforme a Tabela 4.3.6",
@@ -14646,7 +14669,7 @@
         "posicao": "3",
         "id": "IND_CRED_ORI",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Crédito Oriundo de",
         "descricao": "Indicador de Crédito Oriundo de",
@@ -14740,12 +14763,12 @@
         "posicao": "13",
         "id": "IND_DESC_CRED",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Utilização do Crédito Disponível",
-        "descricao": "Indicador de utilização do crédito disponível no período.",
+        "descricao": "Indicador de utilização do crédito disponível no período",
         "valores-validos": {
-          "valores": "0=Utilização do valor total para desconto da contribuição apurada, no Registro M200;1=Utilização de valor parcial para desconto da contribuição apurada, no Registro M200."
+          "valores": "0=Utilização do valor total para desconto da contribuição apurada, no Registro M200;1=Utilização de valor parcial para desconto da contribuição apurada, no Registro M200"
         }
       },
       {
@@ -14780,7 +14803,6 @@
     "obrigatorio": "2",
     "descricao": "Detalhamento da Base de Cálculo do Crédito Apurado no Período - PIS/PASEP",
     "rotulo": "M105 - Detalhamento da Base de Cálculo do Crédito",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
@@ -14797,7 +14819,7 @@
         "posicao": "2",
         "id": "NAT_BC_CRED",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
         "descricao": "Código da Natureza da Base de Cálculo do Crédito apurado no período, conforme a Tabela 4.3.7",
@@ -14809,10 +14831,10 @@
         "posicao": "3",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP, Vinculado ao Tipo de Crédito Escriturado em M100",
-        "descricao": "Código da Situação Tributária referente ao crédito de PIS/PASEP (Tabela 4.3.3) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos).",
+        "descricao": "Código da Situação Tributária referente ao crédito de PIS/PASEP (Tabela 4.3.3) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos)",
         "valores-validos": {
           "datasource": "TABELA_CST_PIS_M105"
         }
@@ -14824,7 +14846,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total da Base de Cálculo Escriturada nos Documentos, Referente ao CST do PIS/PASEP",
-        "descricao": "Valor Total da Base de Cálculo escriturada nos documentos e operações (Blocos “A”, “C”, “D” e “F”), referente ao CST_PIS informado no Campo 03"
+        "descricao": "Valor Total da Base de Cálculo escriturada nos documentos e operações (Blocos 'A', 'C', 'D' e 'F'), referente ao CST_PIS informado no Campo 03"
       },
       {
         "posicao": "5",
@@ -14842,7 +14864,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total da Base de Cálculo do Crédito, Vinculada a Receitas com Incidência Não-cumulativa",
-        "descricao": "Valor Total da Base de Cálculo do Crédito, vinculada a receitas com incidência não-cumulativa (Campo 04 - Campo 05)."
+        "descricao": "Valor Total da Base de Cálculo do Crédito, vinculada a receitas com incidência não-cumulativa (Campo 04 - Campo 05)"
       },
       {
         "posicao": "7",
@@ -14851,7 +14873,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da Base de Cálculo do Crédito, vinculada ao Tipo de Crédito Escriturado em M100",
-        "descricao": "Valor da Base de Cálculo do Crédito, vinculada ao tipo de Crédito escriturado em M100. Para os CST_PIS = “50”, “51”, “52”, “60”, “61” e “62”: Informar o valor do Campo 06 (VL_BC_PIS_NC); para os CST_PIS = “53”, “54”, “55”, “56”, “63”, “64” “65” e “66” (Crédito sobre operações vinculadas a mais de um tipo de receita): Informar a parcela do valor do Campo 06 (VL_BC_PIS_NC) vinculada especificamente ao tipo de crédito escriturado em M100"
+        "descricao": "Valor da Base de Cálculo do Crédito, vinculada ao tipo de Crédito escriturado em M100. Para os CST_PIS = '50', '51', '52', '60', '61' e '62': Informar o valor do Campo 06 (VL_BC_PIS_NC); para os CST_PIS = '53', '54', '55', '56', '63', '64' '65' e '66' (Crédito sobre operações vinculadas a mais de um tipo de receita): Informar a parcela do valor do Campo 06 (VL_BC_PIS_NC) vinculada especificamente ao tipo de crédito escriturado em M100"
       },
       {
         "posicao": "8",
@@ -14860,7 +14882,7 @@
         "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Quantidade Total da Base de Cálculo do Crédito Escriturada nos Documentos",
-        "descricao": "Quantidade Total da Base de Cálculo do Crédito apurado em Unidade de Medida de Produto, escriturada nos documentos e operações (Bloco “C”), referente ao CST_PIS informado no Campo 03"
+        "descricao": "Quantidade Total da Base de Cálculo do Crédito apurado em Unidade de Medida de Produto, escriturada nos documentos e operações (Bloco 'C'), referente ao CST_PIS informado no Campo 03"
       },
       {
         "posicao": "9",
@@ -14869,7 +14891,7 @@
         "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Parcela da Base de Cálculo do Crédito em Quantidade, vinculada ao Tipo de Crédito Escriturado em M100",
-        "descricao": "Parcela da base de cálculo do crédito em quantidade (campo 08) vinculada ao tipo de crédito escriturado em M100."
+        "descricao": "Parcela da base de cálculo do crédito em quantidade (campo 08) vinculada ao tipo de crédito escriturado em M100"
       },
       {
         "posicao": "10",
@@ -14913,10 +14935,10 @@
         "posicao": "2",
         "id": "IND_AJ",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Ajuste",
-        "descricao": "Indicador do tipo de ajuste.",
+        "descricao": "Indicador do tipo de ajuste",
         "valores-validos": {
           "valores": "0=Ajuste de redução;1=Ajuste de acréscimo"
         }
@@ -14934,10 +14956,10 @@
         "posicao": "4",
         "id": "COD_AJ",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8.",
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
         "valores-validos": {
           "datasource": "TABELA_AJ_CONTRIB_CRED"
         }
@@ -14948,7 +14970,7 @@
         "tipo": "C",
         "obrigatorio": "0",
         "rotulo": "Número do documento ao qual o ajuste está vinculado",
-        "descricao": "Número do documento / processo / declaração ao qual o ajuste está vinculado, se houver."
+        "descricao": "Número do documento / processo / declaração ao qual o ajuste está vinculado, se houver"
       },
       {
         "posicao": "6",
@@ -14956,13 +14978,13 @@
         "tipo": "C",
         "obrigatorio": "0",
         "rotulo": "Descrição Resumida do Ajuste",
-        "descricao": "Descrição resumida do ajuste."
+        "descricao": "Descrição resumida do ajuste"
       },
       {
         "posicao": "7",
         "id": "DT_REF",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de Referência do Ajuste",
         "descricao": "Data de referência do ajuste (ddmmaaaa)"
@@ -15005,7 +15027,7 @@
         "posicao": "3",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
         "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
@@ -15037,7 +15059,7 @@
         "id": "DT_OPER_AJ",
         "descricao": "Data da operação a que se refere o ajuste informado neste registro",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Operação referente ao Ajuste"
       },
@@ -15239,7 +15261,7 @@
         "posicao": "2",
         "id": "NUM_CAMPO",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "descricao": "Informar o número do campo do registro M200",
         "rotulo": "Número do Campo de M200 a ser detalhado",
@@ -15297,7 +15319,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código da Contribuição Social Apurada",
-        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5.",
+        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5",
         "valores-validos": {
           "datasource": "TABELA_CS_APUR"
         }
@@ -15433,10 +15455,10 @@
         "posicao": "2",
         "id": "IND_TIP_COOP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Tipo de Sociedade Cooperativa",
-        "descricao": "Indicador do Tipo de Sociedade Cooperativa.",
+        "descricao": "Indicador do Tipo de Sociedade Cooperativa",
         "valores-validos": {
           "valores": "01=Cooperativa de Produção Agropecuária;02=Cooperativa de Consumo;03=Cooperativa de Crédito;04=Cooperativa de Eletrificação Rural;05=Cooperativa de Transporte Rodoviário  de Cargas;06=Cooperativa de Médicos;99=Outras"
         }
@@ -15457,7 +15479,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor de Exclusão Específica das Cooperativas em Geral",
-        "descricao": "Valor de Exclusão Especifica das Cooperativas em Geral, decorrente das Sobras Apuradas na DRE, destinadas a constituição do Fundo de Reserva e do FATES."
+        "descricao": "Valor de Exclusão Especifica das Cooperativas em Geral, decorrente das Sobras Apuradas na DRE, destinadas a constituição do Fundo de Reserva e do FATES"
       },
       {
         "posicao": "5",
@@ -15503,10 +15525,10 @@
         "posicao": "2",
         "id": "IND_AJ",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Ajuste",
-        "descricao": "Indicador do tipo de ajuste.",
+        "descricao": "Indicador do tipo de ajuste",
         "valores-validos": {
           "valores": "0=Ajuste de redução;1=Ajuste de acréscimo"
         }
@@ -15524,10 +15546,10 @@
         "posicao": "4",
         "id": "COD_AJ",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8.",
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
         "valores-validos": {
           "datasource": "TABELA_AJ_CONTRIB_CRED"
         }
@@ -15546,13 +15568,13 @@
         "tipo": "C",
         "obrigatorio": "0",
         "rotulo": "Descrição Resumida do Ajuste",
-        "descricao": "Descrição resumida do ajuste."
+        "descricao": "Descrição resumida do ajuste"
       },
       {
         "posicao": "7",
         "id": "DT_REF",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de Referência do Ajuste",
         "descricao": "Data de referência do ajuste (ddmmaaaa)"
@@ -15595,7 +15617,7 @@
         "posicao": "3",
         "id": "CST_PIS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
         "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
@@ -15627,7 +15649,7 @@
         "id": "DT_OPER_AJ",
         "descricao": "Data da operação a que se refere o ajuste informado neste registro",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Operação referente ao Ajuste"
       },
@@ -15694,10 +15716,10 @@
         "posicao": "2",
         "id": "CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ da Pessoa Jurídica",
-        "descricao": "CNPJ da pessoa jurídica de direito público, empresa pública, sociedade de economia mista ou suas subsidiárias."
+        "descricao": "CNPJ da pessoa jurídica de direito público, empresa pública, sociedade de economia mista ou suas subsidiárias"
       },
       {
         "posicao": "3",
@@ -15739,7 +15761,7 @@
         "posicao": "7",
         "id": "COD_CRED",
         "tipo": "C",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "0",
         "rotulo": "Tipo de Crédito Diferido",
         "descricao": "Código de Tipo de Crédito diferido no período, conforme a Tabela 4.3.6",
@@ -15797,7 +15819,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Natureza do Crédito Diferido",
-        "descricao": "Natureza do Crédito Diferido, vinculado a receita tributada no mercado interno, a descontar:01 - Crédito a Alíquota Básica;02 - Crédito a Alíquota Diferenciada;03 - Crédito a Alíquota por Unidade de Produto;04 Crédito Presumido da Agroindústria.",
+        "descricao": "Natureza do Crédito Diferido, vinculado a receita tributada no mercado interno, a descontar:01 - Crédito a Alíquota Básica;02 - Crédito a Alíquota Diferenciada;03 - Crédito a Alíquota por Unidade de Produto;04 Crédito Presumido da Agroindústria",
         "valores-validos": {
           "valores": "01=Crédito a Alíquota Básica;02=Crédito a Alíquota Diferenciada;03=Crédito a Alíquota por Unidade de Produto;04=Crédito Presumido da Agroindústria"
         }
@@ -15824,7 +15846,7 @@
         "posicao": "7",
         "id": "PER_APUR",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período de Apuração",
         "descricao": "Período de apuração da contribuição social e dos créditos diferidos (MMAAAA)"
@@ -15833,7 +15855,7 @@
         "posicao": "8",
         "id": "DT_RECEB",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de Recebimento da Receita",
         "descricao": "Data de recebimento da receita, objeto de diferimento"
@@ -15935,7 +15957,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código de Situação Tributária",
-        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.3.",
+        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.3",
         "valores-validos": {
           "datasource": "TABELA_CST_PIS_M400"
         }
@@ -15947,7 +15969,7 @@
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total da Receita Bruta",
-        "descricao": "Valor total da receita bruta no período."
+        "descricao": "Valor total da receita bruta no período"
       },
       {
         "posicao": "4",
@@ -16005,7 +16027,7 @@
         "posicao": "2",
         "id": "NAT_REC",
         "tipo": "C",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Natureza da Receita",
         "descricao": "<html>Natureza da Receita, conforme código constante nas Tabelas de Detalhamento da Natureza da Receita por Situação Tributária abaixo:<br/>- Tabela 4.3.10: Produtos Sujeitos à Incidência Monofásica da Contribuição Social - Alíquotas Diferenciadas (CST 04);<br/>- Tabela 4.3.12: Produtos Sujeitos à Substituição Tributária da Contribuição Social (CST 05);<br/>- Tabela 4.3.13: Produtos Sujeitos à Alíquota Zero da Contribuição Social (CST 06);<br/>- Tabela 4.3.14: Operações com Isenção da Contribuição Social (CST 07);<br/>- Tabela 4.3.15: Operações sem Incidência da Contribuição Social (CST 08);<br/>- Tabela 4.3.16: Operações com Suspensão da Contribuição Social (CST 09).</html>",
@@ -16068,7 +16090,7 @@
         "posicao": "2",
         "id": "COD_CRED",
         "tipo": "C",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo de Crédito",
         "descricao": "Código de Tipo de Crédito apurado no período, conforme a Tabela 4.3.6",
@@ -16080,7 +16102,7 @@
         "posicao": "3",
         "id": "IND_CRED_ORI",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Crédito Oriundo de",
         "descricao": "Indicador de Crédito Oriundo de:",
@@ -16174,7 +16196,7 @@
         "posicao": "13",
         "id": "IND_DESC_CRED",
         "tipo": "N",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Utilização do Crédito Disponível",
         "descricao": "Indicador de utilização do crédito disponível no período",
@@ -16214,7 +16236,6 @@
     "obrigatorio": "2",
     "descricao": "Detalhamento da Base de Cálculo do Crédito Apurado no Período - COFINS",
     "rotulo": "M505 - Detalhamento da Base de Cálculo do Crédito",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
@@ -16231,7 +16252,7 @@
         "posicao": "2",
         "id": "NAT_BC_CRED",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
         "descricao": "Código da Natureza da Base de Cálculo do Crédito apurado no período, conforme a Tabela 4.3.7",
@@ -16243,10 +16264,10 @@
         "posicao": "3",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS, Vinculado ao Tipo de Crédito Escriturado em M500",
-        "descricao": "Código da Situação Tributária referente ao crédito de COFINS (Tabela 4.3.4) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos).",
+        "descricao": "Código da Situação Tributária referente ao crédito de COFINS (Tabela 4.3.4) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos)",
         "valores-validos": {
           "datasource": "TABELA_CST_COFINS_M505"
         }
@@ -16258,7 +16279,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total da Base de Cálculo Escriturada nos Documentos, Referente ao CST da COFINS",
-        "descricao": "Valor Total da Base de Cálculo escriturada nos documentos e operações (Blocos “A”, “C”, “D” e “F”), referente ao CST_COFINS informado no Campo 03"
+        "descricao": "Valor Total da Base de Cálculo escriturada nos documentos e operações (Blocos 'A', 'C', 'D' e 'F'), referente ao CST_COFINS informado no Campo 03"
       },
       {
         "posicao": "5",
@@ -16285,7 +16306,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da Base de Cálculo do Crédito, vinculada ao Tipo de Crédito Escriturado em M500",
-        "descricao": "Valor da Base de Cálculo do Crédito, vinculada ao tipo de Crédito escriturado em M500."
+        "descricao": "Valor da Base de Cálculo do Crédito, vinculada ao tipo de Crédito escriturado em M500"
       },
       {
         "posicao": "8",
@@ -16294,7 +16315,7 @@
         "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Quantidade Total da Base de Cálculo do Crédito Escriturada nos Documentos",
-        "descricao": "Quantidade Total da Base de Cálculo do Crédito apurado em Unidade de Medida de Produto, escriturada nos documentos e operações (Bloco “C”), referente ao CST_COFINS informado no Campo 03"
+        "descricao": "Quantidade Total da Base de Cálculo do Crédito apurado em Unidade de Medida de Produto, escriturada nos documentos e operações (Bloco 'C'), referente ao CST_COFINS informado no Campo 03"
       },
       {
         "posicao": "9",
@@ -16303,7 +16324,7 @@
         "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Parcela da Base de Cálculo do Crédito em Quantidade, vinculada ao Tipo de Crédito Escriturado em M500",
-        "descricao": "Parcela da base de cálculo do crédito em quantidade (campo 08) vinculada ao tipo de crédito escriturado em M500."
+        "descricao": "Parcela da base de cálculo do crédito em quantidade (campo 08) vinculada ao tipo de crédito escriturado em M500"
       },
       {
         "posicao": "10",
@@ -16347,10 +16368,10 @@
         "posicao": "2",
         "id": "IND_AJ",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Ajuste",
-        "descricao": "Indicador do tipo de ajuste.",
+        "descricao": "Indicador do tipo de ajuste",
         "valores-validos": {
           "valores": "0=Ajuste de redução;1=Ajuste de acréscimo"
         }
@@ -16368,10 +16389,10 @@
         "posicao": "4",
         "id": "COD_AJ",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8.",
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
         "valores-validos": {
           "datasource": "TABELA_AJ_CONTRIB_CRED"
         }
@@ -16390,13 +16411,13 @@
         "tipo": "C",
         "obrigatorio": "0",
         "rotulo": "Descrição Resumida do Ajuste",
-        "descricao": "Descrição resumida do ajuste."
+        "descricao": "Descrição resumida do ajuste"
       },
       {
         "posicao": "7",
         "id": "DT_REF",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de Referência do Ajuste",
         "descricao": "Data de referência do ajuste (ddmmaaaa)"
@@ -16439,7 +16460,7 @@
         "posicao": "3",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
         "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
@@ -16471,7 +16492,7 @@
         "id": "DT_OPER_AJ",
         "descricao": "Data da operação a que se refere o ajuste informado neste registro",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Operação referente ao Ajuste"
       },
@@ -16673,7 +16694,7 @@
         "posicao": "2",
         "id": "NUM_CAMPO",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "descricao": "Informar o número do campo do registro M600",
         "rotulo": "Número do Campo de M600 a ser detalhado",
@@ -16731,7 +16752,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código da Contribuição Social Apurada",
-        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5.",
+        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5",
         "valores-validos": {
           "datasource": "TABELA_CS_APUR"
         }
@@ -16867,10 +16888,10 @@
         "posicao": "2",
         "id": "IND_TIP_COOP",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Tipo de Sociedade Cooperativa",
-        "descricao": "Indicador do Tipo de 1ociedade Cooperativa.",
+        "descricao": "Indicador do Tipo de 1ociedade Cooperativa",
         "valores-validos": {
           "valores": "01=Cooperativa de Produção Agropecuária;02=Cooperativa de Consumo;03=Cooperativa de Crédito;04=Cooperativa de Eletrificação Rural;05=Cooperativa de Transporte Rodoviário  de Cargas;06=Cooperativa de Médicos;99=Outras"
         }
@@ -16891,7 +16912,7 @@
         "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor de Exclusão Especifica das Cooperativas em Geral",
-        "descricao": "Valor de Exclusão Especifica das Cooperativas em Geral, decorrente das 1obras Apuradas na DRE, destinadas a constituição do Fundo de Reserva e do FATE1."
+        "descricao": "Valor de Exclusão Especifica das Cooperativas em Geral, decorrente das 1obras Apuradas na DRE, destinadas a constituição do Fundo de Reserva e do FATE1"
       },
       {
         "posicao": "5",
@@ -16937,10 +16958,10 @@
         "posicao": "2",
         "id": "IND_AJ",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "obrigatorio": "1",
         "rotulo": "Tipo de Ajuste",
-        "descricao": "Indicador do tipo de ajuste.",
+        "descricao": "Indicador do tipo de ajuste",
         "valores-validos": {
           "valores": "0=Ajuste de redução;1=Ajuste de acréscimo"
         }
@@ -16958,10 +16979,10 @@
         "posicao": "4",
         "id": "COD_AJ",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8.",
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
         "valores-validos": {
           "datasource": "TABELA_AJ_CONTRIB_CRED"
         }
@@ -16980,13 +17001,13 @@
         "tipo": "C",
         "obrigatorio": "0",
         "rotulo": "Descrição Resumida do Ajuste",
-        "descricao": "Descrição resumida do ajuste."
+        "descricao": "Descrição resumida do ajuste"
       },
       {
         "posicao": "7",
         "id": "DT_REF",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de Referência do Ajuste",
         "descricao": "Data de referência do ajuste (ddmmaaaa)"
@@ -17029,7 +17050,7 @@
         "posicao": "3",
         "id": "CST_COFINS",
         "tipo": "N",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
         "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
@@ -17061,7 +17082,7 @@
         "id": "DT_OPER_AJ",
         "descricao": "Data da operação a que se refere o ajuste informado neste registro",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data da Operação referente ao Ajuste"
       },
@@ -17128,10 +17149,10 @@
         "posicao": "2",
         "id": "CNPJ",
         "tipo": "N",
-        "tamanho": "[14]",
+        "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ da Pessoa Jurídica",
-        "descricao": "CNPJ da pessoa jurídica de direito público, empresa pública, sociedade de economia mista ou suas subsidiárias."
+        "descricao": "CNPJ da pessoa jurídica de direito público, empresa pública, sociedade de economia mista ou suas subsidiárias"
       },
       {
         "posicao": "3",
@@ -17173,7 +17194,7 @@
         "posicao": "7",
         "id": "COD_CRED",
         "tipo": "C",
-        "tamanho": "[3]",
+        "tamanho": "3",
         "obrigatorio": "0",
         "rotulo": "Tipo de Crédito Diferido",
         "descricao": "Código de Tipo de Crédito diferido no período, conforme a Tabela 4.3.6",
@@ -17231,9 +17252,9 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Natureza do Crédito Diferido",
-        "descricao": "Natureza do Crédito Diferido, vinculado a receita tributada no mercado interno, a descontar.",
+        "descricao": "Natureza do Crédito Diferido, vinculado a receita tributada no mercado interno, a descontar",
         "valores-validos": {
-          "valores": "01=Crédito a Alíquota Básica;02=Crédito a Alíquota Diferenciada;03=Crédito a Alíquota por Unidade de Produto;04=Crédito Presumido da Agroindústria."
+          "valores": "01=Crédito a Alíquota Básica;02=Crédito a Alíquota Diferenciada;03=Crédito a Alíquota por Unidade de Produto;04=Crédito Presumido da Agroindústria"
         }
       },
       {
@@ -17258,7 +17279,7 @@
         "posicao": "7",
         "id": "PER_APUR",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Periodo de Apuração",
         "descricao": "Periodo de apuração da contribuição social e dos créditos diferidos (MMAAAA)"
@@ -17267,7 +17288,7 @@
         "posicao": "8",
         "id": "DT_RECEB",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "rotulo": "Data de Recebimento da Receita",
         "descricao": "Data de recebimento da receita, objeto de diferimento"
@@ -17298,25 +17319,25 @@
         "posicao": "2",
         "id": "CST_COFINS",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código de Situação Tributária",
-        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.4.",
+        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.4",
         "valores-validos": {
           "datasource": "TABELA_CST_COFINS_M800"
         }
       },
       {
-        "posicao": "3",
+        "posicao": "4",
         "id": "VL_TOT_REC",
         "tipo": "N",
         "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total da Receita Bruta no período",
-        "descricao": "Valor total da receita bruta no período."
+        "descricao": "Valor total da receita bruta no período"
       },
       {
-        "posicao": "4",
+        "posicao": "5",
         "id": "COD_CTA",
         "tipo": "C",
         "tamanho": "60",
@@ -17328,7 +17349,7 @@
         }
       },
       {
-        "posicao": "5",
+        "posicao": "6",
         "id": "DESC_COMPL",
         "tipo": "C",
         "obrigatorio": "0",
@@ -17437,7 +17458,8 @@
         "obrigatorio": "1",
         "descricao": "Quantidade total de linhas do Bloco M"
       }
-    ]
+    ],
+    "pai": "0000"
   },
   {
     "id": "P001",
@@ -17470,6 +17492,7 @@
         }
       }
     ],
+    "pai": "0000",
     "filhos": [
       "P010",
       "P200"
@@ -17499,7 +17522,7 @@
         "id": "CNPJ",
         "descricao": "CNPJ (Informe/Selecione o CNPJ do estabelecimento a que se refere a receita bruta auferida)",
         "tipo": "N",
-        "tamanho": "[014]",
+        "tamanho": "014",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "rotulo": "CNPJ (Informe/Selecione o CNPJ do estabelecimento a que se refere a receita bruta auferida)",
@@ -17536,7 +17559,7 @@
         "posicao": "2",
         "id": "DT_INI",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data inicial a que a apuração se refere (ddmmaaaa)",
         "descricao": "Período de referencia da escrituração (MMAAAA)"
@@ -17545,7 +17568,7 @@
         "posicao": "3",
         "id": "DT_FIM",
         "tipo": "D",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Data final a que a apuração se refere (ddmmaaaa)",
         "descricao": "Período de referencia da escrituração (MMAAAA)"
@@ -17563,7 +17586,7 @@
         "posicao": "5",
         "id": "COD_ATIV_ECON",
         "tipo": "C",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Código indicador correspondente à atividade sujeita a incidência da Contribuição Previdenciária sobre a Receita Bruta",
         "descricao": "Código indicador correspondente à atividade sujeita a incidência da Contribuição Previdenciária sobre a Receita Bruta",
@@ -17667,11 +17690,11 @@
         "posicao": "2",
         "id": "NUM_CAMPO",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
-        "descricao": "Informar o número do campo do registro “P100”",
-        "rotulo": "Informar o número do campo do registro “P100”",
+        "descricao": "Informar o número do campo do registro 'P100'",
+        "rotulo": "Informar o número do campo do registro 'P100'",
         "valores-validos": {
           "valores": "04=Valor da Receita Bruta Total do Estabelecimento no Período;06=Valor da Receita Bruta Total do Estabelecimento;07=Valor das Exclusões da Receita Bruta;08=Valor da Base de Cálculo da Contribuição sobre o valor da Receita Bruta;10=Valor da Contribuição Previdenciária Devida sobre o valor da Receita Bruta"
         }
@@ -17680,7 +17703,7 @@
         "posicao": "3",
         "id": "COD_DET",
         "tipo": "C",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "obrigatorio": "0",
         "descricao": "Código do tipo de detalhamento",
         "rotulo": "Código do tipo de detalhamento",
@@ -17740,7 +17763,7 @@
         "posicao": "3",
         "id": "IND_PROC",
         "tipo": "C",
-        "tamanho": "[1]",
+        "tamanho": "1",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
         "descricao": "Indicador da origem do processo",
@@ -17775,7 +17798,7 @@
         "posicao": "2",
         "id": "PER_REF",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Período de referência da escrituração (MMAAAA)",
         "descricao": "Período de referência da escrituração (MMAAAA)"
@@ -17794,8 +17817,8 @@
         "tipo": "N",
         "casasdecimais": "2",
         "obrigatorio": "0",
-        "rotulo": "Valor total de “Ajustes de redução”",
-        "descricao": "Valor total de “Ajustes de redução”"
+        "rotulo": "Valor total de 'Ajustes de redução'",
+        "descricao": "Valor total de 'Ajustes de redução'"
       },
       {
         "posicao": "5",
@@ -17803,8 +17826,8 @@
         "tipo": "N",
         "casasdecimais": "2",
         "obrigatorio": "0",
-        "rotulo": "Valor total de “Ajustes de acréscimo”",
-        "descricao": "Valor total de “Ajustes de acréscimo”"
+        "rotulo": "Valor total de 'Ajustes de acréscimo'",
+        "descricao": "Valor total de 'Ajustes de acréscimo'"
       },
       {
         "posicao": "6",
@@ -17819,7 +17842,7 @@
         "posicao": "7",
         "id": "COD_REC",
         "tipo": "N",
-        "tamanho": "[6]",
+        "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Código de Receita referente à Contribuição Previdenciária, conforme informado em DCTF",
         "descricao": "Código de Receita referente à Contribuição Previdenciária, conforme informado em DCTF",
@@ -17840,7 +17863,6 @@
     "obrigatorio": "0",
     "descricao": "Ajuste da Contribuição Previdenciária apurada sobre a Receita Bruta",
     "rotulo": "P210 - Ajuste da Contribuição Previdenciária apurada sobre a Receita Bruta",
-    "#comment": [],
     "campos": [
       {
         "posicao": "1",
@@ -17879,7 +17901,7 @@
         "posicao": "4",
         "id": "COD_AJ",
         "tipo": "C",
-        "tamanho": "[2]",
+        "tamanho": "2",
         "obrigatorio": "1",
         "descricao": "Código do ajuste",
         "rotulo": "Código do ajuste",
@@ -17908,7 +17930,7 @@
         "id": "DT_REF",
         "tipo": "D",
         "obrigatorio": "0",
-        "tamanho": "[8]",
+        "tamanho": "8",
         "descricao": "Data de referência do ajuste (ddmmaaaa)",
         "rotulo": "Data de referência do ajuste (ddmmaaaa)"
       }
@@ -17941,6 +17963,7 @@
         "obrigatorio": "1",
         "descricao": "Quantidade total de linhas do Bloco P"
       }
-    ]
+    ],
+    "pai": "0000"
   }
 ]
