@@ -9,9 +9,11 @@ require('./lib/custom-helpers').registerCustomHelpers(handlebars);
 
 const LAYOUT_FISCAL = 'fiscal';
 const LAYOUT_CONTRIB = 'contrib';
-const versoes_fiscal = ['009', '010', '011'];
-const versoes_contrib = ['002', '003'];
-const versoes = { FISCAL: versoes_fiscal, CONTRIB: versoes_contrib };
+
+const versoes = {
+  FISCAL: ['009', '010', '011'],
+  CONTRIB: ['002', '003']
+};
 
 const DEFAULT_OPTIONS = {
   layoutSped: LAYOUT_FISCAL,
