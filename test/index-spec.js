@@ -22,6 +22,14 @@ describe('Sped Gen', function () {
     layouts.should.have.property('CONTRIB').which.is.an.String();
   });
 
+  it('deve exportar hash de versões de layout', function () {
+    spedGen.should.have.property('versoes').which.is.an.Object();
+
+    const layouts = spedGen.versoes;
+    layouts.should.have.property('FISCAL').which.is.an.Array();
+    layouts.should.have.property('CONTRIB').which.is.an.Array();
+  });
+
   it('deve exportar funções do módulo sped-utils', function () {
     spedGen.should.have.property('utils').which.is.an.Object();
   });
@@ -69,14 +77,34 @@ describe('Sped Gen', function () {
       fileName.should.be.calledOnce();
     });
 
-    it('deve carregar metadados do layout Sped informado nas opções', function () {
+    it('deve lançar exceção se versão for incompatível com o layout informado', function() {
+      this.noop_opts.layoutSped = spedGen.layouts.CONTRIB;
+      this.noop_opts.versaoLayout = '011';
+
+      (() => spedGen(this.noop_opts)).should.throw(/Versão '011' inválida para o layout 'contrib'/);
+    });
+
+    it('deve carregar última versão dos metadados do layout Sped informado nas opções se versão não informada', function () {
       const req = sinon.stub().returns([]);
       revertRequireStub = spedGen.__set__('require', req);
       this.noop_opts.layoutSped = 'fiscal';
+      const versoes = spedGen.versoes.FISCAL;
+      const versao = versoes[versoes.length - 1];
 
       spedGen(this.noop_opts);
 
-      req.should.be.calledWith('./meta/metadados-fiscal');
+      req.should.be.calledWith(`./meta/metadados-fiscal-v${versao}`);
+    });
+
+    it('deve carregar metadados do layout Sped e versão informados nas opções', function () {
+      const req = sinon.stub().returns([]);
+      revertRequireStub = spedGen.__set__('require', req);
+      this.noop_opts.layoutSped = 'fiscal';
+      this.noop_opts.versaoLayout = '009';
+
+      spedGen(this.noop_opts);
+
+      req.should.be.calledWith('./meta/metadados-fiscal-v009');
     });
 
     it('deve lançar exceção se a opção template ou templateFile não informada', function(done) {

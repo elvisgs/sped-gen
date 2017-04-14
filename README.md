@@ -17,6 +17,7 @@ spedGen(/*Object*/options);
 
 ### Opções
 - (*String*) **layoutSped**: Os valores possíveis são `fiscal` ou `contrib` (obrigatório, *default*: fiscal)
+- (*String*) **versaoLayout**: Corresponde ao valor do campo `COD_VER` do registro 0000 (ver manuais do SPED para mais informações). Para o layout `fiscal` as versões suportadas são '009', '010' e '011'; para o layout `contrib` as versões suportadas são '002' e '003'. Se não informada, a última versão suportada será usada.
 - (*String*) **template**: String contendo um template handlebars (obrigatório se templateFile não especificado)
 - (*String*) **templateFile**: Arquivo de template handlebars (obrigatório se template não especificado)
 - (*String|Function*) **fileName**: String ou função que retorna o nome do(s) arquivo(s) a ser(em) gerado(s). Pode ser um template handlebars que será processado com os metadados (obrigatório)

@@ -109,10 +109,7 @@
         "tipo": "C",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "UF",
-        "valores-validos": {
-          "datasource": "TABELA_UF_SIGLA_NOME"
-        }
+        "rotulo": "UF"
       },
       {
         "posicao": "11",
@@ -122,10 +119,7 @@
         "tamanho": "7",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
-        "rotulo": "Município",
-        "valores-validos": {
-          "datasource": "TABELA_MUNICIPIOS"
-        }
+        "rotulo": "Município"
       },
       {
         "posicao": "12",
@@ -413,10 +407,7 @@
         "tipo": "N",
         "tamanho": "7",
         "obrigatorio": "0",
-        "rotulo": "Município",
-        "valores-validos": {
-          "datasource": "TABELA_MUNICIPIOS"
-        }
+        "rotulo": "Município"
       }
     ],
     "pai": "0001"
@@ -658,10 +649,7 @@
         "tipo": "C",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "UF",
-        "valores-validos": {
-          "datasource": "TABELA_UF_SIGLA_NOME"
-        }
+        "rotulo": "UF"
       },
       {
         "posicao": "6",
@@ -679,10 +667,7 @@
         "tipo": "N",
         "tamanho": "7",
         "obrigatorio": "1",
-        "rotulo": "Município",
-        "valores-validos": {
-          "datasource": "TABELA_MUNICIPIOS"
-        }
+        "rotulo": "Município"
       },
       {
         "posicao": "8",
@@ -710,43 +695,6 @@
       "0200",
       "0400",
       "0450"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "1900",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      },
-      {
-        "regId": "A010",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      },
-      {
-        "regId": "C010",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      },
-      {
-        "regId": "D010",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      },
-      {
-        "regId": "F010",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      },
-      {
-        "regId": "I010",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      },
-      {
-        "regId": "P010",
-        "campoId": "CNPJ",
-        "campoRef": "CNPJ"
-      }
     ]
   },
   {
@@ -864,10 +812,7 @@
         "tipo": "N",
         "tamanho": "5",
         "obrigatorio": "1",
-        "rotulo": "País",
-        "valores-validos": {
-          "datasource": "TABELA_PAISES"
-        }
+        "rotulo": "País"
       },
       {
         "posicao": "5",
@@ -903,10 +848,7 @@
         "tipo": "N",
         "tamanho": "7",
         "obrigatorio": "0",
-        "rotulo": "Município",
-        "valores-validos": {
-          "datasource": "TABELA_MUNICIPIOS"
-        }
+        "rotulo": "Município"
       },
       {
         "posicao": "9",
@@ -953,44 +895,7 @@
         "rotulo": "Bairro"
       }
     ],
-    "pai": "0140",
-    "referenciadoPor": [
-      {
-        "regId": "A100",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      },
-      {
-        "regId": "C100",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      },
-      {
-        "regId": "C395",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      },
-      {
-        "regId": "C500",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      },
-      {
-        "regId": "D100",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      },
-      {
-        "regId": "D500",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      },
-      {
-        "regId": "F100",
-        "campoId": "COD_PART",
-        "campoRef": "COD_PART"
-      }
-    ]
+    "pai": "0140"
   },
   {
     "id": "0190",
@@ -1030,19 +935,7 @@
         "rotulo": "Descrição"
       }
     ],
-    "pai": "0140",
-    "referenciadoPor": [
-      {
-        "regId": "0200",
-        "campoId": "UNID",
-        "campoRef": "UNID_INV"
-      },
-      {
-        "regId": "C170",
-        "campoId": "UNID",
-        "campoRef": "UNID"
-      }
-    ]
+    "pai": "0140"
   },
   {
     "id": "0200",
@@ -1105,10 +998,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "0",
-        "rotulo": "Unidade de medida",
-        "valores-validos": {
-          "datasource": "UNID_0190"
-        }
+        "rotulo": "Unidade de medida"
       },
       {
         "posicao": "7",
@@ -1147,10 +1037,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "Código do gênero",
-        "valores-validos": {
-          "datasource": "TABELA_GENERO_ITEM"
-        }
+        "rotulo": "Código do gênero"
       },
       {
         "posicao": "11",
@@ -1159,10 +1046,7 @@
         "tipo": "C",
         "tamanho": "5",
         "obrigatorio": "0",
-        "rotulo": "Código do serviço",
-        "valores-validos": {
-          "datasource": "TABELA_SERVICO_LCP_116"
-        }
+        "rotulo": "Código do serviço"
       },
       {
         "posicao": "12",
@@ -1180,78 +1064,6 @@
       "0205",
       "0206",
       "0208"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "A170",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C170",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C180",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C190",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C381",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C385",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C396",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C481",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C485",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C491",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C495",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C870",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "C880",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      },
-      {
-        "regId": "F100",
-        "campoId": "COD_ITEM",
-        "campoRef": "COD_ITEM"
-      }
     ]
   },
   {
@@ -1338,10 +1150,7 @@
         "descricao": "Código do combustível, conforme tabela publicada pela ANP",
         "tipo": "C",
         "obrigatorio": "1",
-        "rotulo": "Código do combustível",
-        "valores-validos": {
-          "datasource": "TABELA_ANP"
-        }
+        "rotulo": "Código do combustível"
       }
     ],
     "pai": "0200"
@@ -1437,14 +1246,7 @@
         "rotulo": "Descrição"
       }
     ],
-    "pai": "0140",
-    "referenciadoPor": [
-      {
-        "regId": "C170",
-        "campoId": "COD_NAT",
-        "campoRef": "COD_NAT"
-      }
-    ]
+    "pai": "0140"
   },
   {
     "id": "0450",
@@ -1484,34 +1286,7 @@
         "rotulo": "Descrição"
       }
     ],
-    "pai": "0140",
-    "referenciadoPor": [
-      {
-        "regId": "A110",
-        "campoId": "COD_INF",
-        "campoRef": "COD_INF"
-      },
-      {
-        "regId": "C110",
-        "campoId": "COD_INF",
-        "campoRef": "COD_INF"
-      },
-      {
-        "regId": "C500",
-        "campoId": "COD_INF",
-        "campoRef": "COD_INF"
-      },
-      {
-        "regId": "D100",
-        "campoId": "COD_INF",
-        "campoRef": "COD_INF"
-      },
-      {
-        "regId": "D500",
-        "campoId": "COD_INF",
-        "campoRef": "COD_INF"
-      }
-    ]
+    "pai": "0140"
   },
   {
     "id": "0500",
@@ -1612,269 +1387,7 @@
         "rotulo": "CNPJ do Estabelecimento"
       }
     ],
-    "pai": "0001",
-    "referenciadoPor": [
-      {
-        "regId": "1900",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "A170",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C170",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C175",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C181",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C185",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C191",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C195",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C381",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C385",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C396",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C481",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C485",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C491",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C495",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C501",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C505",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C601",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C605",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C870",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "C880",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D100",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D101",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D105",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D201",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D205",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D300",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D350",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D501",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D505",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D601",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "D605",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F100",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F120",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F130",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F150",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F500",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F510",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F525",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F550",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "F560",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "I200",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "I300",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M115",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M225",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M400",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M410",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M515",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M625",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M800",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "M810",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      },
-      {
-        "regId": "P100",
-        "campoId": "COD_CTA",
-        "campoRef": "COD_CTA"
-      }
-    ]
+    "pai": "0001"
   },
   {
     "id": "0600",
@@ -1924,29 +1437,7 @@
         "rotulo": "Nome"
       }
     ],
-    "pai": "0001",
-    "referenciadoPor": [
-      {
-        "regId": "A170",
-        "campoId": "COD_CCUS",
-        "campoRef": "COD_CCUS"
-      },
-      {
-        "regId": "F100",
-        "campoId": "COD_CCUS",
-        "campoRef": "COD_CCUS"
-      },
-      {
-        "regId": "F120",
-        "campoId": "COD_CCUS",
-        "campoRef": "COD_CCUS"
-      },
-      {
-        "regId": "F130",
-        "campoId": "COD_CCUS",
-        "campoRef": "COD_CCUS"
-      }
-    ]
+    "pai": "0001"
   },
   {
     "id": "0990",
@@ -2208,10 +1699,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo do Crédito",
-        "descricao": "Código do Tipo do Crédito, conforme Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código do Tipo do Crédito, conforme Tabela 4.3.6"
       },
       {
         "posicao": "6",
@@ -2477,10 +1965,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo do Crédito",
-        "descricao": "Código do Tipo do Crédito, conforme Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código do Tipo do Crédito, conforme Tabela 4.3.6"
       },
       {
         "posicao": "6",
@@ -2857,10 +2342,7 @@
         "descricao": "CNPJ do estabelecimento da pessoa jurídica, emitente dos documentos geradores de receita",
         "tipo": "N",
         "tamanho": "14",
-        "obrigatorio": "1",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "obrigatorio": "1"
       },
       {
         "posicao": "3",
@@ -2869,10 +2351,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Modelo",
-        "descricao": "Código do modelo do documento fiscal conforme a Tabela 4.1.1, ou 98 - Nota Fiscal de Prestação de Serviços (ISSQN) ou 99 - Outros Documentos",
-        "valores-validos": {
-          "datasource": "TABELA_MODELO_DOCUMENTO_98_99"
-        }
+        "descricao": "Código do modelo do documento fiscal conforme a Tabela 4.1.1, ou 98 - Nota Fiscal de Prestação de Serviços (ISSQN) ou 99 - Outros Documentos"
       },
       {
         "posicao": "4",
@@ -2928,10 +2407,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F525"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "10",
@@ -2940,10 +2416,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F525"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "11",
@@ -2952,10 +2425,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_REPRESENTATIVOS_RECEITA"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "12",
@@ -2971,10 +2441,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       }
     ],
     "pai": "1001"
@@ -3199,10 +2666,7 @@
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
         "tamanho": "14",
-        "obrigatorio": "1",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "obrigatorio": "1"
       }
     ],
     "pai": "A001",
@@ -3261,10 +2725,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Participante",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "rotulo": "Participante"
       },
       {
         "posicao": "5",
@@ -3461,10 +2922,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "1",
-        "rotulo": "Código",
-        "valores-validos": {
-          "datasource": "COD_INF_0450"
-        }
+        "rotulo": "Código"
       },
       {
         "posicao": "3",
@@ -3655,10 +3113,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Código do Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Código do Item"
       },
       {
         "posicao": "4",
@@ -3717,10 +3172,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "10",
@@ -3756,10 +3208,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "14",
@@ -3796,10 +3245,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       },
       {
         "posicao": "18",
@@ -3808,10 +3254,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Centro de custos",
-        "valores-validos": {
-          "datasource": "COD_CCUS_0600"
-        }
+        "rotulo": "Centro de custos"
       }
     ],
     "pai": "A100"
@@ -3912,10 +3355,7 @@
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
         "tamanho": "14",
-        "obrigatorio": "1",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "obrigatorio": "1"
       },
       {
         "posicao": "3",
@@ -3995,10 +3435,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Participante",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "rotulo": "Participante"
       },
       {
         "posicao": "5",
@@ -4274,10 +3711,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "1",
-        "rotulo": "Código",
-        "valores-validos": {
-          "datasource": "COD_INF_0450"
-        }
+        "rotulo": "Código"
       },
       {
         "posicao": "3",
@@ -4441,10 +3875,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "4",
@@ -4470,10 +3901,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "0",
-        "rotulo": "Unidade",
-        "valores-validos": {
-          "datasource": "UNID_0190"
-        }
+        "rotulo": "Unidade"
       },
       {
         "posicao": "7",
@@ -4512,10 +3940,7 @@
         "tipo": "N",
         "tamanho": "3",
         "obrigatorio": "0",
-        "rotulo": "CST ICMS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_ICMS"
-        }
+        "rotulo": "CST ICMS"
       },
       {
         "posicao": "11",
@@ -4524,10 +3949,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "12",
@@ -4536,10 +3958,7 @@
         "tipo": "C",
         "tamanho": "010",
         "obrigatorio": "0",
-        "rotulo": "Natureza da operação",
-        "valores-validos": {
-          "datasource": "COD_NAT_0400"
-        }
+        "rotulo": "Natureza da operação"
       },
       {
         "posicao": "13",
@@ -4616,10 +4035,7 @@
         "tipo": "C",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "CST IPI",
-        "valores-validos": {
-          "datasource": "TABELA_CST_IPI"
-        }
+        "rotulo": "CST IPI"
       },
       {
         "posicao": "21",
@@ -4628,10 +4044,7 @@
         "tipo": "C",
         "tamanho": "3",
         "obrigatorio": "0",
-        "rotulo": "Código de enquadramento do IPI",
-        "valores-validos": {
-          "datasource": "TABELA_COD_ENQ"
-        }
+        "rotulo": "Código de enquadramento do IPI"
       },
       {
         "posicao": "22",
@@ -4668,10 +4081,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "26",
@@ -4726,10 +4136,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "32",
@@ -4784,10 +4191,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       }
     ],
     "pai": "C100"
@@ -4819,10 +4223,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "Código fiscal de operação e prestação",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_C175"
-        }
+        "rotulo": "Código fiscal de operação e prestação"
       },
       {
         "posicao": "3",
@@ -4849,10 +4250,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_C175"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "6",
@@ -4907,10 +4305,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_C175"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "12",
@@ -4965,10 +4360,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       },
       {
         "posicao": "18",
@@ -4979,34 +4371,7 @@
         "rotulo": "Informação Complementar"
       }
     ],
-    "pai": "C100",
-    "referenciadoPor": [
-      {
-        "regId": "C175",
-        "campoId": "TABELA_CFOP",
-        "campoRef": "CFOP"
-      },
-      {
-        "regId": "C175",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "C175",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "C870",
-        "campoId": "TABELA_CFOP",
-        "campoRef": "CFOP"
-      },
-      {
-        "regId": "C880",
-        "campoId": "TABELA_CFOP",
-        "campoRef": "CFOP"
-      }
-    ]
+    "pai": "C100"
   },
   {
     "id": "C180",
@@ -5065,10 +4430,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "6",
@@ -5132,10 +4494,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_C181"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -5144,10 +4503,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "4",
@@ -5220,20 +4576,10 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
-    "pai": "C180",
-    "referenciadoPor": [
-      {
-        "regId": "C181",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      }
-    ]
+    "pai": "C180"
   },
   {
     "id": "C185",
@@ -5262,10 +4608,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_C185"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "3",
@@ -5274,10 +4617,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "4",
@@ -5350,20 +4690,10 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
-    "pai": "C180",
-    "referenciadoPor": [
-      {
-        "regId": "C185",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "C180"
   },
   {
     "id": "C188",
@@ -5466,10 +4796,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "6",
@@ -5543,10 +4870,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_C191"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "4",
@@ -5555,10 +4879,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_DEVOLUCAO_COMPRAS"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "5",
@@ -5631,20 +4952,10 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
-    "pai": "C190",
-    "referenciadoPor": [
-      {
-        "regId": "C191",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      }
-    ]
+    "pai": "C190"
   },
   {
     "id": "C195",
@@ -5682,10 +4993,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_C195"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "4",
@@ -5694,10 +5002,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_DEVOLUCAO_COMPRAS"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "5",
@@ -5770,20 +5075,10 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
-    "pai": "C190",
-    "referenciadoPor": [
-      {
-        "regId": "C195",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "C190"
   },
   {
     "id": "C198",
@@ -6020,10 +5315,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -6032,10 +5324,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "4",
@@ -6099,10 +5388,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C380"
@@ -6134,10 +5420,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "3",
@@ -6146,10 +5429,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "4",
@@ -6213,10 +5493,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C380"
@@ -6260,10 +5537,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Participante",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "rotulo": "Participante"
       },
       {
         "posicao": "4",
@@ -6343,10 +5617,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "3",
@@ -6385,10 +5656,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "7",
@@ -6425,10 +5693,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "11",
@@ -6465,10 +5730,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C395"
@@ -6647,10 +5909,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -6714,10 +5973,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "10",
@@ -6726,10 +5982,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C405"
@@ -6761,10 +6014,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "3",
@@ -6828,10 +6078,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "10",
@@ -6840,10 +6087,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C405"
@@ -6977,10 +6221,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "3",
@@ -6989,10 +6230,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "4",
@@ -7001,10 +6239,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "5",
@@ -7068,10 +6303,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C490"
@@ -7103,10 +6335,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Item"
       },
       {
         "posicao": "3",
@@ -7115,10 +6344,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "4",
@@ -7127,10 +6353,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "5",
@@ -7194,10 +6417,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C490"
@@ -7273,10 +6493,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Participante",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "rotulo": "Participante"
       },
       {
         "posicao": "3",
@@ -7372,10 +6589,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "0",
-        "rotulo": "Informação Complementar do Documento",
-        "valores-validos": {
-          "datasource": "COD_INF_0450"
-        }
+        "rotulo": "Informação Complementar do Documento"
       },
       {
         "posicao": "13",
@@ -7430,10 +6644,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -7491,10 +6702,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C500"
@@ -7526,10 +6734,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "3",
@@ -7587,10 +6792,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C500"
@@ -7678,10 +6880,7 @@
         "tipo": "N",
         "tamanho": "7",
         "obrigatorio": "0",
-        "rotulo": "Município dos Pontos de Consumo",
-        "valores-validos": {
-          "datasource": "TABELA_MUNICIPIOS"
-        }
+        "rotulo": "Município dos Pontos de Consumo"
       },
       {
         "posicao": "4",
@@ -7708,10 +6907,7 @@
         "tipo": "C",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "Classe de Consumo",
-        "valores-validos": {
-          "datasource": "TABELA_CONSUMO"
-        }
+        "rotulo": "Classe de Consumo"
       },
       {
         "posicao": "7",
@@ -7889,10 +7085,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -7938,10 +7131,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C600"
@@ -7972,10 +7162,7 @@
         "descricao": "Código da Situação Tributária referente a COFINS",
         "tipo": "N",
         "tamanho": "2",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "3",
@@ -8016,10 +7203,7 @@
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
         "tamanho": "60",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "C600"
@@ -8171,10 +7355,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Código do Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Código do Item"
       },
       {
         "posicao": "3",
@@ -8183,10 +7364,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_C175"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "4",
@@ -8213,10 +7391,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F500"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "7",
@@ -8253,10 +7428,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F500"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "11",
@@ -8293,10 +7465,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       }
     ],
     "pai": "C860"
@@ -8328,10 +7497,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Código do Item",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "rotulo": "Código do Item"
       },
       {
         "posicao": "3",
@@ -8340,10 +7506,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_C175"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "4",
@@ -8370,10 +7533,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F510"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "7",
@@ -8409,10 +7569,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F510"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "11",
@@ -8448,10 +7605,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       }
     ],
     "pai": "C860"
@@ -8596,10 +7750,7 @@
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
         "tamanho": "14",
-        "obrigatorio": "1",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "obrigatorio": "1"
       }
     ],
     "pai": "D001",
@@ -8663,10 +7814,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Participante",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "rotulo": "Participante"
       },
       {
         "posicao": "5",
@@ -8753,10 +7901,7 @@
         "tipo": "N",
         "tamanho": "1",
         "obrigatorio": "0",
-        "rotulo": "Tipo de CT-e",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CTE"
-        }
+        "rotulo": "Tipo de CT-e"
       },
       {
         "posicao": "14",
@@ -8840,10 +7985,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "0",
-        "rotulo": "Informação Complementar do Documento",
-        "valores-validos": {
-          "datasource": "COD_INF_0450"
-        }
+        "rotulo": "Informação Complementar do Documento"
       },
       {
         "posicao": "23",
@@ -8852,10 +7994,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D010",
@@ -8913,10 +8052,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "5",
@@ -8965,10 +8101,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Código da conta analítica contábil debitada/creditada"
       }
     ],
     "pai": "D100"
@@ -9021,10 +8154,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "5",
@@ -9073,10 +8203,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D100"
@@ -9212,10 +8339,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "9",
@@ -9279,10 +8403,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -9328,10 +8449,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D200"
@@ -9363,10 +8481,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "3",
@@ -9412,10 +8527,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D200"
@@ -9538,10 +8650,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "8",
@@ -9577,10 +8686,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "12",
@@ -9617,10 +8723,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "16",
@@ -9657,10 +8760,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D010",
@@ -9823,10 +8923,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "12",
@@ -9881,10 +8978,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "18",
@@ -9939,10 +9033,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D010",
@@ -10045,10 +9136,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "1",
-        "rotulo": "Participante",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "rotulo": "Participante"
       },
       {
         "posicao": "5",
@@ -10198,10 +9286,7 @@
         "tipo": "C",
         "tamanho": "6",
         "obrigatorio": "0",
-        "rotulo": "Informação Complementar do Documento",
-        "valores-validos": {
-          "datasource": "COD_INF_0450"
-        }
+        "rotulo": "Informação Complementar do Documento"
       },
       {
         "posicao": "21",
@@ -10256,10 +9341,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "3",
@@ -10317,10 +9399,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D500"
@@ -10352,10 +9431,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "3",
@@ -10413,10 +9489,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D500"
@@ -10504,10 +9577,7 @@
         "tipo": "N",
         "tamanho": "7",
         "obrigatorio": "0",
-        "rotulo": "Município dos terminais Faturados",
-        "valores-validos": {
-          "datasource": "TABELA_MUNICIPIOS"
-        }
+        "rotulo": "Município dos terminais Faturados"
       },
       {
         "posicao": "4",
@@ -10690,10 +9760,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "Classificação do Item do Serviço",
-        "valores-validos": {
-          "datasource": "TABELA_CLASSIFICACAO_ITEM"
-        }
+        "rotulo": "Classificação do Item do Serviço"
       },
       {
         "posicao": "3",
@@ -10720,10 +9787,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "6",
@@ -10760,10 +9824,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D600"
@@ -10795,10 +9856,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "1",
-        "rotulo": "Classificação do Item do Serviço",
-        "valores-validos": {
-          "datasource": "TABELA_CLASSIFICACAO_ITEM"
-        }
+        "rotulo": "Classificação do Item do Serviço"
       },
       {
         "posicao": "3",
@@ -10825,10 +9883,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "6",
@@ -10865,10 +9920,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta Analítica Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta Analítica Contábil"
       }
     ],
     "pai": "D600"
@@ -11010,10 +10062,7 @@
         "descricao": "Número de inscrição do estabelecimento no CNPJ",
         "tipo": "N",
         "tamanho": "14",
-        "obrigatorio": "1",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "obrigatorio": "1"
       }
     ],
     "pai": "F001",
@@ -11071,10 +10120,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Participante",
-        "descricao": "Código do participante (Campo 02 do Registro 0150)",
-        "valores-validos": {
-          "datasource": "COD_PART_0150"
-        }
+        "descricao": "Código do participante (Campo 02 do Registro 0150)"
       },
       {
         "posicao": "4",
@@ -11083,10 +10129,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Item",
-        "descricao": "Código do item (campo 02 do Registro 0200)",
-        "valores-validos": {
-          "datasource": "COD_ITEM_0200"
-        }
+        "descricao": "Código do item (campo 02 do Registro 0200)"
       },
       {
         "posicao": "5",
@@ -11113,10 +10156,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3 (IN RFB nº 1.009, de 2010)",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS"
-        }
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3 (IN RFB nº 1.009, de 2010)"
       },
       {
         "posicao": "8",
@@ -11153,10 +10193,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4 (IN RFB nº 1.009, de 2010)",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS"
-        }
+        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4 (IN RFB nº 1.009, de 2010)"
       },
       {
         "posicao": "12",
@@ -11217,10 +10254,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "18",
@@ -11229,10 +10263,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Centro de Custos",
-        "descricao": "Código do Centro de Custos",
-        "valores-validos": {
-          "datasource": "COD_CCUS_0600"
-        }
+        "descricao": "Código do Centro de Custos"
       },
       {
         "posicao": "19",
@@ -11383,10 +10414,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F120_F130"
-        }
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3"
       },
       {
         "posicao": "9",
@@ -11423,10 +10451,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F120_F130"
-        }
+        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4"
       },
       {
         "posicao": "13",
@@ -11463,10 +10488,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "17",
@@ -11475,10 +10497,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Centro de Custos",
-        "descricao": "Código do Centro de Custos",
-        "valores-validos": {
-          "datasource": "COD_CCUS_0600"
-        }
+        "descricao": "Código do Centro de Custos"
       },
       {
         "posicao": "18",
@@ -11659,10 +10678,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F120_F130"
-        }
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3"
       },
       {
         "posicao": "12",
@@ -11699,10 +10715,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F120_F130"
-        }
+        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4"
       },
       {
         "posicao": "16",
@@ -11739,10 +10752,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "20",
@@ -11751,10 +10761,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Centro de Custos",
-        "descricao": "Código do Centro de Custos",
-        "valores-validos": {
-          "datasource": "COD_CCUS_0600"
-        }
+        "descricao": "Código do Centro de Custos"
       },
       {
         "posicao": "21",
@@ -11768,28 +10775,6 @@
     "pai": "F010",
     "filhos": [
       "F139"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "F120",
-        "campoId": "TABELA_CST_PIS_F120",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F120",
-        "campoId": "TABELA_CST_COFINS_F120",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "F130",
-        "campoId": "TABELA_CST_PIS_F120",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F130",
-        "campoId": "TABELA_CST_COFINS_F120",
-        "campoRef": "CST_COFINS"
-      }
     ]
   },
   {
@@ -11909,10 +10894,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F150"
-        }
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3"
       },
       {
         "posicao": "8",
@@ -11940,10 +10922,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente ao COFINS, conforme a Tabela indicada no item 4.3.4",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F150"
-        }
+        "descricao": "Código da Situação Tributária referente ao COFINS, conforme a Tabela indicada no item 4.3.4"
       },
       {
         "posicao": "11",
@@ -11980,25 +10959,10 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       }
     ],
-    "pai": "F010",
-    "referenciadoPor": [
-      {
-        "regId": "F150",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F150",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "F010"
   },
   {
     "id": "F200",
@@ -12121,10 +11085,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3 (IN RFB nº 1.009, de 2010)",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F200"
-        }
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3 (IN RFB nº 1.009, de 2010)"
       },
       {
         "posicao": "13",
@@ -12161,10 +11122,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4 (IN RFB nº 1.009, de 2010)",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F200"
-        }
+        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4 (IN RFB nº 1.009, de 2010)"
       },
       {
         "posicao": "17",
@@ -12231,18 +11189,6 @@
       "F205",
       "F210",
       "F211"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "F200",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F200",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
     ]
   },
   {
@@ -12317,10 +11263,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST do PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F205"
-        }
+        "rotulo": "CST do PIS/PASEP"
       },
       {
         "posicao": "8",
@@ -12375,10 +11318,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST da COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F205"
-        }
+        "rotulo": "CST da COFINS"
       },
       {
         "posicao": "14",
@@ -12427,19 +11367,7 @@
         "rotulo": "Parcela a descontar em períodos futuros - COFINS"
       }
     ],
-    "pai": "F200",
-    "referenciadoPor": [
-      {
-        "regId": "F205",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F205",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "F200"
   },
   {
     "id": "F210",
@@ -12503,10 +11431,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP",
-        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F210"
-        }
+        "descricao": "Código da Situação Tributária referente ao PIS/PASEP, conforme a Tabela indicada no item 4.3.3"
       },
       {
         "posicao": "7",
@@ -12534,10 +11459,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS",
-        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F210"
-        }
+        "descricao": "Código da Situação Tributária referente a COFINS, conforme a Tabela indicada no item 4.3.4"
       },
       {
         "posicao": "10",
@@ -12559,19 +11481,7 @@
         "descricao": "Valor do Crédito sobre o custo orçado a ser utilizado no período da escrituração - COFINS"
       }
     ],
-    "pai": "F200",
-    "referenciadoPor": [
-      {
-        "regId": "F210",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F210",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "F200"
   },
   {
     "id": "F211",
@@ -12652,10 +11562,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F500"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "4",
@@ -12701,10 +11608,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F500"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "9",
@@ -12750,10 +11654,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
-        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
-        "valores-validos": {
-          "datasource": "TABELA_MODELO_DOCUMENTO_98_99"
-        }
+        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1"
       },
       {
         "posicao": "14",
@@ -12762,10 +11663,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_REPRESENTATIVOS_RECEITA"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "15",
@@ -12774,10 +11672,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       },
       {
         "posicao": "16",
@@ -12790,38 +11685,6 @@
     "pai": "F010",
     "filhos": [
       "F509"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "C870",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "C870",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "F500",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F500",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "F550",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F550",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
     ]
   },
   {
@@ -12904,10 +11767,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F510"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "4",
@@ -12952,10 +11812,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F510"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "9",
@@ -13000,10 +11857,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
-        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
-        "valores-validos": {
-          "datasource": "TABELA_MODELO_DOCUMENTO_98_99"
-        }
+        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1"
       },
       {
         "posicao": "14",
@@ -13012,10 +11866,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_REPRESENTATIVOS_RECEITA"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "15",
@@ -13024,10 +11875,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       },
       {
         "posicao": "16",
@@ -13040,38 +11888,6 @@
     "pai": "F010",
     "filhos": [
       "F519"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "C880",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "C880",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "F510",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F510",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "F560",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F560",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
     ]
   },
   {
@@ -13202,10 +12018,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F525"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "9",
@@ -13214,10 +12027,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "0",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F525"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "10",
@@ -13233,35 +12043,10 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       }
     ],
-    "pai": "F010",
-    "referenciadoPor": [
-      {
-        "regId": "1900",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "1900",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      },
-      {
-        "regId": "F525",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      },
-      {
-        "regId": "F525",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "F010"
   },
   {
     "id": "F550",
@@ -13299,10 +12084,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F500"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "4",
@@ -13348,10 +12130,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F500"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "9",
@@ -13397,10 +12176,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
-        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
-        "valores-validos": {
-          "datasource": "TABELA_MODELO_DOCUMENTO_98_99"
-        }
+        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1"
       },
       {
         "posicao": "14",
@@ -13409,10 +12185,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_REPRESENTATIVOS_RECEITA"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "15",
@@ -13421,10 +12194,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       },
       {
         "posicao": "16",
@@ -13519,10 +12289,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST PIS/PASEP",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_F510"
-        }
+        "rotulo": "CST PIS/PASEP"
       },
       {
         "posicao": "4",
@@ -13568,10 +12335,7 @@
         "tipo": "N",
         "tamanho": "2",
         "obrigatorio": "1",
-        "rotulo": "CST COFINS",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_F510"
-        }
+        "rotulo": "CST COFINS"
       },
       {
         "posicao": "9",
@@ -13617,10 +12381,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Modelo",
-        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1",
-        "valores-validos": {
-          "datasource": "TABELA_MODELO_DOCUMENTO_98_99"
-        }
+        "descricao": "Código do modelo do documento fiscal, conforme a Tabela 4.1.1"
       },
       {
         "posicao": "14",
@@ -13629,10 +12390,7 @@
         "tipo": "N",
         "tamanho": "4",
         "obrigatorio": "0",
-        "rotulo": "CFOP",
-        "valores-validos": {
-          "datasource": "TABELA_CFOP_REPRESENTATIVOS_RECEITA"
-        }
+        "rotulo": "CFOP"
       },
       {
         "posicao": "15",
@@ -13641,10 +12399,7 @@
         "tipo": "C",
         "tamanho": "60",
         "obrigatorio": "0",
-        "rotulo": "Conta analítica contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "rotulo": "Conta analítica contábil"
       },
       {
         "posicao": "16",
@@ -13768,10 +12523,7 @@
         "tamanho": "4",
         "obrigatorio": "0",
         "rotulo": "Código da Receita",
-        "descricao": "Código da Receita",
-        "valores-validos": {
-          "datasource": "TABELA_COD_REC_F600"
-        }
+        "descricao": "Código da Receita"
       },
       {
         "posicao": "7",
@@ -13825,14 +12577,7 @@
         }
       }
     ],
-    "pai": "F010",
-    "referenciadoPor": [
-      {
-        "regId": "F600",
-        "campoId": "TABELA_COD_REC",
-        "campoRef": "COD_REC"
-      }
-    ]
+    "pai": "F010"
   },
   {
     "id": "F700",
@@ -13990,10 +12735,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Código do Crédito Transferido",
-        "descricao": "Código do crédito transferido, conforme Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código do crédito transferido, conforme Tabela 4.3.6"
       },
       {
         "posicao": "7",
@@ -14117,10 +12859,7 @@
         "tamanho": "14",
         "obrigatorio": "1",
         "rotulo": "CNPJ",
-        "descricao": "Número de inscrição do estabelecimento no CNPJ",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "descricao": "Número de inscrição do estabelecimento no CNPJ"
       },
       {
         "posicao": "3",
@@ -14183,10 +12922,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código de Situação Tributária",
-        "descricao": "Código de Situação Tributária referente à Receita informada no Campo 02",
-        "valores-validos": {
-          "datasource": "TABELA_CST_I100"
-        }
+        "descricao": "Código de Situação Tributária referente à Receita informada no Campo 02"
       },
       {
         "posicao": "4",
@@ -14276,13 +13012,6 @@
     "filhos": [
       "I199",
       "I200"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "I100",
-        "campoId": "TABELA_CST",
-        "campoRef": "CST"
-      }
     ]
   },
   {
@@ -14366,10 +13095,7 @@
         "tamanho": "5",
         "obrigatorio": "1",
         "rotulo": "Código do Tipo de Detalhamento",
-        "descricao": "Código do Tipo de Detalhamento",
-        "valores-validos": {
-          "datasource": "TABELA_RECEITAS_DEDUCOES"
-        }
+        "descricao": "Código do Tipo de Detalhamento"
       },
       {
         "posicao": "4",
@@ -14387,10 +13113,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Código da conta contábil",
-        "descricao": "Código da conta contábil referente ao valor informado no campo 04",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta contábil referente ao valor informado no campo 04"
       },
       {
         "posicao": "6",
@@ -14477,10 +13200,7 @@
         "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Código do Complemento",
-        "descricao": "Código do Complemento",
-        "valores-validos": {
-          "datasource": "TABELA_RECEITAS_DEDUCOES_ANALITICA"
-        }
+        "descricao": "Código do Complemento"
       },
       {
         "posicao": "3",
@@ -14498,10 +13218,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil",
-        "descricao": "Conta Contábil",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Conta Contábil"
       },
       {
         "posicao": "5",
@@ -14660,10 +13377,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo de Crédito",
-        "descricao": "Código de Tipo de Crédito apurado no período, conforme a Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código de Tipo de Crédito apurado no período, conforme a Tabela 4.3.6"
       },
       {
         "posicao": "3",
@@ -14822,10 +13536,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
-        "descricao": "Código da Natureza da Base de Cálculo do Crédito apurado no período, conforme a Tabela 4.3.7",
-        "valores-validos": {
-          "datasource": "TABELA_BC_CRED"
-        }
+        "descricao": "Código da Natureza da Base de Cálculo do Crédito apurado no período, conforme a Tabela 4.3.7"
       },
       {
         "posicao": "3",
@@ -14834,10 +13545,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST do PIS/PASEP, Vinculado ao Tipo de Crédito Escriturado em M100",
-        "descricao": "Código da Situação Tributária referente ao crédito de PIS/PASEP (Tabela 4.3.3) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos)",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_M105"
-        }
+        "descricao": "Código da Situação Tributária referente ao crédito de PIS/PASEP (Tabela 4.3.3) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos)"
       },
       {
         "posicao": "4",
@@ -14903,14 +13611,7 @@
         "descricao": "Descrição do crédito"
       }
     ],
-    "pai": "M100",
-    "referenciadoPor": [
-      {
-        "regId": "M105",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      }
-    ]
+    "pai": "M100"
   },
   {
     "id": "M110",
@@ -14959,10 +13660,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
-        "valores-validos": {
-          "datasource": "TABELA_AJ_CONTRIB_CRED"
-        }
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8"
       },
       {
         "posicao": "5",
@@ -15030,10 +13728,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
-        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_M115"
-        }
+        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro"
       },
       {
         "posicao": "4",
@@ -15079,10 +13774,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
-        "descricao": "Código da conta contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta contábil debitada/creditada"
       },
       {
         "posicao": "9",
@@ -15094,14 +13786,7 @@
         "rotulo": "Informação Complementar"
       }
     ],
-    "pai": "M110",
-    "referenciadoPor": [
-      {
-        "regId": "M115",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      }
-    ]
+    "pai": "M110"
   },
   {
     "id": "M200",
@@ -15276,10 +13961,7 @@
         "tamanho": "6",
         "obrigatorio": "1",
         "descricao": "Informar o Código da Receita referente à contribuição a recolher, detalhada neste registro",
-        "rotulo": "Código da Receita",
-        "valores-validos": {
-          "datasource": "TABELA_CONTRIBUICOES_PIS"
-        }
+        "rotulo": "Código da Receita"
       },
       {
         "posicao": "4",
@@ -15319,10 +14001,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código da Contribuição Social Apurada",
-        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5",
-        "valores-validos": {
-          "datasource": "TABELA_CS_APUR"
-        }
+        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5"
       },
       {
         "posicao": "3",
@@ -15549,10 +14228,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
-        "valores-validos": {
-          "datasource": "TABELA_AJ_CONTRIB_CRED"
-        }
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8"
       },
       {
         "posicao": "5",
@@ -15620,10 +14296,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
-        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_M225"
-        }
+        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro"
       },
       {
         "posicao": "4",
@@ -15669,10 +14342,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
-        "descricao": "Código da conta contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta contábil debitada/creditada"
       },
       {
         "posicao": "9",
@@ -15684,14 +14354,7 @@
         "rotulo": "Informação Complementar"
       }
     ],
-    "pai": "M220",
-    "referenciadoPor": [
-      {
-        "regId": "M225",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      }
-    ]
+    "pai": "M220"
   },
   {
     "id": "M230",
@@ -15764,10 +14427,7 @@
         "tamanho": "3",
         "obrigatorio": "0",
         "rotulo": "Tipo de Crédito Diferido",
-        "descricao": "Código de Tipo de Crédito diferido no período, conforme a Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código de Tipo de Crédito diferido no período, conforme a Tabela 4.3.6"
       }
     ],
     "pai": "M210"
@@ -15798,10 +14458,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código da Contribuição Social Diferida",
-        "descricao": "Código da contribuição  social diferida em períodos anteriores , conforme a Tabela 4.3.5",
-        "valores-validos": {
-          "datasource": "TABELA_CS_APUR"
-        }
+        "descricao": "Código da contribuição  social diferida em períodos anteriores , conforme a Tabela 4.3.5"
       },
       {
         "posicao": "3",
@@ -15957,10 +14614,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código de Situação Tributária",
-        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.3",
-        "valores-validos": {
-          "datasource": "TABELA_CST_PIS_M400"
-        }
+        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.3"
       },
       {
         "posicao": "3",
@@ -15978,10 +14632,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "5",
@@ -15995,13 +14646,6 @@
     "pai": "M001",
     "filhos": [
       "M410"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "M400",
-        "campoId": "TABELA_CST_PIS",
-        "campoRef": "CST_PIS"
-      }
     ]
   },
   {
@@ -16030,10 +14674,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Natureza da Receita",
-        "descricao": "<html>Natureza da Receita, conforme código constante nas Tabelas de Detalhamento da Natureza da Receita por Situação Tributária abaixo:<br/>- Tabela 4.3.10: Produtos Sujeitos à Incidência Monofásica da Contribuição Social - Alíquotas Diferenciadas (CST 04);<br/>- Tabela 4.3.12: Produtos Sujeitos à Substituição Tributária da Contribuição Social (CST 05);<br/>- Tabela 4.3.13: Produtos Sujeitos à Alíquota Zero da Contribuição Social (CST 06);<br/>- Tabela 4.3.14: Operações com Isenção da Contribuição Social (CST 07);<br/>- Tabela 4.3.15: Operações sem Incidência da Contribuição Social (CST 08);<br/>- Tabela 4.3.16: Operações com Suspensão da Contribuição Social (CST 09).</html>",
-        "valores-validos": {
-          "datasource": "TABELA_NCM_ALIQ_410_810"
-        }
+        "descricao": "<html>Natureza da Receita, conforme código constante nas Tabelas de Detalhamento da Natureza da Receita por Situação Tributária abaixo:<br/>- Tabela 4.3.10: Produtos Sujeitos à Incidência Monofásica da Contribuição Social - Alíquotas Diferenciadas (CST 04);<br/>- Tabela 4.3.12: Produtos Sujeitos à Substituição Tributária da Contribuição Social (CST 05);<br/>- Tabela 4.3.13: Produtos Sujeitos à Alíquota Zero da Contribuição Social (CST 06);<br/>- Tabela 4.3.14: Operações com Isenção da Contribuição Social (CST 07);<br/>- Tabela 4.3.15: Operações sem Incidência da Contribuição Social (CST 08);<br/>- Tabela 4.3.16: Operações com Suspensão da Contribuição Social (CST 09).</html>"
       },
       {
         "posicao": "3",
@@ -16051,10 +14692,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "5",
@@ -16093,10 +14731,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Tipo de Crédito",
-        "descricao": "Código de Tipo de Crédito apurado no período, conforme a Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código de Tipo de Crédito apurado no período, conforme a Tabela 4.3.6"
       },
       {
         "posicao": "3",
@@ -16255,10 +14890,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Base de Cálculo do Crédito",
-        "descricao": "Código da Natureza da Base de Cálculo do Crédito apurado no período, conforme a Tabela 4.3.7",
-        "valores-validos": {
-          "datasource": "TABELA_BC_CRED"
-        }
+        "descricao": "Código da Natureza da Base de Cálculo do Crédito apurado no período, conforme a Tabela 4.3.7"
       },
       {
         "posicao": "3",
@@ -16267,10 +14899,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "CST da COFINS, Vinculado ao Tipo de Crédito Escriturado em M500",
-        "descricao": "Código da Situação Tributária referente ao crédito de COFINS (Tabela 4.3.4) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos)",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_M505"
-        }
+        "descricao": "Código da Situação Tributária referente ao crédito de COFINS (Tabela 4.3.4) - Códigos 50 a 56 (créditos Básicos) e de 60 a 66 (Créditos Presumidos)"
       },
       {
         "posicao": "4",
@@ -16336,14 +14965,7 @@
         "descricao": "Descrição do crédito"
       }
     ],
-    "pai": "M500",
-    "referenciadoPor": [
-      {
-        "regId": "M505",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "M500"
   },
   {
     "id": "M510",
@@ -16392,10 +15014,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
-        "valores-validos": {
-          "datasource": "TABELA_AJ_CONTRIB_CRED"
-        }
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8"
       },
       {
         "posicao": "5",
@@ -16463,10 +15082,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
-        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_M515"
-        }
+        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro"
       },
       {
         "posicao": "4",
@@ -16512,10 +15128,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
-        "descricao": "Código da conta contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta contábil debitada/creditada"
       },
       {
         "posicao": "9",
@@ -16527,14 +15140,7 @@
         "rotulo": "Informação Complementar"
       }
     ],
-    "pai": "M510",
-    "referenciadoPor": [
-      {
-        "regId": "M515",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "M510"
   },
   {
     "id": "M600",
@@ -16709,10 +15315,7 @@
         "tamanho": "6",
         "obrigatorio": "1",
         "descricao": "Informar o Código da Receita referente à contribuição a recolher, detalhada neste registro",
-        "rotulo": "Código da Receita",
-        "valores-validos": {
-          "datasource": "TABELA_CONTRIBUICOES_COFINS"
-        }
+        "rotulo": "Código da Receita"
       },
       {
         "posicao": "4",
@@ -16752,10 +15355,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código da Contribuição Social Apurada",
-        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5",
-        "valores-validos": {
-          "datasource": "TABELA_CS_APUR"
-        }
+        "descricao": "Código da contribuição social apurada no período, conforme a Tabela 4.3.5"
       },
       {
         "posicao": "3",
@@ -16982,10 +15582,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código do Ajuste",
-        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8",
-        "valores-validos": {
-          "datasource": "TABELA_AJ_CONTRIB_CRED"
-        }
+        "descricao": "Código do ajuste, conforme a Tabela indicada no item 4.3.8"
       },
       {
         "posicao": "5",
@@ -17053,10 +15650,7 @@
         "tamanho": "2",
         "obrigatorio": "0",
         "rotulo": "Código de Situação Tributária referente à operação detalhada",
-        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_M625"
-        }
+        "descricao": "Código de Situação Tributária referente à operação detalhada neste registro"
       },
       {
         "posicao": "4",
@@ -17102,10 +15696,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
-        "descricao": "Código da conta contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta contábil debitada/creditada"
       },
       {
         "posicao": "9",
@@ -17117,14 +15708,7 @@
         "rotulo": "Informação Complementar"
       }
     ],
-    "pai": "M620",
-    "referenciadoPor": [
-      {
-        "regId": "M625",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
-    ]
+    "pai": "M620"
   },
   {
     "id": "M630",
@@ -17197,10 +15781,7 @@
         "tamanho": "3",
         "obrigatorio": "0",
         "rotulo": "Tipo de Crédito Diferido",
-        "descricao": "Código de Tipo de Crédito diferido no período, conforme a Tabela 4.3.6",
-        "valores-validos": {
-          "datasource": "TABELA_TIPO_CRED"
-        }
+        "descricao": "Código de Tipo de Crédito diferido no período, conforme a Tabela 4.3.6"
       }
     ],
     "pai": "M610"
@@ -17231,10 +15812,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código da Contribuição Social Diferida",
-        "descricao": "Código da contribuição  social diferida em períodos anteriores , conforme a Tabela 4.3.5",
-        "valores-validos": {
-          "datasource": "TABELA_CS_APUR"
-        }
+        "descricao": "Código da contribuição  social diferida em períodos anteriores , conforme a Tabela 4.3.5"
       },
       {
         "posicao": "3",
@@ -17322,10 +15900,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Código de Situação Tributária",
-        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.4",
-        "valores-validos": {
-          "datasource": "TABELA_CST_COFINS_M800"
-        }
+        "descricao": "Código de Situação Tributária - CST das demais receitas auferidas no período, sem incidência da contribuição, ou sem contribuição apurada a pagar, conforme a Tabela 4.3.4"
       },
       {
         "posicao": "4",
@@ -17343,10 +15918,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "6",
@@ -17360,13 +15932,6 @@
     "pai": "M001",
     "filhos": [
       "M810"
-    ],
-    "referenciadoPor": [
-      {
-        "regId": "M800",
-        "campoId": "TABELA_CST_COFINS",
-        "campoRef": "CST_COFINS"
-      }
     ]
   },
   {
@@ -17395,10 +15960,7 @@
         "tamanho": "3",
         "obrigatorio": "1",
         "rotulo": "Natureza da Receita",
-        "descricao": "<html>Natureza da Receita, conforme relação constante nas Tabelas de Detalhamento da Natureza da Receita por Situação Tributária abaixo:<br/>- Tabela 4.3.10: Produtos Sujeitos à Incidência Monofásica da Contribuição Social - Alíquotas Diferenciadas (CST 04);<br/>- Tabela 4.3.12: Produtos Sujeitos à Substituição Tributária da Contribuição Social (CST 05);<br/>- Tabela 4.3.13: Produtos Sujeitos à Alíquota Zero da Contribuição Social (CST 06);<br/>- Tabela 4.3.14: Operações com Isenção da Contribuição Social (CST 07);<br/>- Tabela 4.3.15: Operações sem Incidência da Contribuição Social (CST 08);<br/>- Tabela 4.3.16: Operações com Suspensão da Contribuição Social (CST 09).</html>",
-        "valores-validos": {
-          "datasource": "TABELA_NCM_ALIQ_410_810"
-        }
+        "descricao": "<html>Natureza da Receita, conforme relação constante nas Tabelas de Detalhamento da Natureza da Receita por Situação Tributária abaixo:<br/>- Tabela 4.3.10: Produtos Sujeitos à Incidência Monofásica da Contribuição Social - Alíquotas Diferenciadas (CST 04);<br/>- Tabela 4.3.12: Produtos Sujeitos à Substituição Tributária da Contribuição Social (CST 05);<br/>- Tabela 4.3.13: Produtos Sujeitos à Alíquota Zero da Contribuição Social (CST 06);<br/>- Tabela 4.3.14: Operações com Isenção da Contribuição Social (CST 07);<br/>- Tabela 4.3.15: Operações sem Incidência da Contribuição Social (CST 08);<br/>- Tabela 4.3.16: Operações com Suspensão da Contribuição Social (CST 09).</html>"
       },
       {
         "posicao": "3",
@@ -17416,10 +15978,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil",
-        "descricao": "Código da conta analítica contábil debitada/creditada",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil debitada/creditada"
       },
       {
         "posicao": "5",
@@ -17525,10 +16084,7 @@
         "tamanho": "014",
         "tamanho-fixo": "true",
         "obrigatorio": "1",
-        "rotulo": "CNPJ (Informe/Selecione o CNPJ do estabelecimento a que se refere a receita bruta auferida)",
-        "valores-validos": {
-          "datasource": "CNPJ_0140"
-        }
+        "rotulo": "CNPJ (Informe/Selecione o CNPJ do estabelecimento a que se refere a receita bruta auferida)"
       }
     ],
     "pai": "P001",
@@ -17589,10 +16145,7 @@
         "tamanho": "8",
         "obrigatorio": "1",
         "rotulo": "Código indicador correspondente à atividade sujeita a incidência da Contribuição Previdenciária sobre a Receita Bruta",
-        "descricao": "Código indicador correspondente à atividade sujeita a incidência da Contribuição Previdenciária sobre a Receita Bruta",
-        "valores-validos": {
-          "datasource": "TABELA_COD_ATIVIDADE"
-        }
+        "descricao": "Código indicador correspondente à atividade sujeita a incidência da Contribuição Previdenciária sobre a Receita Bruta"
       },
       {
         "posicao": "6",
@@ -17647,10 +16200,7 @@
         "tamanho": "60",
         "obrigatorio": "0",
         "rotulo": "Código da conta analítica contábil referente à Contribuição Previdenciária sobre o valor da Receita Bruta",
-        "descricao": "Código da conta analítica contábil referente à Contribuição Previdenciária sobre o valor da Receita Bruta",
-        "valores-validos": {
-          "datasource": "COD_CTA_0500"
-        }
+        "descricao": "Código da conta analítica contábil referente à Contribuição Previdenciária sobre o valor da Receita Bruta"
       },
       {
         "posicao": "12",
@@ -17706,10 +16256,7 @@
         "tamanho": "8",
         "obrigatorio": "0",
         "descricao": "Código do tipo de detalhamento",
-        "rotulo": "Código do tipo de detalhamento",
-        "valores-validos": {
-          "datasource": "TABELA_COD_DETALHAMENTO"
-        }
+        "rotulo": "Código do tipo de detalhamento"
       },
       {
         "posicao": "4",
@@ -17845,10 +16392,7 @@
         "tamanho": "6",
         "obrigatorio": "1",
         "rotulo": "Código de Receita referente à Contribuição Previdenciária, conforme informado em DCTF",
-        "descricao": "Código de Receita referente à Contribuição Previdenciária, conforme informado em DCTF",
-        "valores-validos": {
-          "datasource": "TABELA_COD_REC_P200"
-        }
+        "descricao": "Código de Receita referente à Contribuição Previdenciária, conforme informado em DCTF"
       }
     ],
     "pai": "P001",
@@ -17904,10 +16448,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "descricao": "Código do ajuste",
-        "rotulo": "Código do ajuste",
-        "valores-validos": {
-          "datasource": "TABELA_AJ_CONTRIB_CRED"
-        }
+        "rotulo": "Código do ajuste"
       },
       {
         "posicao": "5",

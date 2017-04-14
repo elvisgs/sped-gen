@@ -9,9 +9,13 @@ require('./lib/custom-helpers').registerCustomHelpers(handlebars);
 
 const LAYOUT_FISCAL = 'fiscal';
 const LAYOUT_CONTRIB = 'contrib';
+const versoes_fiscal = ['009', '010', '011'];
+const versoes_contrib = ['002', '003'];
+const versoes = { FISCAL: versoes_fiscal, CONTRIB: versoes_contrib };
 
 const DEFAULT_OPTIONS = {
   layoutSped: LAYOUT_FISCAL,
+  versaoLayout: null,
   template: null,
   templateFile: null,
   fileName: null,
@@ -33,7 +37,14 @@ const generate = options => {
     opts.fileName = opts.fileName(opts);
   }
 
-  const metadata = require(`./meta/metadados-${opts.layoutSped}`);
+  validateVersion(opts);
+
+  if (opts.versaoLayout == null) {
+    const versions = getVersions(opts.layoutSped);
+    opts.versaoLayout = versions[versions.length - 1]
+  }
+
+  const metadata = require(`./meta/metadados-${opts.layoutSped}-v${opts.versaoLayout}`);
 
   const template = opts.template != null ? opts.template : fs.readFileSync(opts.templateFile).toString();
   const compiledTemplate = handlebars.compile(template);
@@ -79,12 +90,29 @@ const validateOptions = opts => {
   }
 };
 
+const validateVersion = opts => {
+  const layout = opts.layoutSped;
+  const version = opts.versaoLayout;
+
+  if (version == null) return;
+
+  const validVersions = getVersions(layout);
+
+  if (validVersions.indexOf(version) === -1) {
+    const msg = `Versão '${version}' inválida para o layout '${layout}'. Versões válidas: ${validVersions.join(', ')}`;
+    throw new Error(msg);
+  }
+};
+
+const getVersions = layout => versoes[layout.toUpperCase()];
+
 const registerHelper = (name, func) => {
   handlebars.registerHelper(name, func);
 };
 
 module.exports = generate;
 module.exports.layouts = { FISCAL: LAYOUT_FISCAL, CONTRIB: LAYOUT_CONTRIB };
+module.exports.versoes = versoes;
 module.exports.utils = spedUtils;
 module.exports.DEFAULT_OPTIONS = DEFAULT_OPTIONS;
 module.exports.registerHelper = registerHelper;
