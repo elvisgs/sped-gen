@@ -3,6 +3,21 @@
 [![Build Status](https://travis-ci.org/elvisgs/sped-gen.svg?branch=master)](https://travis-ci.org/elvisgs/sped-gen)
 > Gerador de código baseado em metadados do SPED - Sistema Público de Escrituração Digital.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Conteúdo**
+
+- [Instalação](#instala%C3%A7%C3%A3o)
+- [Uso](#uso)
+  - [Opções](#op%C3%A7%C3%B5es)
+- [Formato dos metadados](#formato-dos-metadados)
+  - [Campos adicionais incluídos por padrão nos metadados](#campos-adicionais-inclu%C3%ADdos-por-padr%C3%A3o-nos-metadados)
+- [Funções e constantes utilitárias](#fun%C3%A7%C3%B5es-e-constantes-utilit%C3%A1rias)
+  - [No módulo](#no-m%C3%B3dulo)
+  - [Nos templates (helpers do handlebars)](#nos-templates-helpers-do-handlebars)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Instalação
 ```shell
 $ npm install sped-gen
@@ -103,6 +118,3 @@ spedGen.registerHelper // registra um helper do handlebars
 - **ucase**(*String*): Converte a string para uppercase
 
 A utilização de alguns desses helpers pode ser vista nos exemplos.
-
-## TODO
-- Permitir outras template engines
