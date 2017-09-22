@@ -9,7 +9,9 @@
     "test:watch": "nodemon -w . -d 0 --exec npm test",
     "lint": "eslint .",
     "toc": "doctoc README.md --title **Conteúdo**",
-    "prepublish": "npm test && npm run lint",
+    "precommit": "npm test && npm run lint",
+    "prepush": "npm test && npm run lint",
+    "commitmsg": "validate-commit-msg",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
@@ -48,7 +50,8 @@
     "semantic-release": "^8.0.3",
     "should": "^10.0.0",
     "should-sinon": "0.0.5",
-    "sinon": "^1.17.4"
+    "sinon": "^1.17.4",
+    "validate-commit-msg": "^2.14.0"
   },
   "config": {
     "commitizen": {
