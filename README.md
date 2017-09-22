@@ -2,6 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/sped-gen.svg)](https://www.npmjs.com/package/sped-gen)
 [![Build Status](https://travis-ci.org/elvisgs/sped-gen.svg?branch=master)](https://travis-ci.org/elvisgs/sped-gen)
 [![Codecov](https://img.shields.io/codecov/c/github/elvisgs/sped-gen.svg)](https://codecov.io/gh/elvisgs/sped-gen)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 > Gerador de código baseado em metadados do SPED - Sistema Público de Escrituração Digital.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
