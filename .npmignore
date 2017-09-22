@@ -1,5 +1,7 @@
 examples/
 test/
+.nyc_output/
+coverage/
 .editorconfig
 .eslintrc.json
 .travis.yml

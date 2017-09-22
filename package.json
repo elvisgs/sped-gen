@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "mocha",
+    "test": "nyc mocha",
     "test:watch": "nodemon -w . -d 0 --exec npm test",
-    "lint": "eslint .",
+    "coverage": "nyc report --reporter=text-lcov | codecov",
+    "lint": "eslint src",
     "toc": "doctoc README.md --title **Conteúdo**",
     "precommit": "npm test && npm run lint",
     "prepush": "npm test && npm run lint",
@@ -37,6 +38,7 @@
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
+    "codecov": "^2.3.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
     "doctoc": "^1.3.0",
@@ -45,6 +47,7 @@
     "mocha": "^2.5.3",
     "mocha-sinon": "^1.1.5",
     "nodemon": "^1.9.2",
+    "nyc": "^11.2.1",
     "rewire": "^2.5.2",
     "rimraf": "^2.6.2",
     "semantic-release": "^8.0.3",
@@ -57,5 +60,13 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 90,
+    "statements": 90,
+    "functions": 70,
+    "branches": 90
   }
 }
