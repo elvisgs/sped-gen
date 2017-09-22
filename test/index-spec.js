@@ -34,12 +34,18 @@ describe('Sped Gen', function () {
     spedGen.should.have.property('utils').which.is.an.Object();
   });
 
-  it('deve exportar default options', function () {
-    spedGen.should.have.property('DEFAULT_OPTIONS').which.is.an.Object();
-  });
-
   it('deve exportar função para registrar helpers do handlebars', function() {
     spedGen.should.have.property('registerHelper').which.is.a.Function();
+  });
+
+  describe('Default options', () => {
+    it('deve ser exportado pelo modulo', function () {
+      spedGen.should.have.property('DEFAULT_OPTIONS').which.is.an.Object();
+    });
+
+    it('deve ter filter que retorna true', () => {
+      spedGen.DEFAULT_OPTIONS.filter().should.be.true();
+    });
   });
 
   describe('Função principal', function () {

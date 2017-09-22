@@ -27,7 +27,7 @@ const DEFAULT_OPTIONS = {
   mapper: reg => reg,
   writer: null,
   aditionalFields: {},
-  helpers: {}
+  helpers: null
 };
 
 const generate = options => {
@@ -57,9 +57,8 @@ const generate = options => {
     opts.writer = { write };
   }
 
-  if (opts.helpers) {
-    Object.keys(opts.helpers).forEach(name => registerHelper(name, opts.helpers[name]));
-  }
+  opts.helpers = opts.helpers || {};
+  Object.keys(opts.helpers).forEach(name => registerHelper(name, opts.helpers[name]));
 
   metadata.filter(opts.filter).forEach(registro => {
     registro.bloco = registro.id[0];
@@ -81,9 +80,7 @@ const generate = options => {
     }
   });
 
-  if (opts.helpers) {
-    Object.keys(opts.helpers).forEach(name => handlebars.unregisterHelper(name));
-  }
+  Object.keys(opts.helpers).forEach(name => handlebars.unregisterHelper(name));
 };
 
 const validateOptions = opts => {

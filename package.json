@@ -7,7 +7,8 @@
     "commit": "git-cz",
     "test": "nyc mocha",
     "test:watch": "nodemon -w . -d 0 --exec npm test",
-    "coverage": "nyc report --reporter=lcov && codecov",
+    "coverage": "nyc report --reporter=lcov",
+    "postcoverage": "codecov",
     "lint": "eslint src",
     "toc": "doctoc README.md --title **Conteúdo**",
     "precommit": "npm test && npm run lint",
@@ -64,9 +65,9 @@
   "nyc": {
     "check-coverage": true,
     "per-file": true,
-    "lines": 90,
-    "statements": 90,
-    "functions": 70,
-    "branches": 90
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100
   }
 }

@@ -41,6 +41,18 @@ describe('Custom Handlebars Helpers', function () {
     hbs.helpers.ucase.should.be.a.Function();
   });
 
+  it('deve registrar helper addOne', function () {
+    hbs.helpers.addOne.should.be.a.Function();
+  });
+
+  it('deve registrar helper lcase', function () {
+    hbs.helpers.lcase.should.be.a.Function();
+  });
+
+  it('deve registrar helper ucase', function () {
+    hbs.helpers.ucase.should.be.a.Function();
+  });
+
   describe('camelize', function () {
     it('deve converter string para camelcase', function () {
       hbs.helpers.camelize('foo_bar_baz').should.be.equal('fooBarBaz');
@@ -96,6 +108,27 @@ describe('Custom Handlebars Helpers', function () {
     it('deve converter string para pascal case', function () {
       hbs.helpers.pascalCase('um_campo').should.be.equal('UmCampo');
       hbs.helpers.pascalCase('UM_CAMPO').should.be.equal('UmCampo');
+    });
+  });
+
+  describe('addOne', function () {
+    it('deve incrementar em 1', function () {
+      hbs.helpers.addOne(9).should.be.equal(10);
+      hbs.helpers.addOne(-2).should.be.equal(-1);
+    });
+  });
+
+  describe('lcase', function () {
+    it('deve converter string para lower case', function () {
+      hbs.helpers.lcase('FoO').should.be.equal('foo');
+      hbs.helpers.lcase('BAR').should.be.equal('bar');
+    });
+  });
+
+  describe('ucase', function () {
+    it('deve converter string para upper case', function () {
+      hbs.helpers.ucase('foO').should.be.equal('FOO');
+      hbs.helpers.ucase('bar').should.be.equal('BAR');
     });
   });
 });
