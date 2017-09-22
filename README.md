@@ -1,6 +1,7 @@
 # SPED-Gen
-[![npm version](https://badge.fury.io/js/sped-gen.svg)](https://badge.fury.io/js/sped-gen)
+[![npm version](https://img.shields.io/npm/v/sped-gen.svg)](https://www.npmjs.com/package/sped-gen)
 [![Build Status](https://travis-ci.org/elvisgs/sped-gen.svg?branch=master)](https://travis-ci.org/elvisgs/sped-gen)
+[![Codecov](https://img.shields.io/codecov/c/github/elvisgs/sped-gen.svg)](https://codecov.io/gh/elvisgs/sped-gen)
 > Gerador de código baseado em metadados do SPED - Sistema Público de Escrituração Digital.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
