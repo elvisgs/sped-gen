@@ -7,7 +7,7 @@
     "commit": "git-cz",
     "test": "nyc mocha",
     "test:watch": "nodemon -w . -d 0 --exec npm test",
-    "coverage": "nyc report --reporter=text-lcov && codecov",
+    "coverage": "nyc report --reporter=lcov && codecov",
     "lint": "eslint src",
     "toc": "doctoc README.md --title **Conteúdo**",
     "precommit": "npm test && npm run lint",
