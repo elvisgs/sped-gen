@@ -12,7 +12,7 @@ const LAYOUT_CONTRIB = 'contrib';
 
 const versoes = {
   FISCAL: ['009', '010', '011'],
-  CONTRIB: ['002', '003']
+  CONTRIB: ['002', '003', '004', '005']
 };
 
 const DEFAULT_OPTIONS = {
