@@ -511,7 +511,7 @@
         "id": "REC_BRU_NCUM_TRIB_MI",
         "descricao": "Receita Bruta Não-Cumulativa - Tributada no Mercado Interno",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Receita Bruta Não-Cumulativa - Tributada no Mercado Interno"
       },
@@ -520,7 +520,7 @@
         "id": "REC_BRU_NCUM_NT_MI",
         "descricao": "Receita Bruta Não-Cumulativa - Não Tributada no Mercado Interno",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Receita Bruta Não-Cumulativa - Não Tributada no Mercado Interno"
       },
@@ -529,7 +529,7 @@
         "id": "REC_BRU_NCUM_EXP",
         "descricao": "Receita Bruta Não Cumulativa - Exportação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Receita Bruta Não-Cumulativa - Exportação"
       },
@@ -538,7 +538,7 @@
         "id": "REC_BRU_CUM",
         "descricao": "Receita Bruta Cumulativa",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Receita Bruta Cumulativa"
       },
@@ -547,7 +547,7 @@
         "id": "REC_BRU_TOTAL",
         "descricao": "Receita Bruta Total",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Receita Bruta Total"
       }
@@ -556,11 +556,11 @@
   },
   {
     "id": "0120",
-    "descricao": "Identificação de Períodos Dispensados da Escrituração Fiscal Digital das Contribuições",
+    "descricao": "Identificação de EFD-Contribuições Sem Dados a Escriturar",
     "nivel": "2",
     "ocorrencia": "2",
-    "obrigatorio": "2",
-    "rotulo": "Identificação de Períodos Dispensados da Escrituração Fiscal Digital das Contribuições",
+    "obrigatorio": "0",
+    "rotulo": "Identificação de EFD-Contribuições Sem Dados a Escriturar",
     "campos": [
       {
         "posicao": "1",
@@ -586,10 +586,10 @@
       {
         "posicao": "3",
         "id": "INF_COMP",
-        "descricao": "Informação complementar do registro",
+        "descricao": "Informação complementar do registro, definidor da situação em que a pessoa jurídica se enquadra no período, para estar procedendo à escrituração sem dados, nos Blocos A, C, D, F e/ou I",
         "tipo": "C",
         "tamanho": "90",
-        "obrigatorio": "0",
+        "obrigatorio": "1",
         "rotulo": "Informação complementar"
       }
     ],
@@ -1054,7 +1054,7 @@
         "descricao": "Alíquota de ICMS aplicável ao item nas operações internas",
         "tipo": "N",
         "tamanho": "6",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Alíquota do ICMS"
       }
@@ -1355,7 +1355,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica/grupo de contas",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "1",
         "rotulo": "Código"
       },
@@ -1373,7 +1373,7 @@
         "id": "COD_CTA_REF",
         "descricao": "Código da conta correlacionada no Plano de Contas Referenciado, publicado pela RFB",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta relacionada no Plano de Contas Referenciado da RFB"
       },
@@ -1423,7 +1423,7 @@
         "id": "COD_CCUS",
         "descricao": "Código do centro de custos",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "1",
         "rotulo": "Código"
       },
@@ -1565,10 +1565,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Ação Judicial",
-        "descricao": "Indicador da Natureza da Ação Judicial, impetrada na Justiça Federal:01 - Decisão Judicial Transitada em Julgado, a favor da Pessoa Jurídica.02 - Decisão Judicial Não Transitada em Julgado, a favor da Pessoa Jurídica.03 - Decisão Judicial oriunda de Liminar em Mandado de Segurança.04 - Decisão Judicial oriunda de Liminar em Medida Cautelar.05 - Decisão Judicial oriunda de Antecipação de Tutela. 06 - Decisão Judicial Vinculada a Depósito Administrativo ou Judicial em Montante Integral.07 - Medida Judicial em que a Pessoa Jurídica não é o autor.08 - Sumula Vinculante aprovada pelo STF99 - Outros",
-        "valores-validos": {
-          "valores": "01=Decisão Judicial Transitada em Julgado, a favor da Pessoa Jurídica;02=Decisão Judicial Não Transitada em Julgado, a favor da Pessoa Jurídica;03=Decisão Judicial oriunda de Liminar em Mandado de Segurança;04=Decisão Judicial oriunda de Liminar em Medida Cautelar;05=Decisão Judicial oriunda de Antecipação de Tutela;06=Decisão Judicial Vinculada a Depósito Administrativo ou Judicial em Montante Integral;07=Medida Judicial em que a Pessoa Jurídica não é o autor;08=Sumula Vinculante aprovada pelo STF;99=Outros"
-        }
+        "descricao": "Indicador da Natureza da Ação Judicial, impetrada na Justiça Federal"
       },
       {
         "posicao": "6",
@@ -1626,10 +1623,7 @@
         "tamanho": "2",
         "obrigatorio": "1",
         "rotulo": "Natureza da Ação",
-        "descricao": "Indicador da Natureza da Ação, decorrente de Processo Administrativo na Secretaria da Receita Federal do Brasil:01 -  Processo Administrativo de Consulta;02 - Despacho Decisório;03 - Ato Declaratório Executivo;04 - Ato Declaratório Interpretativo;05 - Decisão Administrativa de DRJ ou do CARF;06 - Auto de Infração;99 - Outros",
-        "valores-validos": {
-          "valores": "01= Processo Administrativo de Consulta;02=Despacho Decisório;03=Ato Declaratório Executivo;04=Ato Declaratório Interpretativo;05=Decisão Administrativa de DRJ ou do CARF;06=Auto de Infração;99=Outros"
-        }
+        "descricao": "Indicador da Natureza da Ação, decorrente de Processo Administrativo na Secretaria da Receita Federal do Brasil"
       },
       {
         "posicao": "4",
@@ -2439,7 +2433,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil representativa da receita recebida",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       }
@@ -2798,7 +2792,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total do documento",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total do Documento"
       },
@@ -2819,7 +2813,7 @@
         "id": "VL_DESC",
         "descricao": "Valor total do desconto",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor total do desconto"
       },
@@ -2828,7 +2822,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de cálculo do PIS/PASEP"
       },
@@ -2837,7 +2831,7 @@
         "id": "VL_PIS",
         "descricao": "Valor total do PIS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -2846,7 +2840,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de cálculo do COFINS"
       },
@@ -2855,7 +2849,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor total da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da COFINS"
       },
@@ -2864,7 +2858,7 @@
         "id": "VL_PIS_RET",
         "descricao": "Valor total do PIS retido na fonte",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP retido na fonte"
       },
@@ -2873,7 +2867,7 @@
         "id": "VL_COFINS_RET",
         "descricao": "Valor total da COFINS retido na fonte",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS retida na fonte"
       },
@@ -2882,7 +2876,7 @@
         "id": "VL_ISS",
         "descricao": "Valor do ISS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ISS"
       }
@@ -3004,7 +2998,7 @@
         "id": "VL_TOT_SERV",
         "descricao": "Valor total do serviço, prestado por pessoa física ou jurídica domiciliada no exterior",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total do serviço"
       },
@@ -3013,7 +3007,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo da Operação - PIS/PASEP - Importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de cálculo PIS/PASEP"
       },
@@ -3022,7 +3016,7 @@
         "id": "VL_PIS_IMP",
         "descricao": "Valor pago/recolhido de PIS/PASEP - Importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor recolhido de PIS/PASEP"
       },
@@ -3040,7 +3034,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da Operação - COFINS - Importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de cálculo COFINS"
       },
@@ -3049,7 +3043,7 @@
         "id": "VL_COFINS_IMP",
         "descricao": "Valor pago/recolhido de COFINS - Importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor recolhido de COFINS"
       },
@@ -3128,7 +3122,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item (mercadorias ou serviços)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total do item"
       },
@@ -3137,7 +3131,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto do item / Exclusão",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto do item / Exclusão"
       },
@@ -3179,7 +3173,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo PIS/PASEP"
       },
@@ -3188,7 +3182,7 @@
         "id": "ALIQ_PIS",
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP"
       },
@@ -3197,7 +3191,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -3215,7 +3209,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo COFINS"
       },
@@ -3225,7 +3219,7 @@
         "descricao": "Alíquota do COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "6",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS"
       },
@@ -3234,7 +3228,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -3243,7 +3237,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       },
@@ -3252,7 +3246,7 @@
         "id": "COD_CCUS",
         "descricao": "Código do centro de custos",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Centro de custos"
       }
@@ -3511,7 +3505,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total do documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total do documento"
       },
@@ -3532,7 +3526,7 @@
         "id": "VL_DESC",
         "descricao": "Valor total do desconto",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto"
       },
@@ -3541,7 +3535,7 @@
         "id": "VL_ABAT_NT",
         "descricao": "Abatimento não tributado e não comercial Ex. desconto ICMS nas remessas para ZFM",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Abatimento não tributado e não comercial"
       },
@@ -3550,7 +3544,7 @@
         "id": "VL_MERC",
         "descricao": "Valor total das mercadorias e serviços",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor total das mercadorias e serviços"
       },
@@ -3571,7 +3565,7 @@
         "id": "VL_FRT",
         "descricao": "Valor do frete indicado no documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do frete"
       },
@@ -3580,7 +3574,7 @@
         "id": "VL_SEG",
         "descricao": "Valor do seguro indicado no documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do seguro"
       },
@@ -3589,7 +3583,7 @@
         "id": "VL_OUT_DA",
         "descricao": "Valor de outras despesas acessórias",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor de outras despesas"
       },
@@ -3598,7 +3592,7 @@
         "id": "VL_BC_ICMS",
         "descricao": "Valor da base de cálculo do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo do ICMS"
       },
@@ -3607,7 +3601,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ICMS"
       },
@@ -3616,7 +3610,7 @@
         "id": "VL_BC_ICMS_ST",
         "descricao": "Valor da base de cálculo do ICMS substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo do ICMS ST"
       },
@@ -3625,7 +3619,7 @@
         "id": "VL_ICMS_ST",
         "descricao": "Valor do ICMS retido por substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ICMS ST"
       },
@@ -3634,7 +3628,7 @@
         "id": "VL_IPI",
         "descricao": "Valor total do IPI",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do IPI"
       },
@@ -3643,7 +3637,7 @@
         "id": "VL_PIS",
         "descricao": "Valor total do PIS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -3652,7 +3646,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor total da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -3661,7 +3655,7 @@
         "id": "VL_PIS_ST",
         "descricao": "Valor total do PIS retido por substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP ST"
       },
@@ -3670,7 +3664,7 @@
         "id": "VL_COFINS_ST",
         "descricao": "Valor total da COFINS retido por substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS ST"
       }
@@ -3814,7 +3808,7 @@
         "id": "VL_PIS_IMP",
         "descricao": "Valor pago de PIS na importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -3823,7 +3817,7 @@
         "id": "VL_COFINS_IMP",
         "descricao": "Valor pago de COFINS na importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -3890,7 +3884,7 @@
         "id": "QTD",
         "descricao": "Quantidade do item",
         "tipo": "N",
-        "casasdecimais": "05",
+        "casasdecimais": "5",
         "obrigatorio": "0",
         "rotulo": "Quantidade"
       },
@@ -3908,7 +3902,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item (mercadorias ou serviços)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total"
       },
@@ -3917,7 +3911,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto comercial",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto"
       },
@@ -3965,7 +3959,7 @@
         "id": "VL_BC_ICMS",
         "descricao": "Valor da base de cálculo do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo do ICMS"
       },
@@ -3975,7 +3969,7 @@
         "descricao": "Alíquota do ICMS",
         "tipo": "N",
         "tamanho": "6",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Alíquota do ICMS"
       },
@@ -3984,7 +3978,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor do ICMS creditado/debitado",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ICMS"
       },
@@ -3993,7 +3987,7 @@
         "id": "VL_BC_ICMS_ST",
         "descricao": "Valor da base de cálculo referente à substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo do ICMS ST"
       },
@@ -4012,7 +4006,7 @@
         "id": "VL_ICMS_ST",
         "descricao": "Valor do ICMS referente à substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ICMS ST"
       },
@@ -4051,7 +4045,7 @@
         "id": "VL_BC_IPI",
         "descricao": "Valor da base de cálculo do IPI",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo do IPI"
       },
@@ -4061,7 +4055,7 @@
         "descricao": "Alíquota do IPI",
         "tipo": "N",
         "tamanho": "6",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Alíquota do IPI"
       },
@@ -4070,7 +4064,7 @@
         "id": "VL_IPI",
         "descricao": "Valor do IPI creditado/debitado",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do IPI"
       },
@@ -4088,7 +4082,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo PIS/PASEP"
       },
@@ -4098,7 +4092,7 @@
         "descricao": "Alíquota do PIS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP"
       },
@@ -4107,7 +4101,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -4116,7 +4110,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP (em reais)"
       },
@@ -4125,7 +4119,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor PIS/PASEP"
       },
@@ -4143,7 +4137,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo COFINS"
       },
@@ -4153,7 +4147,7 @@
         "descricao": "Alíquota do COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS"
       },
@@ -4162,7 +4156,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -4171,7 +4165,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS (em reais)"
       },
@@ -4180,7 +4174,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor COFINS"
       },
@@ -4189,7 +4183,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       }
@@ -4358,7 +4352,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       },
@@ -4455,7 +4449,7 @@
         "id": "VL_TOT_ITEM",
         "descricao": "Valor Total do Item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       }
@@ -4510,7 +4504,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -4519,7 +4513,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto comercial / Exclusão",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto comercial / Exclusão"
       },
@@ -4528,7 +4522,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo PIS/PASEP"
       },
@@ -4538,7 +4532,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP"
       },
@@ -4547,7 +4541,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -4556,7 +4550,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS/PASEP (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP (R$)"
       },
@@ -4565,7 +4559,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor PIS/PASEP"
       },
@@ -4574,7 +4568,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -4624,7 +4618,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -4633,7 +4627,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto comercial / Exclusão",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto comercial / Exclusão"
       },
@@ -4642,7 +4636,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo COFINS"
       },
@@ -4652,7 +4646,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS"
       },
@@ -4661,7 +4655,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -4670,7 +4664,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS (R$)"
       },
@@ -4679,7 +4673,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor COFINS"
       },
@@ -4688,7 +4682,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -4821,7 +4815,7 @@
         "id": "VL_TOT_ITEM",
         "descricao": "Valor Total do Item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       }
@@ -4859,8 +4853,8 @@
         "id": "CNPJ_CPF_PART",
         "descricao": "CNPJ/CPF do Participante a que se referem as operações consolidadas neste registro (pessoa jurídica ou pessoa física vendedora/remetente)",
         "tipo": "C",
-        "tamanho": "014",
-        "obrigatorio": "1",
+        "tamanho": "14",
+        "obrigatorio": "0",
         "rotulo": "CNPJ/CPF do Participante"
       },
       {
@@ -4886,7 +4880,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -4895,7 +4889,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto comercial / Exclusão",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto comercial / Exclusão"
       },
@@ -4904,7 +4898,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo PIS/PASEP"
       },
@@ -4914,7 +4908,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP"
       },
@@ -4923,7 +4917,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -4932,7 +4926,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS/PASEP (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP (R$)"
       },
@@ -4941,7 +4935,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor PIS/PASEP"
       },
@@ -4950,7 +4944,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -4982,8 +4976,8 @@
         "id": "CNPJ_CPF_PART",
         "descricao": "CNPJ/CPF do Participante a que se referem as operações consolidadas neste registro (pessoa jurídica ou pessoa física vendedora/remetente)",
         "tipo": "C",
-        "tamanho": "014",
-        "obrigatorio": "1",
+        "tamanho": "14",
+        "obrigatorio": "0",
         "rotulo": "CNPJ/CPF do Participante"
       },
       {
@@ -5009,7 +5003,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -5018,7 +5012,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto comercial / Exclusão",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do desconto comercial / Exclusão"
       },
@@ -5027,7 +5021,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo COFINS"
       },
@@ -5037,7 +5031,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS"
       },
@@ -5046,7 +5040,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -5055,7 +5049,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS (R$)"
       },
@@ -5064,7 +5058,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor COFINS"
       },
@@ -5073,7 +5067,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -5170,7 +5164,7 @@
         "id": "VL_PIS_IMP",
         "descricao": "Valor pago de PIS na importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -5179,7 +5173,7 @@
         "id": "VL_COFINS_IMP",
         "descricao": "Valor pago de COFINS na importação",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -5268,7 +5262,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total dos documentos regulares",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total"
       },
@@ -5277,7 +5271,7 @@
         "id": "VL_DOC_CANC",
         "descricao": "Valor total dos documentos cancelados",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total dos Documentos Cancelados"
       }
@@ -5331,7 +5325,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -5340,7 +5334,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo PIS/PASEP"
       },
@@ -5350,7 +5344,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP"
       },
@@ -5359,7 +5353,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -5368,7 +5362,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS/PASEP (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota PIS/PASEP (R$)"
       },
@@ -5377,7 +5371,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -5386,7 +5380,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -5436,7 +5430,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -5445,7 +5439,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo COFINS"
       },
@@ -5455,7 +5449,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS"
       },
@@ -5464,7 +5458,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -5473,7 +5467,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota COFINS (R$)"
       },
@@ -5482,7 +5476,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do COFINS"
       },
@@ -5491,7 +5485,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -5536,7 +5530,7 @@
         "descricao": "Código do participante (campo 02 do Registro 0150) - emitente do documento",
         "tipo": "C",
         "tamanho": "60",
-        "obrigatorio": "0",
+        "obrigatorio": "1",
         "rotulo": "Participante"
       },
       {
@@ -5580,7 +5574,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total do documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total"
       }
@@ -5624,7 +5618,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total do item (mercadorias ou serviços)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -5633,7 +5627,7 @@
         "id": "VL_DESC",
         "descricao": "Valor do desconto comercial do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do Desconto Comercial"
       },
@@ -5663,7 +5657,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do credito de PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -5673,7 +5667,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -5682,7 +5676,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do crédito de PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -5700,7 +5694,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo do crédito de COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -5710,7 +5704,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -5719,7 +5713,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor do crédito de COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -5728,7 +5722,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -5772,7 +5766,7 @@
         "id": "ECF_MOD",
         "descricao": "Modelo do equipamento",
         "tipo": "C",
-        "tamanho": "020",
+        "tamanho": "20",
         "obrigatorio": "1",
         "rotulo": "Modelo do equipamento"
       },
@@ -5781,7 +5775,7 @@
         "id": "ECF_FAB",
         "descricao": "Número de série de fabricação do ECF",
         "tipo": "C",
-        "tamanho": "020",
+        "tamanho": "21",
         "obrigatorio": "1",
         "rotulo": "Número de série de fabricação do ECF"
       },
@@ -5862,7 +5856,7 @@
         "id": "GT_FIN",
         "descricao": "Valor do Grande Total final",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do Grande Total Final"
       },
@@ -5871,7 +5865,7 @@
         "id": "VL_BRT",
         "descricao": "Valor da venda bruta",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Venda Bruta"
       }
@@ -5916,7 +5910,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -5925,7 +5919,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -5935,7 +5929,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -5944,7 +5938,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -5953,7 +5947,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS/PASEP (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP (em reais)"
       },
@@ -5962,7 +5956,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -5980,7 +5974,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -6021,7 +6015,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -6030,7 +6024,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -6040,7 +6034,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -6049,7 +6043,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -6058,7 +6052,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS (em reais)"
       },
@@ -6067,7 +6061,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -6085,7 +6079,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -6246,7 +6240,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -6255,7 +6249,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -6265,7 +6259,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -6274,7 +6268,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -6283,7 +6277,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS/PASEP (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP (em reais)"
       },
@@ -6292,7 +6286,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -6301,7 +6295,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -6360,7 +6354,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -6369,7 +6363,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -6379,7 +6373,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -6388,7 +6382,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -6397,7 +6391,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS (em reais)"
       },
@@ -6406,7 +6400,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -6415,7 +6409,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -6569,7 +6563,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total do documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Documento Fiscal"
       },
@@ -6578,7 +6572,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor acumulado do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado do ICMS"
       },
@@ -6596,7 +6590,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -6605,7 +6599,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       }
@@ -6651,7 +6645,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -6672,7 +6666,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -6682,7 +6676,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "1",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -6691,7 +6685,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -6700,7 +6694,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -6741,7 +6735,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total dos itens"
       },
@@ -6762,7 +6756,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de cálculo da COFINS"
       },
@@ -6772,7 +6766,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "1",
         "rotulo": "Alíquota da COFINS"
       },
@@ -6781,7 +6775,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da COFINS"
       },
@@ -6790,7 +6784,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -6939,7 +6933,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total dos documentos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total dos Documentos"
       },
@@ -6948,7 +6942,7 @@
         "id": "VL_DESC",
         "descricao": "Valor acumulado dos descontos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado dos Descontos"
       },
@@ -6965,7 +6959,7 @@
         "id": "VL_FORN",
         "descricao": "Valor acumulado do fornecimento",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado do Fornecimento"
       },
@@ -6974,7 +6968,7 @@
         "id": "VL_SERV_NT",
         "descricao": "Valor acumulado dos serviços não-tributados pelo ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado dos Serviços não-tributados pelo ICMS"
       },
@@ -6983,7 +6977,7 @@
         "id": "VL_TERC",
         "descricao": "Valores cobrados em nome de terceiros",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valores Cobrados em Nome de Terceiros"
       },
@@ -6992,7 +6986,7 @@
         "id": "VL_DA",
         "descricao": "Valor acumulado das despesas acessórias",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado das Despesas Acessórias"
       },
@@ -7001,7 +6995,7 @@
         "id": "VL_BC_ICMS",
         "descricao": "Valor acumulado da base de cálculo do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado da Base de Cálculo do ICMS"
       },
@@ -7010,7 +7004,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor acumulado do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado do ICMS"
       },
@@ -7019,7 +7013,7 @@
         "id": "VL_BC_ICMS_ST",
         "descricao": "Valor acumulado da base de cálculo do ICMS substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado da Base de Cálculo do ICMS ST"
       },
@@ -7028,7 +7022,7 @@
         "id": "VL_ICMS_ST",
         "descricao": "Valor acumulado do ICMS retido por substituição tributária",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado do ICMS ST"
       },
@@ -7037,7 +7031,7 @@
         "id": "VL_PIS",
         "descricao": "Valor acumulado do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Acumulado do PIS/PASEP"
       },
@@ -7046,7 +7040,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor acumulado da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Acumulado da COFINS"
       }
@@ -7092,7 +7086,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -7101,7 +7095,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -7111,7 +7105,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "1",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -7120,7 +7114,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -7129,7 +7123,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -7169,7 +7163,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "rotulo": "Valor Total do Item"
       },
       {
@@ -7177,7 +7171,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "rotulo": "Base de Cálculo da COFINS"
       },
       {
@@ -7186,7 +7180,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "rotulo": "Alíquota da COFINS"
       },
       {
@@ -7194,7 +7188,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "rotulo": "Valor da COFINS"
       },
       {
@@ -7202,7 +7196,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "rotulo": "Conta Analítica Contábil"
       }
     ],
@@ -7463,7 +7457,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       }
@@ -7603,7 +7597,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       }
@@ -7825,7 +7819,7 @@
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
-          "valores": "07=D100 - Nota Fiscal de Serviço de Transporte;08=D100 - Conhecimento de Transporte Rodoviário de Cargas;8B=D100 - Conhecimento de Transporte de Cargas Avulso;09=D100 - Conhecimento de Transporte Aquaviário de Cargas;10=D100 - Conhecimento Aéreo;11=D100 - Conhecimento de Transporte Ferroviário de Cargas;26=D100 - Conhecimento de Transporte Multimodal de Cargas;27=D100 - Nota Fiscal de Transporte Ferroviário de Cargas;57=D100 - Conhecimento de Transporte Eletrônico - CT-e"
+          "valores": "07=D100 - Nota Fiscal de Serviço de Transporte;08=D100 - Conhecimento de Transporte Rodoviário de Cargas;8B=D100 - Conhecimento de Transporte de Cargas Avulso;09=D100 - Conhecimento de Transporte Aquaviário de Cargas;10=D100 - Conhecimento Aéreo;11=D100 - Conhecimento de Transporte Ferroviário de Cargas;26=D100 - Conhecimento de Transporte Multimodal de Cargas;27=D100 - Nota Fiscal de Transporte Ferroviário de Cargas;57=D100 - Conhecimento de Transporte Eletrônico - CT-e;67=D100 - Conhecimento de Transporte Eletrônico para Outros Serviços - CT-e OS"
         }
       },
       {
@@ -7917,7 +7911,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total do documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Documento Fiscal"
       },
@@ -7926,7 +7920,7 @@
         "id": "VL_DESC",
         "descricao": "Valor total do desconto",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total do Desconto"
       },
@@ -7947,7 +7941,7 @@
         "id": "VL_SERV",
         "descricao": "Valor total da prestação de serviço",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total da Prestação de Serviço"
       },
@@ -7956,7 +7950,7 @@
         "id": "VL_BC_ICMS",
         "descricao": "Valor da base de cálculo do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do ICMS"
       },
@@ -7965,7 +7959,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ICMS"
       },
@@ -7974,7 +7968,7 @@
         "id": "VL_NT",
         "descricao": "Valor não-tributado do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor não-tributado do ICMS"
       },
@@ -7992,7 +7986,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -8041,7 +8035,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total dos Itens"
       },
@@ -8071,7 +8065,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -8081,7 +8075,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -8090,7 +8084,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -8099,7 +8093,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Código da conta analítica contábil debitada/creditada"
       }
@@ -8143,7 +8137,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total dos Itens"
       },
@@ -8173,7 +8167,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -8183,7 +8177,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -8192,7 +8186,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -8201,7 +8195,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -8281,7 +8275,7 @@
         "obrigatorio": "1",
         "rotulo": "Modelo do Documento",
         "valores-validos": {
-          "valores": "07=D200 - Nota Fiscal de Serviço de Transporte;08=D200 - Conhecimento de Transporte Rodoviário de Cargas;8B=D200 - Conhecimento de Transporte de Cargas Avulso;09=D200 - Conhecimento de Transporte Aquaviário de Cargas;10=D200 - Conhecimento Aéreo;11=D200 - Conhecimento de Transporte Ferroviário de Cargas;26=D200 - Conhecimento de Transporte Multimodal de Cargas;27=D200 - Nota Fiscal de Transporte Ferroviário de Cargas;57=D200 - Conhecimento de Transporte Eletrônico - CT-e"
+          "valores": "07=D200 - Nota Fiscal de Serviço de Transporte;08=D200 - Conhecimento de Transporte Rodoviário de Cargas;8B=D200 - Conhecimento de Transporte de Cargas Avulso;09=D200 - Conhecimento de Transporte Aquaviário de Cargas;10=D200 - Conhecimento Aéreo;11=D200 - Conhecimento de Transporte Ferroviário de Cargas;26=D200 - Conhecimento de Transporte Multimodal de Cargas;27=D200 - Nota Fiscal de Transporte Ferroviário de Cargas;57=D200 - Conhecimento de Transporte Eletrônico - CT-e;67=D200 - Conhecimento de Transporte Eletrônico para Outros Serviços - CT-e OS"
         }
       },
       {
@@ -8355,7 +8349,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total dos documentos fiscais",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total dos Documentos"
       },
@@ -8364,7 +8358,7 @@
         "id": "VL_DESC",
         "descricao": "Valor total dos descontos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total dos Descontos"
       }
@@ -8410,7 +8404,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -8419,7 +8413,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -8429,7 +8423,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -8438,7 +8432,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -8447,7 +8441,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -8488,7 +8482,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor total dos itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -8497,7 +8491,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -8507,7 +8501,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -8516,7 +8510,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -8525,7 +8519,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -8666,7 +8660,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total dos documentos fiscais emitidos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total dos Documentos"
       },
@@ -8675,7 +8669,7 @@
         "id": "VL_DESC",
         "descricao": "Valor total dos descontos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total dos Descontos"
       },
@@ -8693,7 +8687,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -8703,7 +8697,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -8712,7 +8706,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -8730,7 +8724,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -8740,7 +8734,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -8749,7 +8743,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -8758,7 +8752,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -8849,7 +8843,7 @@
         "id": "ECF_MOD",
         "descricao": "Modelo do equipamento",
         "tipo": "C",
-        "tamanho": "020",
+        "tamanho": "20",
         "obrigatorio": "1",
         "rotulo": "Modelo do equipamento"
       },
@@ -8858,7 +8852,7 @@
         "id": "ECF_FAB",
         "descricao": "Número de série de fabricação do ECF",
         "tipo": "C",
-        "tamanho": "020",
+        "tamanho": "21",
         "obrigatorio": "1",
         "rotulo": "Número de série de fabricação do ECF"
       },
@@ -8903,7 +8897,7 @@
         "id": "GT_FIN",
         "descricao": "Valor do Grande Total final",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor do Grande Total Final"
       },
@@ -8912,7 +8906,7 @@
         "id": "VL_BRT",
         "descricao": "Valor da venda bruta",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Venda Bruta"
       },
@@ -8930,7 +8924,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -8940,7 +8934,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -8949,7 +8943,7 @@
         "id": "QUANT_BC_PIS",
         "descricao": "Base de cálculo em quantidade PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade PIS/PASEP"
       },
@@ -8958,7 +8952,7 @@
         "id": "ALIQ_PIS_QUANT",
         "descricao": "Alíquota do PIS/PASEP (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP (em reais)"
       },
@@ -8967,7 +8961,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -8985,7 +8979,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -8995,7 +8989,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -9004,7 +8998,7 @@
         "id": "QUANT_BC_COFINS",
         "descricao": "Base de cálculo em quantidade COFINS",
         "tipo": "N",
-        "casasdecimais": "03",
+        "casasdecimais": "3",
         "obrigatorio": "0",
         "rotulo": "Base de cálculo em quantidade COFINS"
       },
@@ -9013,7 +9007,7 @@
         "id": "ALIQ_COFINS_QUANT",
         "descricao": "Alíquota da COFINS (em reais)",
         "tipo": "N",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS (em reais)"
       },
@@ -9022,7 +9016,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -9031,7 +9025,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -9212,7 +9206,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total do documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor total do Documento"
       },
@@ -9221,7 +9215,7 @@
         "id": "VL_DESC",
         "descricao": "Valor total do desconto",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total do Desconto"
       },
@@ -9230,7 +9224,7 @@
         "id": "VL_SERV",
         "descricao": "Valor da prestação de serviços",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Prestação de Serviços"
       },
@@ -9239,7 +9233,7 @@
         "id": "VL_SERV_NT",
         "descricao": "Valor total dos serviços não-tributados pelo ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Total dos Serviços não-tributados pelo ICMS"
       },
@@ -9248,7 +9242,7 @@
         "id": "VL_TERC",
         "descricao": "Valores cobrados em nome de terceiros",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valores Cobrados em Nome de Terceiros"
       },
@@ -9257,7 +9251,7 @@
         "id": "VL_DA",
         "descricao": "Valor de outras despesas indicadas no documento fiscal",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor de outras despesas"
       },
@@ -9266,7 +9260,7 @@
         "id": "VL_BC_ICMS",
         "descricao": "Valor da base de cálculo do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do ICMS"
       },
@@ -9275,7 +9269,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do ICMS"
       },
@@ -9293,7 +9287,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -9302,7 +9296,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       }
@@ -9348,7 +9342,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor Total dos Itens  (Serviços)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Item"
       },
@@ -9369,7 +9363,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -9379,7 +9373,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -9388,7 +9382,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -9397,7 +9391,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -9438,7 +9432,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor Total dos Itens",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total dos Itens"
       },
@@ -9459,7 +9453,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -9469,7 +9463,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -9478,7 +9472,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -9487,7 +9481,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -9640,7 +9634,7 @@
         "id": "VL_DOC",
         "descricao": "Valor total acumulado dos documentos fiscais",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total Acumulado dos Documentos Fiscais"
       },
@@ -9649,7 +9643,7 @@
         "id": "VL_DESC",
         "descricao": "Valor acumulado dos descontos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado dos Descontos"
       },
@@ -9658,7 +9652,7 @@
         "id": "VL_SERV",
         "descricao": "Valor acumulado das prestações de serviços tributados pelo ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Acumulado das Prestações de Serviços Tributados pelo ICMS"
       },
@@ -9667,7 +9661,7 @@
         "id": "VL_SERV_NT",
         "descricao": "Valor acumulado dos serviços não-tributados pelo ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado dos Serviços não-tributados pelo ICMS"
       },
@@ -9676,7 +9670,7 @@
         "id": "VL_TERC",
         "descricao": "Valores cobrados em nome de terceiros",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valores Cobrados em Nome de Terceiros"
       },
@@ -9685,7 +9679,7 @@
         "id": "VL_DA",
         "descricao": "Valor acumulado das despesas acessórias",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado das Despesas Acessórias"
       },
@@ -9694,7 +9688,7 @@
         "id": "VL_BC_ICMS",
         "descricao": "Valor acumulado da base de cálculo do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado da Base de Cálculo do ICMS"
       },
@@ -9703,7 +9697,7 @@
         "id": "VL_ICMS",
         "descricao": "Valor acumulado do ICMS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado do ICMS"
       },
@@ -9712,7 +9706,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -9721,7 +9715,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       }
@@ -9767,7 +9761,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor acumulado do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Acumulado do Item"
       },
@@ -9776,7 +9770,7 @@
         "id": "VL_DESC",
         "descricao": "Valor acumulado dos descontos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado dos Descontos"
       },
@@ -9794,7 +9788,7 @@
         "id": "VL_BC_PIS",
         "descricao": "Valor da base de cálculo do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo do PIS/PASEP"
       },
@@ -9804,7 +9798,7 @@
         "descricao": "Alíquota do PIS/PASEP (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota do PIS/PASEP"
       },
@@ -9813,7 +9807,7 @@
         "id": "VL_PIS",
         "descricao": "Valor do PIS/PASEP",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor do PIS/PASEP"
       },
@@ -9822,7 +9816,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -9863,7 +9857,7 @@
         "id": "VL_ITEM",
         "descricao": "Valor acumulado do item",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Acumulado do Item"
       },
@@ -9872,7 +9866,7 @@
         "id": "VL_DESC",
         "descricao": "Valor acumulado dos descontos",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor Acumulado dos Descontos"
       },
@@ -9890,7 +9884,7 @@
         "id": "VL_BC_COFINS",
         "descricao": "Valor da base de cálculo da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Base de Cálculo da COFINS"
       },
@@ -9900,7 +9894,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "0",
         "rotulo": "Alíquota da COFINS"
       },
@@ -9909,7 +9903,7 @@
         "id": "VL_COFINS",
         "descricao": "Valor da COFINS",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "0",
         "rotulo": "Valor da COFINS"
       },
@@ -9918,7 +9912,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil"
       }
@@ -10251,7 +10245,7 @@
         "posicao": "17",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -10260,7 +10254,7 @@
         "posicao": "18",
         "id": "COD_CCUS",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Centro de Custos",
         "descricao": "Código do Centro de Custos"
@@ -10485,7 +10479,7 @@
         "posicao": "16",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -10494,7 +10488,7 @@
         "posicao": "17",
         "id": "COD_CCUS",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Centro de Custos",
         "descricao": "Código do Centro de Custos"
@@ -10749,7 +10743,7 @@
         "posicao": "19",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -10758,7 +10752,7 @@
         "posicao": "20",
         "id": "COD_CCUS",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Centro de Custos",
         "descricao": "Código do Centro de Custos"
@@ -10956,7 +10950,7 @@
         "posicao": "14",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -11216,7 +11210,7 @@
         "id": "VL_CUS_INC_ACUM_ANT",
         "descricao": "Valor Total do Custo Incorrido da unidade imobiliária acumulado até o mês anterior ao da escrituração",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Custo Incorrido da unidade imobiliária acumulado até o mês anterior ao da escrituração"
       },
@@ -11225,7 +11219,7 @@
         "id": "VL_CUS_INC_PER_ESC",
         "descricao": "Valor Total do Custo Incorrido da unidade imobiliária no mês da escrituração",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Custo Incorrido da unidade imobiliária no mês da escrituração"
       },
@@ -11234,7 +11228,7 @@
         "id": "VL_CUS_INC_ACUM",
         "descricao": "Valor Total do Custo Incorrido da unidade imobiliária acumulado até o mês da escrituração (Campo 02 + 03)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor Total do Custo Incorrido da unidade imobiliária acumulado até o mês da escrituração"
       },
@@ -11243,7 +11237,7 @@
         "id": "VL_EXC_BC_CUS_INC_ACUM",
         "descricao": "Parcela do Custo Incorrido sem direito ao crédito da atividade imobiliária, acumulado até o período",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Parcela do Custo Incorrido sem direito ao crédito da atividade imobiliária, acumulado até o período"
       },
@@ -11252,7 +11246,7 @@
         "id": "VL_BC_CUS_INC",
         "descricao": "Valor da Base de Cálculo do Crédito sobre o Custo Incorrido, acumulado até o período da escrituração (Campo 04 - 05)",
         "tipo": "N",
-        "casasdecimais": "02",
+        "casasdecimais": "2",
         "obrigatorio": "1",
         "rotulo": "Valor da Base de Cálculo do Crédito sobre o Custo Incorrido, acumulado até o período da escrituração"
       },
@@ -11326,7 +11320,7 @@
         "descricao": "Alíquota da COFINS (em percentual)",
         "tipo": "N",
         "tamanho": "8",
-        "casasdecimais": "04",
+        "casasdecimais": "4",
         "obrigatorio": "1",
         "rotulo": "Alíquota da COFINS"
       },
@@ -11670,7 +11664,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       },
@@ -11873,7 +11867,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       },
@@ -12041,7 +12035,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil representativa da receita recebida",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       }
@@ -12192,7 +12186,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       },
@@ -12397,7 +12391,7 @@
         "id": "COD_CTA",
         "descricao": "Código da conta analítica contábil debitada/creditada",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil"
       },
@@ -13110,7 +13104,7 @@
         "posicao": "5",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Código da conta contábil",
         "descricao": "Código da conta contábil referente ao valor informado no campo 04"
@@ -13215,7 +13209,7 @@
         "posicao": "4",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil",
         "descricao": "Conta Contábil"
@@ -13771,7 +13765,7 @@
         "posicao": "8",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
         "descricao": "Código da conta contábil debitada/creditada"
@@ -14339,7 +14333,7 @@
         "posicao": "8",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
         "descricao": "Código da conta contábil debitada/creditada"
@@ -14629,7 +14623,7 @@
         "posicao": "4",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -14689,7 +14683,7 @@
         "posicao": "4",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -15125,7 +15119,7 @@
         "posicao": "8",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
         "descricao": "Código da conta contábil debitada/creditada"
@@ -15693,7 +15687,7 @@
         "posicao": "8",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Contábil Debitada/Creditada",
         "descricao": "Código da conta contábil debitada/creditada"
@@ -15915,7 +15909,7 @@
         "posicao": "5",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta Analítica Contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -15975,7 +15969,7 @@
         "posicao": "4",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Conta analítica contábil",
         "descricao": "Código da conta analítica contábil debitada/creditada"
@@ -16197,7 +16191,7 @@
         "posicao": "11",
         "id": "COD_CTA",
         "tipo": "C",
-        "tamanho": "60",
+        "tamanho": "255",
         "obrigatorio": "0",
         "rotulo": "Código da conta analítica contábil referente à Contribuição Previdenciária sobre o valor da Receita Bruta",
         "descricao": "Código da conta analítica contábil referente à Contribuição Previdenciária sobre o valor da Receita Bruta"
